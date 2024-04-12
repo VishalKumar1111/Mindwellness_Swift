@@ -1,0 +1,6 @@
+framework module Pods_MindWellness {
+  umbrella header "Pods-MindWellness-umbrella.h"
+
+  export *
+  module * { export * }
+}

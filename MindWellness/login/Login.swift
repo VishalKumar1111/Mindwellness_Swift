@@ -12,6 +12,7 @@ import FirebaseAuth
 class Login: UIViewController {
 
     
+  
     @IBOutlet weak var emailTextField: UITextField!
     
     @IBOutlet weak var passwordTextField: UITextField!
@@ -19,24 +20,42 @@ class Login: UIViewController {
     @IBOutlet weak var loginButton: UIButton!
     
     @IBOutlet weak var errorLabel: UILabel!
+    override func viewWillAppear(_ animated: Bool) {
+        
+        presentSecurityAlert()
+        
+    }
 
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        presentSecurityAlert()
+//        let isAlertShown = UserDefaults.standard.bool(forKey: "isAlertShown")
+//            if !isAlertShown {
+//                // Alert has not been shown, present it
+//
+//
+//
+//                // Set the flag to indicate that the alert has been shown
+//                UserDefaults.standard.set(true, forKey: "isAlertShown")
+//            }
         
-        let refreshAlert = UIAlertController(title: "Security?", message: "Your Email Id and Phone Number will be Stored for proceeding Further.", preferredStyle: UIAlertController.Style.alert)
-
-        refreshAlert.addAction(UIAlertAction(title: "Ok", style: .default, handler: { (action: UIAlertAction!) in
-              print("Handle Ok logic here")
-        }))
-
-        refreshAlert.addAction(UIAlertAction(title: "Details & Policies", style: .cancel, handler: { (action: UIAlertAction!) in
-              print("Handle Cancel Logic here")
-        }))
-
-        present(refreshAlert, animated: true, completion: nil)
-        
-        
+//        let refreshAlert = UIAlertController(title: "Security?", message: "We collect your email address solely for account management and communication purposes within our app.Your email address is stored securely and will not be shared with third parties without your explicit consent. We prioritize the protection of your information.", preferredStyle: UIAlertController.Style.alert)
+//
+//        refreshAlert.addAction(UIAlertAction(title: "Ok", style: .default, handler: { (action: UIAlertAction!) in
+//              print("Handle Ok logic here")
+//        }))
+//
+//        refreshAlert.addAction(UIAlertAction(title: "Details & Policies", style: .cancel, handler: { (action: UIAlertAction!) in
+//              print("Handle Cancel Logic here")
+//
+//            let sc = self.storyboard?.instantiateViewController(withIdentifier: "privacy") as? PrivacyViewController
+//            self.navigationController?.pushViewController(sc!, animated: true)
+//        }))
+//
+//        present(refreshAlert, animated: true, completion: nil)
+//
+//
         
         if let backgroundImage = UIImage(named: "Background") {
             let imageView = UIImageView(frame: self.view.bounds)
@@ -49,6 +68,22 @@ class Login: UIViewController {
         // Do any additional setup after loading the view.
     }
     
+    func presentSecurityAlert() {
+        let refreshAlert = UIAlertController(title: "Security", message: "We collect your email address solely for account management and communication purposes within our app. Your email address is stored securely and will not be shared with third parties without your explicit consent. We prioritize the protection of your information.", preferredStyle: .alert)
+
+        refreshAlert.addAction(UIAlertAction(title: "Ok", style: .default, handler: { (action: UIAlertAction!) in
+              print("Handle Ok logic here")
+        }))
+
+        refreshAlert.addAction(UIAlertAction(title: "Policies", style: .cancel, handler: { (action: UIAlertAction!) in
+              print("Handle Cancel Logic here")
+            
+            let sc = self.storyboard?.instantiateViewController(withIdentifier: "privacy") as? PrivacyViewController
+            self.navigationController?.pushViewController(sc!, animated: true)
+        }))
+
+        present(refreshAlert, animated: true, completion: nil)
+    }
     func setUpElements() {
         
         // Hide the error label

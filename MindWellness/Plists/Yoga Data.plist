@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<array>
+	<dict>
+		<key>YogaName</key>
+		<string>Sukhasan</string>
+		<key>Detail</key>
+		<string>It was seen that sitting cross-legged might improve mental integration. Getting up from the cross-legged position may also prove to improve the balance and sense of touch, which might be beneficial for our health in the long run.</string>
+		<key>Image</key>
+		<string>ri9B8IzLXIY</string>
+		<key>VideoUrl</key>
+		<string>https://www.youtube.com/watch?v=ri9B8IzLXIY</string>
+	</dict>
+	<dict>
+		<key>YogaName</key>
+		<string>Bakasana</string>
+		<key>Detail</key>
+		<string>Bakasana benefits may release negative emotions like stress, anxiety and depression out of the body. It may create a sense of awareness in the body to maintain stability and focus.</string>
+		<key>Image</key>
+		<string>k3DsjAV4X8Q</string>
+		<key>VideoUrl</key>
+		<string>https://www.youtube.com/watch?v=k3DsjAV4X8Q</string>
+	</dict>
+	<dict>
+		<key>YogaName</key>
+		<string>Paschimottanasana</string>
+		<key>Detail</key>
+		<string>Paschimottanasana is capable of improving your mental health. It can calm your body and mind and allows the mind to relax. As you maintain the position for a long time, you get to open your mind and eliminate the feelings of depression and worry. </string>
+		<key>Image</key>
+		<string>T8sgVyF4Ux4</string>
+		<key>VideoUrl</key>
+		<string>https://www.youtube.com/watch?v=T8sgVyF4Ux4</string>
+	</dict>
+	<dict>
+		<key>YogaName</key>
+		<string>Chakrasana</string>
+		<key>Detail</key>
+		<string>Regular practising of Wheel Pose provides clarity of thought and mental peace. Other Benefits: It improves the strength of the arms, shoulders and wrists. Practising Chakrasana is also good for patients who have osteoporosis and infertility.</string>
+		<key>Image</key>
+		<string>Sc0qmTkGq78</string>
+		<key>VideoUrl</key>
+		<string>https://www.youtube.com/watch?v=Sc0qmTkGq78</string>
+	</dict>
+	<dict>
+		<key>YogaName</key>
+		<string>Balasana</string>
+		<key>Detail</key>
+		<string>Balasana or resting pose has therapeutic benefits for anxiety, stress, depression, sleeping difficulties and fatigue.</string>
+		<key>Image</key>
+		<string>Ppku7i3ypGM</string>
+		<key>VideoUrl</key>
+		<string>https://www.youtube.com/watch?v=Ppku7i3ypGM</string>
+	</dict>
+</array>
+</plist>

@@ -1,0 +1,242 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Bucket
+   uuid = "73124064-945E-4478-A0D3-A1B298B102E0"
+   type = "0"
+   version = "2.0">
+   <Breakpoints>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "B916822D-C8DF-440C-89BC-1E391C6D4D55"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Pods/ABGaugeViewKit/ABGaugeViewKit/ABGaugeView.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "18"
+            endingLineNumber = "18"
+            landmarkName = "ABGaugeView"
+            landmarkType = "3">
+            <Locations>
+               <Location
+                  uuid = "B916822D-C8DF-440C-89BC-1E391C6D4D55 - 1b05cb02922ab7b2"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "ABGaugeViewKit.ABGaugeView.arcAngle.getter : CoreGraphics.CGFloat"
+                  moduleName = "ABGaugeViewKit"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/iostraining/Desktop/Prakhar/MindWellness/Pods/ABGaugeViewKit/ABGaugeViewKit/ABGaugeView.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "18"
+                  endingLineNumber = "18"
+                  offsetFromSymbolStart = "113">
+               </Location>
+               <Location
+                  uuid = "B916822D-C8DF-440C-89BC-1E391C6D4D55 - fae16bc3b71ea7d6"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "ABGaugeViewKit.ABGaugeView.arcAngle.setter : CoreGraphics.CGFloat"
+                  moduleName = "ABGaugeViewKit"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/iostraining/Desktop/Prakhar/MindWellness/Pods/ABGaugeViewKit/ABGaugeViewKit/ABGaugeView.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "18"
+                  endingLineNumber = "18"
+                  offsetFromSymbolStart = "126">
+               </Location>
+               <Location
+                  uuid = "B916822D-C8DF-440C-89BC-1E391C6D4D55 - dfabd88feb036079"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "ABGaugeViewKit.ABGaugeView.arcAngle.modify : CoreGraphics.CGFloat"
+                  moduleName = "ABGaugeViewKit"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/iostraining/Desktop/Prakhar/MindWellness/Pods/ABGaugeViewKit/ABGaugeViewKit/ABGaugeView.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "0"
+                  endingLineNumber = "0"
+                  offsetFromSymbolStart = "18">
+               </Location>
+               <Location
+                  uuid = "B916822D-C8DF-440C-89BC-1E391C6D4D55 - dfec2786bae5672"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "ABGaugeViewKit.ABGaugeView.arcAngle.modify : CoreGraphics.CGFloat with unmangled suffix &quot;.resume.0&quot;"
+                  moduleName = "ABGaugeViewKit"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/iostraining/Desktop/Prakhar/MindWellness/Pods/ABGaugeViewKit/ABGaugeViewKit/ABGaugeView.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "18"
+                  endingLineNumber = "18"
+                  offsetFromSymbolStart = "8">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "A1E6BA2F-89F9-47B2-BEF4-888D6388E566"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Pods/ABGaugeViewKit/ABGaugeViewKit/ABGaugeView.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "17"
+            endingLineNumber = "17"
+            landmarkName = "ABGaugeView"
+            landmarkType = "3">
+            <Locations>
+               <Location
+                  uuid = "A1E6BA2F-89F9-47B2-BEF4-888D6388E566 - 1fbf8b1ffe489189"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "ABGaugeViewKit.ABGaugeView.areas.getter : Swift.String"
+                  moduleName = "ABGaugeViewKit"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/iostraining/Desktop/Prakhar/MindWellness/Pods/ABGaugeViewKit/ABGaugeViewKit/ABGaugeView.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "17"
+                  endingLineNumber = "17"
+                  offsetFromSymbolStart = "139">
+               </Location>
+               <Location
+                  uuid = "A1E6BA2F-89F9-47B2-BEF4-888D6388E566 - 622ad6fd7a7381f5"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "ABGaugeViewKit.ABGaugeView.areas.setter : Swift.String"
+                  moduleName = "ABGaugeViewKit"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/iostraining/Desktop/Prakhar/MindWellness/Pods/ABGaugeViewKit/ABGaugeViewKit/ABGaugeView.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "17"
+                  endingLineNumber = "17"
+                  offsetFromSymbolStart = "174">
+               </Location>
+               <Location
+                  uuid = "A1E6BA2F-89F9-47B2-BEF4-888D6388E566 - 5acdb43df71bfe57"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "ABGaugeViewKit.ABGaugeView.areas.modify : Swift.String"
+                  moduleName = "ABGaugeViewKit"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/iostraining/Desktop/Prakhar/MindWellness/Pods/ABGaugeViewKit/ABGaugeViewKit/ABGaugeView.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "0"
+                  endingLineNumber = "0"
+                  offsetFromSymbolStart = "18">
+               </Location>
+               <Location
+                  uuid = "A1E6BA2F-89F9-47B2-BEF4-888D6388E566 - d513f959c78d51f5"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "ABGaugeViewKit.ABGaugeView.areas.modify : Swift.String with unmangled suffix &quot;.resume.0&quot;"
+                  moduleName = "ABGaugeViewKit"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/iostraining/Desktop/Prakhar/MindWellness/Pods/ABGaugeViewKit/ABGaugeViewKit/ABGaugeView.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "17"
+                  endingLineNumber = "17"
+                  offsetFromSymbolStart = "8">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "FFF31097-7725-4814-A6BE-4EFF9DB9AFF2"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Pods/ABGaugeViewKit/ABGaugeViewKit/ABGaugeView.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "16"
+            endingLineNumber = "16"
+            landmarkName = "ABGaugeView"
+            landmarkType = "3">
+            <Locations>
+               <Location
+                  uuid = "FFF31097-7725-4814-A6BE-4EFF9DB9AFF2 - 4d43045ecdb4736e"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "ABGaugeViewKit.ABGaugeView.colorCodes.getter : Swift.String"
+                  moduleName = "ABGaugeViewKit"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/iostraining/Desktop/Prakhar/MindWellness/Pods/ABGaugeViewKit/ABGaugeViewKit/ABGaugeView.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "16"
+                  endingLineNumber = "16"
+                  offsetFromSymbolStart = "139">
+               </Location>
+               <Location
+                  uuid = "FFF31097-7725-4814-A6BE-4EFF9DB9AFF2 - 9c477280eadf631a"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "ABGaugeViewKit.ABGaugeView.colorCodes.setter : Swift.String"
+                  moduleName = "ABGaugeViewKit"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/iostraining/Desktop/Prakhar/MindWellness/Pods/ABGaugeViewKit/ABGaugeViewKit/ABGaugeView.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "16"
+                  endingLineNumber = "16"
+                  offsetFromSymbolStart = "174">
+               </Location>
+               <Location
+                  uuid = "FFF31097-7725-4814-A6BE-4EFF9DB9AFF2 - 506efbd7f3875d5d"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "ABGaugeViewKit.ABGaugeView.colorCodes.modify : Swift.String"
+                  moduleName = "ABGaugeViewKit"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/iostraining/Desktop/Prakhar/MindWellness/Pods/ABGaugeViewKit/ABGaugeViewKit/ABGaugeView.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "0"
+                  endingLineNumber = "0"
+                  offsetFromSymbolStart = "18">
+               </Location>
+               <Location
+                  uuid = "FFF31097-7725-4814-A6BE-4EFF9DB9AFF2 - 2debc17d96b9b91a"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "ABGaugeViewKit.ABGaugeView.colorCodes.modify : Swift.String with unmangled suffix &quot;.resume.0&quot;"
+                  moduleName = "ABGaugeViewKit"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/iostraining/Desktop/Prakhar/MindWellness/Pods/ABGaugeViewKit/ABGaugeViewKit/ABGaugeView.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "16"
+                  endingLineNumber = "16"
+                  offsetFromSymbolStart = "8">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+   </Breakpoints>
+</Bucket>

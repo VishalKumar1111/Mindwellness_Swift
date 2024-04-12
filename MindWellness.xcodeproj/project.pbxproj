@@ -1,0 +1,1166 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 51;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		1421432729A8D1D5008AD1AF /* medi.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 1421432629A8D1D5008AD1AF /* medi.jpeg */; };
+		143B2D452B0CA0BD00EAB11A /* ExpertsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 143B2D432B0CA0BD00EAB11A /* ExpertsTableViewCell.swift */; };
+		143B2D462B0CA0BD00EAB11A /* ExpertsTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 143B2D442B0CA0BD00EAB11A /* ExpertsTableViewCell.xib */; };
+		143D6FA4291E3864004B9F95 /* sound.mpeg in Resources */ = {isa = PBXBuildFile; fileRef = 143D6FA3291E3864004B9F95 /* sound.mpeg */; };
+		143DE272286F2E4100B71C05 /* psychtristnearme.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 143DE271286F2E4100B71C05 /* psychtristnearme.jpeg */; };
+		143DE276286F2FB600B71C05 /* counselling.png in Resources */ = {isa = PBXBuildFile; fileRef = 143DE275286F2FB600B71C05 /* counselling.png */; };
+		143F890A28F015D400A1D206 /* doctor.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 143F890928F015D400A1D206 /* doctor.jpg */; };
+		143F890C28F0217A00A1D206 /* bg.png in Resources */ = {isa = PBXBuildFile; fileRef = 143F890B28F0217A00A1D206 /* bg.png */; };
+		143F891028F0302800A1D206 /* meditation.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 143F890F28F0302800A1D206 /* meditation.jpeg */; };
+		14413CA72B1F4E90002C89F2 /* ExpertViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14413CA62B1F4E90002C89F2 /* ExpertViewController.swift */; };
+		1441A04F286DE67200D740E5 /* AfterResultQuestionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1441A04E286DE67200D740E5 /* AfterResultQuestionViewController.swift */; };
+		1441CCA72877152A006BCBF2 /* CommonResultViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1441CCA62877152A006BCBF2 /* CommonResultViewController.swift */; };
+		1441CCAB28771910006BCBF2 /* ExTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1441CCAA28771910006BCBF2 /* ExTableViewCell.swift */; };
+		144757C32ACC08BF00515C2A /* SoundMedTableViewCel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 144757C12ACC08BF00515C2A /* SoundMedTableViewCel.swift */; };
+		144757C42ACC08BF00515C2A /* SoundMedTableViewCel.xib in Resources */ = {isa = PBXBuildFile; fileRef = 144757C22ACC08BF00515C2A /* SoundMedTableViewCel.xib */; };
+		144A31202875A500008081DF /* doctor.plist in Resources */ = {isa = PBXBuildFile; fileRef = 144A311F2875A500008081DF /* doctor.plist */; };
+		144BBF392A3CA7AB00889738 /* menu-icon-png-3-lines-11552729023jws2rdggar.png in Resources */ = {isa = PBXBuildFile; fileRef = 144BBF382A3CA7AB00889738 /* menu-icon-png-3-lines-11552729023jws2rdggar.png */; };
+		145A05B62A7D477D004CA66D /* BMI.cms.png in Resources */ = {isa = PBXBuildFile; fileRef = 145A05B52A7D477D004CA66D /* BMI.cms.png */; };
+		145A05B92A7D4BED004CA66D /* Understanding-Your-BMI-A-Guide-to-Reading-a-BMI-Chart.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 145A05B82A7D4BED004CA66D /* Understanding-Your-BMI-A-Guide-to-Reading-a-BMI-Chart.jpeg */; };
+		14668E20292E210100FD57C0 /* videoImage.png in Resources */ = {isa = PBXBuildFile; fileRef = 14668E1F292E210100FD57C0 /* videoImage.png */; };
+		14668E2A292E609000FD57C0 /* soundplay.tiff in Resources */ = {isa = PBXBuildFile; fileRef = 14668E29292E609000FD57C0 /* soundplay.tiff */; };
+		14668E2C292E655100FD57C0 /* stopsound.png in Resources */ = {isa = PBXBuildFile; fileRef = 14668E2B292E655100FD57C0 /* stopsound.png */; };
+		147D322A28ACEA200033C686 /* AssessmentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 147D322928ACEA200033C686 /* AssessmentViewController.swift */; };
+		14841B1D2928D95C002E867C /* Yoga Data.plist in Resources */ = {isa = PBXBuildFile; fileRef = 14841B1C2928D95C002E867C /* Yoga Data.plist */; };
+		1492057F2ACFFCA6004BF349 /* FoodViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1492057E2ACFFCA6004BF349 /* FoodViewController.swift */; };
+		14941C95290276660002F0A7 /* CarouselViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14941C94290276660002F0A7 /* CarouselViewController.swift */; };
+		14941C9D290277F80002F0A7 /* DoctorListTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14941C9B290277F80002F0A7 /* DoctorListTableViewCell.swift */; };
+		14941C9E290277F80002F0A7 /* DoctorListTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 14941C9C290277F80002F0A7 /* DoctorListTableViewCell.xib */; };
+		14941CA229027DAB0002F0A7 /* DoctorListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14941CA129027DAB0002F0A7 /* DoctorListViewController.swift */; };
+		1495980F2AC6F7D400B11449 /* MedSoundViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1495980E2AC6F7D400B11449 /* MedSoundViewController.swift */; };
+		149C9B79289176AC00BD4D9E /* images3.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 149C9B78289176AC00BD4D9E /* images3.jpeg */; };
+		149C9B7D28917BC300BD4D9E /* images5.png in Resources */ = {isa = PBXBuildFile; fileRef = 149C9B7C28917BC300BD4D9E /* images5.png */; };
+		149D9E1C29F81F05006CCD09 /* female.png in Resources */ = {isa = PBXBuildFile; fileRef = 149D9E1B29F81F05006CCD09 /* female.png */; };
+		14A6B18E289BFA2100E5FCCB /* MoreQuizViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14A6B18D289BFA2100E5FCCB /* MoreQuizViewController.swift */; };
+		14A6B84F29264D5000AFA629 /* YogaTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14A6B84D29264D5000AFA629 /* YogaTableViewCell.swift */; };
+		14A6B85029264D5000AFA629 /* YogaTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 14A6B84E29264D5000AFA629 /* YogaTableViewCell.xib */; };
+		14A8FA7B28A25F5000D1C331 /* helpapp.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 14A8FA7A28A25F5000D1C331 /* helpapp.jpeg */; };
+		14A8FA7D28A260CB00D1C331 /* yog.png in Resources */ = {isa = PBXBuildFile; fileRef = 14A8FA7C28A260CB00D1C331 /* yog.png */; };
+		14A8FA7F28A2628300D1C331 /* mentalhealth.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 14A8FA7E28A2628300D1C331 /* mentalhealth.jpeg */; };
+		14AF1B1B28A2416200503730 /* Mental.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 14AF1B1A28A2416200503730 /* Mental.jpeg */; };
+		14B4374828B4EB5B0042AD31 /* MentalHealthViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14B4374728B4EB5B0042AD31 /* MentalHealthViewController.swift */; };
+		14BB3E382A8FBE4200F55820 /* v1.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 14F7E8902A8532FA006BEB98 /* v1.mp4 */; };
+		14BB3E392A8FBE4E00F55820 /* v2.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 14F7E8932A853310006BEB98 /* v2.mp4 */; };
+		14BB3E3A2A8FBE5400F55820 /* v3.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 14F7E8912A853310006BEB98 /* v3.mp4 */; };
+		14BB3E3B2A8FBE5800F55820 /* v4.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 14F7E8922A853310006BEB98 /* v4.mp4 */; };
+		14BB3E3C2A8FBE5D00F55820 /* v5.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 14F7E8942A853310006BEB98 /* v5.mp4 */; };
+		14BB3E3E2A8FBF6800F55820 /* vdo.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 14BB3E3D2A8FBF4C00F55820 /* vdo.mp4 */; };
+		14C4BA0B2B2C29F800E50353 /* CollectionYoga.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14C4BA092B2C29F800E50353 /* CollectionYoga.swift */; };
+		14C4BA0C2B2C29F800E50353 /* CollectionYoga.xib in Resources */ = {isa = PBXBuildFile; fileRef = 14C4BA0A2B2C29F800E50353 /* CollectionYoga.xib */; };
+		14C5EB182BC57100006D9153 /* PrivacyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14C5EB172BC57100006D9153 /* PrivacyViewController.swift */; };
+		14C77A272B21B7A900DA51BF /* CollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14C77A252B21B7A900DA51BF /* CollectionViewCell.swift */; };
+		14C77A282B21B7A900DA51BF /* CollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 14C77A262B21B7A900DA51BF /* CollectionViewCell.xib */; };
+		14C77A2C2B21ECEA00DA51BF /* MentalBlogsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14C77A2B2B21ECEA00DA51BF /* MentalBlogsViewController.swift */; };
+		14C7E2992B2B3B1500FBC461 /* YogaController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14C7E2982B2B3B1500FBC461 /* YogaController.swift */; };
+		14C8B71928F5556100A0CE37 /* bg6.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 14C8B71828F5556100A0CE37 /* bg6.jpeg */; };
+		14C8B71B28F5556600A0CE37 /* bg5.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 14C8B71A28F5556600A0CE37 /* bg5.jpeg */; };
+		14C8B71D28F5556B00A0CE37 /* bg4.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 14C8B71C28F5556B00A0CE37 /* bg4.jpeg */; };
+		14C8B71F28F5557500A0CE37 /* bg3.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 14C8B71E28F5557500A0CE37 /* bg3.jpeg */; };
+		14C8B72128F5557A00A0CE37 /* bg2.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 14C8B72028F5557A00A0CE37 /* bg2.jpeg */; };
+		14CA9FCD2A83E7EB00AA3605 /* Screenshot 2023-08-09 at 8.57.20 PM.png in Resources */ = {isa = PBXBuildFile; fileRef = 14CA9FCC2A83E7EB00AA3605 /* Screenshot 2023-08-09 at 8.57.20 PM.png */; };
+		14D5A28E2B74EA75001504BB /* CardsCollectionViewLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14D5A28D2B74EA75001504BB /* CardsCollectionViewLayout.swift */; };
+		14D5A2922B74EB87001504BB /* LabelCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14D5A2912B74EB87001504BB /* LabelCollectionViewCell.swift */; };
+		14E0C59E28ACD68B00B93C24 /* PaidViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14E0C59D28ACD68B00B93C24 /* PaidViewController.swift */; };
+		15E39AD46A3E6B2EA9A7B267 /* Pods_MindWellness.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 69A8816889378E4842AED78D /* Pods_MindWellness.framework */; };
+		38177A4729A739BA001E85AE /* HeaderTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38177A4529A739BA001E85AE /* HeaderTableViewCell.swift */; };
+		38177A4829A739BA001E85AE /* HeaderTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 38177A4629A739BA001E85AE /* HeaderTableViewCell.xib */; };
+		38336FBE295AC8EC004B0E51 /* SideBarTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38336FBD295AC8EC004B0E51 /* SideBarTableViewCell.swift */; };
+		3838C15A295C3DC1004C7FFA /* ThumbnailImageMHPVC.plist in Resources */ = {isa = PBXBuildFile; fileRef = 3838C159295C3DC1004C7FFA /* ThumbnailImageMHPVC.plist */; };
+		3840FD1829E2E34B00A0E404 /* BMIViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3840FD1729E2E34B00A0E404 /* BMIViewController.swift */; };
+		38483E1729DC9ADC00BD377C /* ShowDiseaseTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38483E1529DC9ADC00BD377C /* ShowDiseaseTableViewCell.swift */; };
+		38483E1829DC9ADC00BD377C /* ShowDiseaseTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 38483E1629DC9ADC00BD377C /* ShowDiseaseTableViewCell.xib */; };
+		38483E1B29DCACB100BD377C /* UIView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38483E1A29DCACB100BD377C /* UIView+Extension.swift */; };
+		3850105C295EC8FA00A929C2 /* YogaTextTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3850105A295EC8FA00A929C2 /* YogaTextTableViewCell.swift */; };
+		3850105D295EC8FA00A929C2 /* YogaTextTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3850105B295EC8FA00A929C2 /* YogaTextTableViewCell.xib */; };
+		3851C68729A7478200D32021 /* LabelTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3851C68529A7478200D32021 /* LabelTableViewCell.swift */; };
+		3851C68829A7478200D32021 /* LabelTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3851C68629A7478200D32021 /* LabelTableViewCell.xib */; };
+		3851C68B29A74F0700D32021 /* CollectionTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3851C68929A74F0700D32021 /* CollectionTableViewCell.swift */; };
+		3851C68C29A74F0700D32021 /* CollectionTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3851C68A29A74F0700D32021 /* CollectionTableViewCell.xib */; };
+		3851C69129A7696400D32021 /* LastTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3851C68F29A7696400D32021 /* LastTableViewCell.swift */; };
+		3851C69229A7696400D32021 /* LastTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3851C69029A7696400D32021 /* LastTableViewCell.xib */; };
+		3851C69529A76A7800D32021 /* LastCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3851C69329A76A7800D32021 /* LastCollectionViewCell.swift */; };
+		3851C69629A76A7800D32021 /* LastCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3851C69429A76A7800D32021 /* LastCollectionViewCell.xib */; };
+		3852D69729A8F9C500E3B5DB /* SoundViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3852D69629A8F9C500E3B5DB /* SoundViewController.swift */; };
+		3857F87529A5F28F0095CE0B /* MeditationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3857F87429A5F28F0095CE0B /* MeditationViewController.swift */; };
+		3857F88129A610E10095CE0B /* FieldCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3857F87F29A610E10095CE0B /* FieldCollectionViewCell.swift */; };
+		3857F88229A610E10095CE0B /* FieldCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3857F88029A610E10095CE0B /* FieldCollectionViewCell.xib */; };
+		385C981A29617CC7009D4D6F /* MentalHealthProbTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 385C981829617CC7009D4D6F /* MentalHealthProbTableViewCell.swift */; };
+		385C981B29617CC7009D4D6F /* MentalHealthProbTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 385C981929617CC7009D4D6F /* MentalHealthProbTableViewCell.xib */; };
+		385F10212943286B00388A28 /* MentalHealthProblemViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 385F10202943286B00388A28 /* MentalHealthProblemViewController.swift */; };
+		385F102429432AE100388A28 /* MHPTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 385F102229432AE100388A28 /* MHPTableViewCell.swift */; };
+		385F102529432AE100388A28 /* MHPTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 385F102329432AE100388A28 /* MHPTableViewCell.xib */; };
+		38769F48296805B600803258 /* YogaVideoTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38769F46296805B600803258 /* YogaVideoTableViewCell.swift */; };
+		38769F49296805B600803258 /* YogaVideoTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 38769F47296805B600803258 /* YogaVideoTableViewCell.xib */; };
+		3876A033294B0E1600B3C964 /* MHPDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3876A032294B0E1600B3C964 /* MHPDetailsViewController.swift */; };
+		387806652952F2BA00A768B1 /* Depression.plist in Resources */ = {isa = PBXBuildFile; fileRef = 387806642952F2BA00A768B1 /* Depression.plist */; };
+		387806672952F2D400A768B1 /* Addiction.plist in Resources */ = {isa = PBXBuildFile; fileRef = 387806662952F2D400A768B1 /* Addiction.plist */; };
+		387806692952F2E300A768B1 /* Bipolar Disorder.plist in Resources */ = {isa = PBXBuildFile; fileRef = 387806682952F2E300A768B1 /* Bipolar Disorder.plist */; };
+		3878066B2952F2FE00A768B1 /* Anxiety.plist in Resources */ = {isa = PBXBuildFile; fileRef = 3878066A2952F2FE00A768B1 /* Anxiety.plist */; };
+		3878066D2952F57000A768B1 /* Psychosis.plist in Resources */ = {isa = PBXBuildFile; fileRef = 3878066C2952F57000A768B1 /* Psychosis.plist */; };
+		387806812953036800A768B1 /* bipolardisorder.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 3878067B2953036800A768B1 /* bipolardisorder.jpg */; };
+		387806822953036800A768B1 /* anxiety.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 3878067C2953036800A768B1 /* anxiety.jpg */; };
+		387806832953036800A768B1 /* phycosis.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 3878067D2953036800A768B1 /* phycosis.jpg */; };
+		387806842953036800A768B1 /* Addiction.png in Resources */ = {isa = PBXBuildFile; fileRef = 3878067E2953036800A768B1 /* Addiction.png */; };
+		387806852953036800A768B1 /* otherpsychotic.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 3878067F2953036800A768B1 /* otherpsychotic.jpeg */; };
+		387806862953036800A768B1 /* depression.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 387806802953036800A768B1 /* depression.jpg */; };
+		38BD90222960430C00C616D6 /* MentalHealthContentsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38BD90202960430C00C616D6 /* MentalHealthContentsTableViewCell.swift */; };
+		38BD90232960430C00C616D6 /* MentalHealthContentsTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 38BD90212960430C00C616D6 /* MentalHealthContentsTableViewCell.xib */; };
+		38C7C949295B527900B21FEB /* cross.png in Resources */ = {isa = PBXBuildFile; fileRef = 38C7C948295B527900B21FEB /* cross.png */; };
+		38F161DD2960AC2200FA7A83 /* MentalHealthTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38F161DB2960AC2200FA7A83 /* MentalHealthTableViewCell.swift */; };
+		38F161DE2960AC2200FA7A83 /* MentalHealthTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 38F161DC2960AC2200FA7A83 /* MentalHealthTableViewCell.xib */; };
+		38F161E02960B19900FA7A83 /* DesignableImageClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38F161DF2960B19900FA7A83 /* DesignableImageClass.swift */; };
+		38F63B53295037F70086B53C /* AasanTextViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38F63B52295037F70086B53C /* AasanTextViewController.swift */; };
+		C25D6DAD26B12B7000567C3D /* launchscreen.png in Resources */ = {isa = PBXBuildFile; fileRef = C25D6DAC26B12B6F00567C3D /* launchscreen.png */; };
+		C25D6DB226B12E4400567C3D /* StressScreenTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C25D6DB126B12E4400567C3D /* StressScreenTableViewCell.swift */; };
+		C25D6DB926B1320700567C3D /* ten.png in Resources */ = {isa = PBXBuildFile; fileRef = C25D6DB826B1320700567C3D /* ten.png */; };
+		C25D6DBD26B13E3700567C3D /* PossibleTreatmentTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C25D6DBC26B13E3700567C3D /* PossibleTreatmentTableViewCell.swift */; };
+		C25D6DC026B141BC00567C3D /* eleven.jpg in Resources */ = {isa = PBXBuildFile; fileRef = C25D6DBF26B141BC00567C3D /* eleven.jpg */; };
+		C25D6DCE26B1482D00567C3D /* PossibleInvestigationTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C25D6DCD26B1482D00567C3D /* PossibleInvestigationTableViewCell.swift */; };
+		C25F383726FDE723001CD63C /* GaugeMeterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C25F383626FDE723001CD63C /* GaugeMeterViewController.swift */; };
+		C293BAD726F1EA260092AC9C /* QuestionAnswerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C293BAD626F1EA260092AC9C /* QuestionAnswerViewController.swift */; };
+		C2A84CF326A9791B0002801F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2A84CF226A9791B0002801F /* AppDelegate.swift */; };
+		C2A84CF526A9791B0002801F /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2A84CF426A9791B0002801F /* SceneDelegate.swift */; };
+		C2A84CFA26A9791B0002801F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C2A84CF826A9791B0002801F /* Main.storyboard */; };
+		C2A84CFC26A9791D0002801F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C2A84CFB26A9791D0002801F /* Assets.xcassets */; };
+		C2A84CFF26A9791D0002801F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C2A84CFD26A9791D0002801F /* LaunchScreen.storyboard */; };
+		C2A84D0826A979AE0002801F /* IntroViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2A84D0726A979AE0002801F /* IntroViewController.swift */; };
+		C2A84D0C26A97AA30002801F /* two.jpg in Resources */ = {isa = PBXBuildFile; fileRef = C2A84D0B26A97AA30002801F /* two.jpg */; };
+		C2A84D1F26A97D120002801F /* HomeScreenTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2A84D1E26A97D120002801F /* HomeScreenTableViewCell.swift */; };
+		C2A84D2726A98E5C0002801F /* PossibleTreatmentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2A84D2626A98E5C0002801F /* PossibleTreatmentViewController.swift */; };
+		C2A84D2A26A98F840002801F /* PossibleInvestigationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2A84D2926A98F840002801F /* PossibleInvestigationViewController.swift */; };
+		C2DF41652B528D9C0097B8AB /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = C2DF41642B528D9C0097B8AB /* GoogleService-Info.plist */; };
+		C2EA1A602B5266CE00DD7BCA /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2EA1A5F2B5266CE00DD7BCA /* ViewController.swift */; };
+		C2EA1A622B5266DD00DD7BCA /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2EA1A612B5266DC00DD7BCA /* Constants.swift */; };
+		C2EA1A642B5266EA00DD7BCA /* Utilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2EA1A632B5266E900DD7BCA /* Utilities.swift */; };
+		C2EA1A662B5266F500DD7BCA /* Signup.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2EA1A652B5266F500DD7BCA /* Signup.swift */; };
+		C2EA1A6A2B52821600DD7BCA /* Login.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2EA1A692B52821500DD7BCA /* Login.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		1421432429A8D07D008AD1AF /* meditBg.webp */ = {isa = PBXFileReference; lastKnownFileType = file; path = meditBg.webp; sourceTree = "<group>"; };
+		1421432529A8D153008AD1AF /* meditationBg.webp */ = {isa = PBXFileReference; lastKnownFileType = file; path = meditationBg.webp; sourceTree = "<group>"; };
+		1421432629A8D1D5008AD1AF /* medi.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = medi.jpeg; sourceTree = "<group>"; };
+		143B00E82AFB85EB007B7348 /* Special Valentine.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Special Valentine.ttf"; path = "../../../../../Downloads/special-valentine/Special Valentine.ttf"; sourceTree = "<group>"; };
+		143B00E92AFB85FB007B7348 /* Montserrat-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Montserrat-Regular.ttf"; path = "../../../../../Downloads/montserrat/Montserrat-Regular.ttf"; sourceTree = "<group>"; };
+		143B00EA2AFB8602007B7348 /* Montserrat-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Montserrat-Bold.ttf"; path = "../../../../../Downloads/montserrat/Montserrat-Bold.ttf"; sourceTree = "<group>"; };
+		143B2D432B0CA0BD00EAB11A /* ExpertsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExpertsTableViewCell.swift; sourceTree = "<group>"; };
+		143B2D442B0CA0BD00EAB11A /* ExpertsTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ExpertsTableViewCell.xib; sourceTree = "<group>"; };
+		143D6FA3291E3864004B9F95 /* sound.mpeg */ = {isa = PBXFileReference; lastKnownFileType = video.mpeg; path = sound.mpeg; sourceTree = "<group>"; };
+		143DE271286F2E4100B71C05 /* psychtristnearme.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = psychtristnearme.jpeg; sourceTree = "<group>"; };
+		143DE275286F2FB600B71C05 /* counselling.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = counselling.png; sourceTree = "<group>"; };
+		143F890928F015D400A1D206 /* doctor.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = doctor.jpg; sourceTree = "<group>"; };
+		143F890B28F0217A00A1D206 /* bg.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bg.png; sourceTree = "<group>"; };
+		143F890F28F0302800A1D206 /* meditation.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = meditation.jpeg; sourceTree = "<group>"; };
+		14413CA62B1F4E90002C89F2 /* ExpertViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExpertViewController.swift; sourceTree = "<group>"; };
+		1441A04E286DE67200D740E5 /* AfterResultQuestionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AfterResultQuestionViewController.swift; sourceTree = "<group>"; };
+		1441CCA62877152A006BCBF2 /* CommonResultViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommonResultViewController.swift; sourceTree = "<group>"; };
+		1441CCAA28771910006BCBF2 /* ExTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExTableViewCell.swift; sourceTree = "<group>"; };
+		144757C12ACC08BF00515C2A /* SoundMedTableViewCel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SoundMedTableViewCel.swift; sourceTree = "<group>"; };
+		144757C22ACC08BF00515C2A /* SoundMedTableViewCel.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SoundMedTableViewCel.xib; sourceTree = "<group>"; };
+		144A311F2875A500008081DF /* doctor.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = doctor.plist; sourceTree = "<group>"; };
+		144BBF382A3CA7AB00889738 /* menu-icon-png-3-lines-11552729023jws2rdggar.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "menu-icon-png-3-lines-11552729023jws2rdggar.png"; sourceTree = "<group>"; };
+		145A05B52A7D477D004CA66D /* BMI.cms.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = BMI.cms.png; sourceTree = "<group>"; };
+		145A05B82A7D4BED004CA66D /* Understanding-Your-BMI-A-Guide-to-Reading-a-BMI-Chart.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Understanding-Your-BMI-A-Guide-to-Reading-a-BMI-Chart.jpeg"; sourceTree = "<group>"; };
+		14668E1F292E210100FD57C0 /* videoImage.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = videoImage.png; sourceTree = "<group>"; };
+		14668E29292E609000FD57C0 /* soundplay.tiff */ = {isa = PBXFileReference; lastKnownFileType = image.tiff; path = soundplay.tiff; sourceTree = "<group>"; };
+		14668E2B292E655100FD57C0 /* stopsound.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = stopsound.png; sourceTree = "<group>"; };
+		147D322928ACEA200033C686 /* AssessmentViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AssessmentViewController.swift; sourceTree = "<group>"; };
+		14841B1C2928D95C002E867C /* Yoga Data.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Yoga Data.plist"; sourceTree = "<group>"; };
+		1492057E2ACFFCA6004BF349 /* FoodViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodViewController.swift; sourceTree = "<group>"; };
+		14941C94290276660002F0A7 /* CarouselViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarouselViewController.swift; sourceTree = "<group>"; };
+		14941C9B290277F80002F0A7 /* DoctorListTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DoctorListTableViewCell.swift; sourceTree = "<group>"; };
+		14941C9C290277F80002F0A7 /* DoctorListTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DoctorListTableViewCell.xib; sourceTree = "<group>"; };
+		14941CA129027DAB0002F0A7 /* DoctorListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DoctorListViewController.swift; sourceTree = "<group>"; };
+		1495980E2AC6F7D400B11449 /* MedSoundViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MedSoundViewController.swift; sourceTree = "<group>"; };
+		149C9B78289176AC00BD4D9E /* images3.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = images3.jpeg; sourceTree = "<group>"; };
+		149C9B7C28917BC300BD4D9E /* images5.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = images5.png; sourceTree = "<group>"; };
+		149D9E1B29F81F05006CCD09 /* female.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = female.png; sourceTree = "<group>"; };
+		14A6B18D289BFA2100E5FCCB /* MoreQuizViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoreQuizViewController.swift; sourceTree = "<group>"; };
+		14A6B84D29264D5000AFA629 /* YogaTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YogaTableViewCell.swift; sourceTree = "<group>"; };
+		14A6B84E29264D5000AFA629 /* YogaTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = YogaTableViewCell.xib; sourceTree = "<group>"; };
+		14A8FA7A28A25F5000D1C331 /* helpapp.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = helpapp.jpeg; sourceTree = "<group>"; };
+		14A8FA7C28A260CB00D1C331 /* yog.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = yog.png; sourceTree = "<group>"; };
+		14A8FA7E28A2628300D1C331 /* mentalhealth.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = mentalhealth.jpeg; sourceTree = "<group>"; };
+		14AF1B1A28A2416200503730 /* Mental.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Mental.jpeg; sourceTree = "<group>"; };
+		14B4374728B4EB5B0042AD31 /* MentalHealthViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MentalHealthViewController.swift; sourceTree = "<group>"; };
+		14BB3E3D2A8FBF4C00F55820 /* vdo.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = vdo.mp4; sourceTree = "<group>"; };
+		14C4BA092B2C29F800E50353 /* CollectionYoga.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionYoga.swift; sourceTree = "<group>"; };
+		14C4BA0A2B2C29F800E50353 /* CollectionYoga.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CollectionYoga.xib; sourceTree = "<group>"; };
+		14C5EB172BC57100006D9153 /* PrivacyViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrivacyViewController.swift; sourceTree = "<group>"; };
+		14C77A252B21B7A900DA51BF /* CollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionViewCell.swift; sourceTree = "<group>"; };
+		14C77A262B21B7A900DA51BF /* CollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CollectionViewCell.xib; sourceTree = "<group>"; };
+		14C77A2B2B21ECEA00DA51BF /* MentalBlogsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MentalBlogsViewController.swift; sourceTree = "<group>"; };
+		14C7E2982B2B3B1500FBC461 /* YogaController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YogaController.swift; sourceTree = "<group>"; };
+		14C8B71828F5556100A0CE37 /* bg6.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = bg6.jpeg; sourceTree = "<group>"; };
+		14C8B71A28F5556600A0CE37 /* bg5.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = bg5.jpeg; sourceTree = "<group>"; };
+		14C8B71C28F5556B00A0CE37 /* bg4.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = bg4.jpeg; sourceTree = "<group>"; };
+		14C8B71E28F5557500A0CE37 /* bg3.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = bg3.jpeg; sourceTree = "<group>"; };
+		14C8B72028F5557A00A0CE37 /* bg2.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = bg2.jpeg; sourceTree = "<group>"; };
+		14CA9FCC2A83E7EB00AA3605 /* Screenshot 2023-08-09 at 8.57.20 PM.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Screenshot 2023-08-09 at 8.57.20 PM.png"; sourceTree = "<group>"; };
+		14D5A28D2B74EA75001504BB /* CardsCollectionViewLayout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardsCollectionViewLayout.swift; sourceTree = "<group>"; };
+		14D5A2912B74EB87001504BB /* LabelCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LabelCollectionViewCell.swift; sourceTree = "<group>"; };
+		14E0C59D28ACD68B00B93C24 /* PaidViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaidViewController.swift; sourceTree = "<group>"; };
+		14F7E8902A8532FA006BEB98 /* v1.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = v1.mp4; sourceTree = "<group>"; };
+		14F7E8912A853310006BEB98 /* v3.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = v3.mp4; sourceTree = "<group>"; };
+		14F7E8922A853310006BEB98 /* v4.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = v4.mp4; sourceTree = "<group>"; };
+		14F7E8932A853310006BEB98 /* v2.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = v2.mp4; sourceTree = "<group>"; };
+		14F7E8942A853310006BEB98 /* v5.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = v5.mp4; sourceTree = "<group>"; };
+		38177A4529A739BA001E85AE /* HeaderTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeaderTableViewCell.swift; sourceTree = "<group>"; };
+		38177A4629A739BA001E85AE /* HeaderTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HeaderTableViewCell.xib; sourceTree = "<group>"; };
+		38336FBD295AC8EC004B0E51 /* SideBarTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SideBarTableViewCell.swift; sourceTree = "<group>"; };
+		3838C159295C3DC1004C7FFA /* ThumbnailImageMHPVC.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = ThumbnailImageMHPVC.plist; sourceTree = "<group>"; };
+		3840FD1729E2E34B00A0E404 /* BMIViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BMIViewController.swift; sourceTree = "<group>"; };
+		38483E1529DC9ADC00BD377C /* ShowDiseaseTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShowDiseaseTableViewCell.swift; sourceTree = "<group>"; };
+		38483E1629DC9ADC00BD377C /* ShowDiseaseTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ShowDiseaseTableViewCell.xib; sourceTree = "<group>"; };
+		38483E1A29DCACB100BD377C /* UIView+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Extension.swift"; sourceTree = "<group>"; };
+		3850105A295EC8FA00A929C2 /* YogaTextTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YogaTextTableViewCell.swift; sourceTree = "<group>"; };
+		3850105B295EC8FA00A929C2 /* YogaTextTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = YogaTextTableViewCell.xib; sourceTree = "<group>"; };
+		3851C68529A7478200D32021 /* LabelTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LabelTableViewCell.swift; sourceTree = "<group>"; };
+		3851C68629A7478200D32021 /* LabelTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LabelTableViewCell.xib; sourceTree = "<group>"; };
+		3851C68929A74F0700D32021 /* CollectionTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionTableViewCell.swift; sourceTree = "<group>"; };
+		3851C68A29A74F0700D32021 /* CollectionTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CollectionTableViewCell.xib; sourceTree = "<group>"; };
+		3851C68F29A7696400D32021 /* LastTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LastTableViewCell.swift; sourceTree = "<group>"; };
+		3851C69029A7696400D32021 /* LastTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LastTableViewCell.xib; sourceTree = "<group>"; };
+		3851C69329A76A7800D32021 /* LastCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LastCollectionViewCell.swift; sourceTree = "<group>"; };
+		3851C69429A76A7800D32021 /* LastCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LastCollectionViewCell.xib; sourceTree = "<group>"; };
+		3852D69629A8F9C500E3B5DB /* SoundViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SoundViewController.swift; sourceTree = "<group>"; };
+		3857F87429A5F28F0095CE0B /* MeditationViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MeditationViewController.swift; sourceTree = "<group>"; };
+		3857F87F29A610E10095CE0B /* FieldCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FieldCollectionViewCell.swift; sourceTree = "<group>"; };
+		3857F88029A610E10095CE0B /* FieldCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FieldCollectionViewCell.xib; sourceTree = "<group>"; };
+		385C981829617CC7009D4D6F /* MentalHealthProbTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MentalHealthProbTableViewCell.swift; sourceTree = "<group>"; };
+		385C981929617CC7009D4D6F /* MentalHealthProbTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MentalHealthProbTableViewCell.xib; sourceTree = "<group>"; };
+		385F10202943286B00388A28 /* MentalHealthProblemViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MentalHealthProblemViewController.swift; sourceTree = "<group>"; };
+		385F102229432AE100388A28 /* MHPTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MHPTableViewCell.swift; sourceTree = "<group>"; };
+		385F102329432AE100388A28 /* MHPTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MHPTableViewCell.xib; sourceTree = "<group>"; };
+		38769F46296805B600803258 /* YogaVideoTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YogaVideoTableViewCell.swift; sourceTree = "<group>"; };
+		38769F47296805B600803258 /* YogaVideoTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = YogaVideoTableViewCell.xib; sourceTree = "<group>"; };
+		3876A032294B0E1600B3C964 /* MHPDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MHPDetailsViewController.swift; sourceTree = "<group>"; };
+		387806642952F2BA00A768B1 /* Depression.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Depression.plist; sourceTree = "<group>"; };
+		387806662952F2D400A768B1 /* Addiction.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Addiction.plist; sourceTree = "<group>"; };
+		387806682952F2E300A768B1 /* Bipolar Disorder.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Bipolar Disorder.plist"; sourceTree = "<group>"; };
+		3878066A2952F2FE00A768B1 /* Anxiety.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Anxiety.plist; sourceTree = "<group>"; };
+		3878066C2952F57000A768B1 /* Psychosis.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Psychosis.plist; sourceTree = "<group>"; };
+		3878067B2953036800A768B1 /* bipolardisorder.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = bipolardisorder.jpg; sourceTree = "<group>"; };
+		3878067C2953036800A768B1 /* anxiety.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = anxiety.jpg; sourceTree = "<group>"; };
+		3878067D2953036800A768B1 /* phycosis.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = phycosis.jpg; sourceTree = "<group>"; };
+		3878067E2953036800A768B1 /* Addiction.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Addiction.png; sourceTree = "<group>"; };
+		3878067F2953036800A768B1 /* otherpsychotic.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = otherpsychotic.jpeg; sourceTree = "<group>"; };
+		387806802953036800A768B1 /* depression.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = depression.jpg; sourceTree = "<group>"; };
+		38BD90202960430C00C616D6 /* MentalHealthContentsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MentalHealthContentsTableViewCell.swift; sourceTree = "<group>"; };
+		38BD90212960430C00C616D6 /* MentalHealthContentsTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MentalHealthContentsTableViewCell.xib; sourceTree = "<group>"; };
+		38C7C948295B527900B21FEB /* cross.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = cross.png; sourceTree = SOURCE_ROOT; };
+		38F161DB2960AC2200FA7A83 /* MentalHealthTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MentalHealthTableViewCell.swift; sourceTree = "<group>"; };
+		38F161DC2960AC2200FA7A83 /* MentalHealthTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MentalHealthTableViewCell.xib; sourceTree = "<group>"; };
+		38F161DF2960B19900FA7A83 /* DesignableImageClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DesignableImageClass.swift; sourceTree = "<group>"; };
+		38F63B52295037F70086B53C /* AasanTextViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AasanTextViewController.swift; sourceTree = "<group>"; };
+		4C7EFC6B738CC2FCA9FF8241 /* Pods-MindWellness.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MindWellness.release.xcconfig"; path = "Target Support Files/Pods-MindWellness/Pods-MindWellness.release.xcconfig"; sourceTree = "<group>"; };
+		69A8816889378E4842AED78D /* Pods_MindWellness.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MindWellness.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		8902A7AB73125F132A5CB4C2 /* Pods-MindWellness.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MindWellness.debug.xcconfig"; path = "Target Support Files/Pods-MindWellness/Pods-MindWellness.debug.xcconfig"; sourceTree = "<group>"; };
+		C25D6DAC26B12B6F00567C3D /* launchscreen.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = launchscreen.png; sourceTree = "<group>"; };
+		C25D6DB126B12E4400567C3D /* StressScreenTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StressScreenTableViewCell.swift; sourceTree = "<group>"; };
+		C25D6DB826B1320700567C3D /* ten.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ten.png; sourceTree = "<group>"; };
+		C25D6DBC26B13E3700567C3D /* PossibleTreatmentTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PossibleTreatmentTableViewCell.swift; sourceTree = "<group>"; };
+		C25D6DBF26B141BC00567C3D /* eleven.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = eleven.jpg; sourceTree = "<group>"; };
+		C25D6DCD26B1482D00567C3D /* PossibleInvestigationTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PossibleInvestigationTableViewCell.swift; sourceTree = "<group>"; };
+		C25F383626FDE723001CD63C /* GaugeMeterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GaugeMeterViewController.swift; sourceTree = "<group>"; };
+		C293BAD626F1EA260092AC9C /* QuestionAnswerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestionAnswerViewController.swift; sourceTree = "<group>"; };
+		C2A84CEF26A9791B0002801F /* MindWellness.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MindWellness.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		C2A84CF226A9791B0002801F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		C2A84CF426A9791B0002801F /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		C2A84CF926A9791B0002801F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		C2A84CFB26A9791D0002801F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		C2A84CFE26A9791D0002801F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		C2A84D0026A9791D0002801F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C2A84D0726A979AE0002801F /* IntroViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IntroViewController.swift; sourceTree = "<group>"; };
+		C2A84D0B26A97AA30002801F /* two.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = two.jpg; sourceTree = "<group>"; };
+		C2A84D1E26A97D120002801F /* HomeScreenTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeScreenTableViewCell.swift; sourceTree = "<group>"; };
+		C2A84D2626A98E5C0002801F /* PossibleTreatmentViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PossibleTreatmentViewController.swift; sourceTree = "<group>"; };
+		C2A84D2926A98F840002801F /* PossibleInvestigationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PossibleInvestigationViewController.swift; sourceTree = "<group>"; };
+		C2DF41642B528D9C0097B8AB /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		C2EA1A5F2B5266CE00DD7BCA /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		C2EA1A612B5266DC00DD7BCA /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		C2EA1A632B5266E900DD7BCA /* Utilities.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Utilities.swift; sourceTree = "<group>"; };
+		C2EA1A652B5266F500DD7BCA /* Signup.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Signup.swift; sourceTree = "<group>"; };
+		C2EA1A692B52821500DD7BCA /* Login.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Login.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		C2A84CEC26A9791B0002801F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				15E39AD46A3E6B2EA9A7B267 /* Pods_MindWellness.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		143B00E72AFB85DC007B7348 /* Font */ = {
+			isa = PBXGroup;
+			children = (
+				143B00E92AFB85FB007B7348 /* Montserrat-Regular.ttf */,
+				143B00EA2AFB8602007B7348 /* Montserrat-Bold.ttf */,
+				143B00E82AFB85EB007B7348 /* Special Valentine.ttf */,
+			);
+			path = Font;
+			sourceTree = "<group>";
+		};
+		1476415A2BC6A9D2007A12C1 /* New Mental Health Problem */ = {
+			isa = PBXGroup;
+			children = (
+				385F10202943286B00388A28 /* MentalHealthProblemViewController.swift */,
+				3857F87429A5F28F0095CE0B /* MeditationViewController.swift */,
+				3851C68D29A7690600D32021 /* xib */,
+			);
+			path = "New Mental Health Problem";
+			sourceTree = "<group>";
+		};
+		147E0D7D291D231000D4B594 /* Audio */ = {
+			isa = PBXGroup;
+			children = (
+				14F7E88F2A853289006BEB98 /* Videos */,
+				143D6FA3291E3864004B9F95 /* sound.mpeg */,
+			);
+			path = Audio;
+			sourceTree = "<group>";
+		};
+		14841B1B2928D92F002E867C /* Plists */ = {
+			isa = PBXGroup;
+			children = (
+				144A311F2875A500008081DF /* doctor.plist */,
+				14841B1C2928D95C002E867C /* Yoga Data.plist */,
+				387806642952F2BA00A768B1 /* Depression.plist */,
+				387806662952F2D400A768B1 /* Addiction.plist */,
+				387806682952F2E300A768B1 /* Bipolar Disorder.plist */,
+				3878066A2952F2FE00A768B1 /* Anxiety.plist */,
+				3878066C2952F57000A768B1 /* Psychosis.plist */,
+				3838C159295C3DC1004C7FFA /* ThumbnailImageMHPVC.plist */,
+			);
+			path = Plists;
+			sourceTree = "<group>";
+		};
+		1492057D2ACFFBEB004BF349 /* Food & Diet */ = {
+			isa = PBXGroup;
+			children = (
+				1492057E2ACFFCA6004BF349 /* FoodViewController.swift */,
+			);
+			path = "Food & Diet";
+			sourceTree = "<group>";
+		};
+		14941C9A290277770002F0A7 /* DoctorList */ = {
+			isa = PBXGroup;
+			children = (
+				14941C9C290277F80002F0A7 /* DoctorListTableViewCell.xib */,
+				14941C9B290277F80002F0A7 /* DoctorListTableViewCell.swift */,
+				14941CA129027DAB0002F0A7 /* DoctorListViewController.swift */,
+				143B2D432B0CA0BD00EAB11A /* ExpertsTableViewCell.swift */,
+				143B2D442B0CA0BD00EAB11A /* ExpertsTableViewCell.xib */,
+				14413CA62B1F4E90002C89F2 /* ExpertViewController.swift */,
+			);
+			path = DoctorList;
+			sourceTree = "<group>";
+		};
+		149597FF2AC6C8CD00B11449 /* MeditationSound */ = {
+			isa = PBXGroup;
+			children = (
+				1495980E2AC6F7D400B11449 /* MedSoundViewController.swift */,
+				144757C12ACC08BF00515C2A /* SoundMedTableViewCel.swift */,
+				144757C22ACC08BF00515C2A /* SoundMedTableViewCel.xib */,
+			);
+			path = MeditationSound;
+			sourceTree = "<group>";
+		};
+		14A6B84C29264D1E00AFA629 /* Yoga & It's Benefits */ = {
+			isa = PBXGroup;
+			children = (
+				38A3FB1229642B0000834E0F /* xib */,
+				38A3FB1329642B1100834E0F /* Class */,
+				14C4BA092B2C29F800E50353 /* CollectionYoga.swift */,
+				14C4BA0A2B2C29F800E50353 /* CollectionYoga.xib */,
+			);
+			path = "Yoga & It's Benefits";
+			sourceTree = "<group>";
+		};
+		14D5A28C2B74E89E001504BB /* CollectionViewResult */ = {
+			isa = PBXGroup;
+			children = (
+				14D5A28D2B74EA75001504BB /* CardsCollectionViewLayout.swift */,
+				14D5A2912B74EB87001504BB /* LabelCollectionViewCell.swift */,
+			);
+			path = CollectionViewResult;
+			sourceTree = "<group>";
+		};
+		14F7E88F2A853289006BEB98 /* Videos */ = {
+			isa = PBXGroup;
+			children = (
+				14F7E8902A8532FA006BEB98 /* v1.mp4 */,
+				14F7E8932A853310006BEB98 /* v2.mp4 */,
+				14F7E8912A853310006BEB98 /* v3.mp4 */,
+				14F7E8922A853310006BEB98 /* v4.mp4 */,
+				14F7E8942A853310006BEB98 /* v5.mp4 */,
+				14BB3E3D2A8FBF4C00F55820 /* vdo.mp4 */,
+			);
+			path = Videos;
+			sourceTree = "<group>";
+		};
+		38336FBC295AC8B4004B0E51 /* HomePageViewController */ = {
+			isa = PBXGroup;
+			children = (
+				14941C94290276660002F0A7 /* CarouselViewController.swift */,
+				38336FBD295AC8EC004B0E51 /* SideBarTableViewCell.swift */,
+				3840FD1729E2E34B00A0E404 /* BMIViewController.swift */,
+				14C5EB172BC57100006D9153 /* PrivacyViewController.swift */,
+			);
+			path = HomePageViewController;
+			sourceTree = "<group>";
+		};
+		38483E1229DC976F00BD377C /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		38483E1329DC977A00BD377C /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				3852D69629A8F9C500E3B5DB /* SoundViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		38483E1429DC9AA200BD377C /* AfterResultCells */ = {
+			isa = PBXGroup;
+			children = (
+				38483E1529DC9ADC00BD377C /* ShowDiseaseTableViewCell.swift */,
+				38483E1629DC9ADC00BD377C /* ShowDiseaseTableViewCell.xib */,
+			);
+			path = AfterResultCells;
+			sourceTree = "<group>";
+		};
+		38483E1929DCAC8400BD377C /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				38483E1A29DCACB100BD377C /* UIView+Extension.swift */,
+			);
+			path = Extension;
+			sourceTree = "<group>";
+		};
+		3851C68D29A7690600D32021 /* xib */ = {
+			isa = PBXGroup;
+			children = (
+				3851C69329A76A7800D32021 /* LastCollectionViewCell.swift */,
+				3851C68929A74F0700D32021 /* CollectionTableViewCell.swift */,
+				3851C68529A7478200D32021 /* LabelTableViewCell.swift */,
+				38177A4529A739BA001E85AE /* HeaderTableViewCell.swift */,
+				3857F87F29A610E10095CE0B /* FieldCollectionViewCell.swift */,
+				3851C68F29A7696400D32021 /* LastTableViewCell.swift */,
+				3851C69029A7696400D32021 /* LastTableViewCell.xib */,
+				3857F88029A610E10095CE0B /* FieldCollectionViewCell.xib */,
+				38177A4629A739BA001E85AE /* HeaderTableViewCell.xib */,
+				3851C68629A7478200D32021 /* LabelTableViewCell.xib */,
+				3851C68A29A74F0700D32021 /* CollectionTableViewCell.xib */,
+				3851C69429A76A7800D32021 /* LastCollectionViewCell.xib */,
+			);
+			path = xib;
+			sourceTree = "<group>";
+		};
+		3857F87629A5F40A0095CE0B /* Meditation */ = {
+			isa = PBXGroup;
+			children = (
+				38483E1329DC977A00BD377C /* Controller */,
+				38483E1229DC976F00BD377C /* Model */,
+			);
+			path = Meditation;
+			sourceTree = "<group>";
+		};
+		3869B1122951AFAC00995529 /* StressViewControls */ = {
+			isa = PBXGroup;
+			children = (
+				14D5A28C2B74E89E001504BB /* CollectionViewResult */,
+				38483E1429DC9AA200BD377C /* AfterResultCells */,
+				C293BAD626F1EA260092AC9C /* QuestionAnswerViewController.swift */,
+				14A6B18D289BFA2100E5FCCB /* MoreQuizViewController.swift */,
+				C25F383626FDE723001CD63C /* GaugeMeterViewController.swift */,
+			);
+			path = StressViewControls;
+			sourceTree = "<group>";
+		};
+		3889EBA32949A698009AB6BF /* MentalHealthProblem */ = {
+			isa = PBXGroup;
+			children = (
+				3889EBA42949A6C2009AB6BF /* Xib */,
+				3889EBA52949A6CC009AB6BF /* Class */,
+				3876A032294B0E1600B3C964 /* MHPDetailsViewController.swift */,
+			);
+			path = MentalHealthProblem;
+			sourceTree = "<group>";
+		};
+		3889EBA42949A6C2009AB6BF /* Xib */ = {
+			isa = PBXGroup;
+			children = (
+				38BD90212960430C00C616D6 /* MentalHealthContentsTableViewCell.xib */,
+				38F161DC2960AC2200FA7A83 /* MentalHealthTableViewCell.xib */,
+				385F102329432AE100388A28 /* MHPTableViewCell.xib */,
+				385C981929617CC7009D4D6F /* MentalHealthProbTableViewCell.xib */,
+				14C77A252B21B7A900DA51BF /* CollectionViewCell.swift */,
+				14C77A262B21B7A900DA51BF /* CollectionViewCell.xib */,
+			);
+			path = Xib;
+			sourceTree = "<group>";
+		};
+		3889EBA52949A6CC009AB6BF /* Class */ = {
+			isa = PBXGroup;
+			children = (
+				385F102229432AE100388A28 /* MHPTableViewCell.swift */,
+				38F161DB2960AC2200FA7A83 /* MentalHealthTableViewCell.swift */,
+				385C981829617CC7009D4D6F /* MentalHealthProbTableViewCell.swift */,
+				38BD90202960430C00C616D6 /* MentalHealthContentsTableViewCell.swift */,
+				14C77A2B2B21ECEA00DA51BF /* MentalBlogsViewController.swift */,
+			);
+			path = Class;
+			sourceTree = "<group>";
+		};
+		38A3FB1229642B0000834E0F /* xib */ = {
+			isa = PBXGroup;
+			children = (
+				14A6B84E29264D5000AFA629 /* YogaTableViewCell.xib */,
+				3850105B295EC8FA00A929C2 /* YogaTextTableViewCell.xib */,
+				38769F47296805B600803258 /* YogaVideoTableViewCell.xib */,
+			);
+			path = xib;
+			sourceTree = "<group>";
+		};
+		38A3FB1329642B1100834E0F /* Class */ = {
+			isa = PBXGroup;
+			children = (
+				38769F46296805B600803258 /* YogaVideoTableViewCell.swift */,
+				38F63B52295037F70086B53C /* AasanTextViewController.swift */,
+				14B4374728B4EB5B0042AD31 /* MentalHealthViewController.swift */,
+				14A6B84D29264D5000AFA629 /* YogaTableViewCell.swift */,
+				3850105A295EC8FA00A929C2 /* YogaTextTableViewCell.swift */,
+				14C7E2982B2B3B1500FBC461 /* YogaController.swift */,
+			);
+			path = Class;
+			sourceTree = "<group>";
+		};
+		C2A84CE626A9791B0002801F = {
+			isa = PBXGroup;
+			children = (
+				143B00E72AFB85DC007B7348 /* Font */,
+				C2A84CF126A9791B0002801F /* MindWellness */,
+				C2A84CF026A9791B0002801F /* Products */,
+				D0A5F3EBDF3254AC5DEEF714 /* Pods */,
+				F6AD09B95D96A42F3742A41F /* Frameworks */,
+				38483E1929DCAC8400BD377C /* Extension */,
+			);
+			sourceTree = "<group>";
+		};
+		C2A84CF026A9791B0002801F /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				C2A84CEF26A9791B0002801F /* MindWellness.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		C2A84CF126A9791B0002801F /* MindWellness */ = {
+			isa = PBXGroup;
+			children = (
+				14841B1B2928D92F002E867C /* Plists */,
+				C2A84D0A26A97A860002801F /* Images */,
+				147E0D7D291D231000D4B594 /* Audio */,
+				C2A84D1C26A97CCA0002801F /* Table View Cell */,
+				C2EA1A5E2B5266A000DD7BCA /* login */,
+				C2A84D2126A9805A0002801F /* View Controller */,
+				C2A84CF226A9791B0002801F /* AppDelegate.swift */,
+				C2A84CF426A9791B0002801F /* SceneDelegate.swift */,
+				C2A84CF826A9791B0002801F /* Main.storyboard */,
+				C2A84CFB26A9791D0002801F /* Assets.xcassets */,
+				C2A84CFD26A9791D0002801F /* LaunchScreen.storyboard */,
+				C2DF41642B528D9C0097B8AB /* GoogleService-Info.plist */,
+				C2A84D0026A9791D0002801F /* Info.plist */,
+			);
+			path = MindWellness;
+			sourceTree = "<group>";
+		};
+		C2A84D0A26A97A860002801F /* Images */ = {
+			isa = PBXGroup;
+			children = (
+				143F890B28F0217A00A1D206 /* bg.png */,
+				14C8B72028F5557A00A0CE37 /* bg2.jpeg */,
+				14C8B71E28F5557500A0CE37 /* bg3.jpeg */,
+				14C8B71C28F5556B00A0CE37 /* bg4.jpeg */,
+				38C7C948295B527900B21FEB /* cross.png */,
+				14C8B71A28F5556600A0CE37 /* bg5.jpeg */,
+				149D9E1B29F81F05006CCD09 /* female.png */,
+				14CA9FCC2A83E7EB00AA3605 /* Screenshot 2023-08-09 at 8.57.20 PM.png */,
+				14C8B71828F5556100A0CE37 /* bg6.jpeg */,
+				14668E1F292E210100FD57C0 /* videoImage.png */,
+				145A05B82A7D4BED004CA66D /* Understanding-Your-BMI-A-Guide-to-Reading-a-BMI-Chart.jpeg */,
+				143F890F28F0302800A1D206 /* meditation.jpeg */,
+				144BBF382A3CA7AB00889738 /* menu-icon-png-3-lines-11552729023jws2rdggar.png */,
+				1421432429A8D07D008AD1AF /* meditBg.webp */,
+				14A8FA7A28A25F5000D1C331 /* helpapp.jpeg */,
+				14AF1B1A28A2416200503730 /* Mental.jpeg */,
+				14A8FA7E28A2628300D1C331 /* mentalhealth.jpeg */,
+				3878067B2953036800A768B1 /* bipolardisorder.jpg */,
+				3878067C2953036800A768B1 /* anxiety.jpg */,
+				3878067E2953036800A768B1 /* Addiction.png */,
+				3878067F2953036800A768B1 /* otherpsychotic.jpeg */,
+				3878067D2953036800A768B1 /* phycosis.jpg */,
+				387806802953036800A768B1 /* depression.jpg */,
+				14A8FA7C28A260CB00D1C331 /* yog.png */,
+				1421432629A8D1D5008AD1AF /* medi.jpeg */,
+				149C9B78289176AC00BD4D9E /* images3.jpeg */,
+				143DE271286F2E4100B71C05 /* psychtristnearme.jpeg */,
+				149C9B7C28917BC300BD4D9E /* images5.png */,
+				C2A84D0B26A97AA30002801F /* two.jpg */,
+				145A05B52A7D477D004CA66D /* BMI.cms.png */,
+				C25D6DB826B1320700567C3D /* ten.png */,
+				C25D6DBF26B141BC00567C3D /* eleven.jpg */,
+				1421432529A8D153008AD1AF /* meditationBg.webp */,
+				143DE275286F2FB600B71C05 /* counselling.png */,
+				14668E2B292E655100FD57C0 /* stopsound.png */,
+				143F890928F015D400A1D206 /* doctor.jpg */,
+				C25D6DAC26B12B6F00567C3D /* launchscreen.png */,
+				14668E29292E609000FD57C0 /* soundplay.tiff */,
+			);
+			path = Images;
+			sourceTree = "<group>";
+		};
+		C2A84D1C26A97CCA0002801F /* Table View Cell */ = {
+			isa = PBXGroup;
+			children = (
+				C2A84D1E26A97D120002801F /* HomeScreenTableViewCell.swift */,
+				C25D6DB126B12E4400567C3D /* StressScreenTableViewCell.swift */,
+				C25D6DBC26B13E3700567C3D /* PossibleTreatmentTableViewCell.swift */,
+				C25D6DCD26B1482D00567C3D /* PossibleInvestigationTableViewCell.swift */,
+				1441CCAA28771910006BCBF2 /* ExTableViewCell.swift */,
+			);
+			path = "Table View Cell";
+			sourceTree = "<group>";
+		};
+		C2A84D2126A9805A0002801F /* View Controller */ = {
+			isa = PBXGroup;
+			children = (
+				1476415A2BC6A9D2007A12C1 /* New Mental Health Problem */,
+				1492057D2ACFFBEB004BF349 /* Food & Diet */,
+				149597FF2AC6C8CD00B11449 /* MeditationSound */,
+				3857F87629A5F40A0095CE0B /* Meditation */,
+				38336FBC295AC8B4004B0E51 /* HomePageViewController */,
+				3869B1122951AFAC00995529 /* StressViewControls */,
+				3889EBA32949A698009AB6BF /* MentalHealthProblem */,
+				14A6B84C29264D1E00AFA629 /* Yoga & It's Benefits */,
+				14941C9A290277770002F0A7 /* DoctorList */,
+				C2A84D0726A979AE0002801F /* IntroViewController.swift */,
+				1441CCA62877152A006BCBF2 /* CommonResultViewController.swift */,
+				C2A84D2626A98E5C0002801F /* PossibleTreatmentViewController.swift */,
+				C2A84D2926A98F840002801F /* PossibleInvestigationViewController.swift */,
+				1441A04E286DE67200D740E5 /* AfterResultQuestionViewController.swift */,
+				14E0C59D28ACD68B00B93C24 /* PaidViewController.swift */,
+				147D322928ACEA200033C686 /* AssessmentViewController.swift */,
+				38F161DF2960B19900FA7A83 /* DesignableImageClass.swift */,
+			);
+			path = "View Controller";
+			sourceTree = "<group>";
+		};
+		C2EA1A5E2B5266A000DD7BCA /* login */ = {
+			isa = PBXGroup;
+			children = (
+				C2EA1A632B5266E900DD7BCA /* Utilities.swift */,
+				C2EA1A692B52821500DD7BCA /* Login.swift */,
+				C2EA1A612B5266DC00DD7BCA /* Constants.swift */,
+				C2EA1A5F2B5266CE00DD7BCA /* ViewController.swift */,
+				C2EA1A652B5266F500DD7BCA /* Signup.swift */,
+			);
+			path = login;
+			sourceTree = "<group>";
+		};
+		D0A5F3EBDF3254AC5DEEF714 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				8902A7AB73125F132A5CB4C2 /* Pods-MindWellness.debug.xcconfig */,
+				4C7EFC6B738CC2FCA9FF8241 /* Pods-MindWellness.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		F6AD09B95D96A42F3742A41F /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				69A8816889378E4842AED78D /* Pods_MindWellness.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		C2A84CEE26A9791B0002801F /* MindWellness */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C2A84D0326A9791D0002801F /* Build configuration list for PBXNativeTarget "MindWellness" */;
+			buildPhases = (
+				1A6FF3BC403ADE1C405C3762 /* [CP] Check Pods Manifest.lock */,
+				C2A84CEB26A9791B0002801F /* Sources */,
+				C2A84CEC26A9791B0002801F /* Frameworks */,
+				C2A84CED26A9791B0002801F /* Resources */,
+				26567CAC608817F15436001F /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MindWellness;
+			productName = MindWellness;
+			productReference = C2A84CEF26A9791B0002801F /* MindWellness.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		C2A84CE726A9791B0002801F /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1220;
+				LastUpgradeCheck = 1220;
+				TargetAttributes = {
+					C2A84CEE26A9791B0002801F = {
+						CreatedOnToolsVersion = 12.2;
+					};
+				};
+			};
+			buildConfigurationList = C2A84CEA26A9791B0002801F /* Build configuration list for PBXProject "MindWellness" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = C2A84CE626A9791B0002801F;
+			productRefGroup = C2A84CF026A9791B0002801F /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				C2A84CEE26A9791B0002801F /* MindWellness */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		C2A84CED26A9791B0002801F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				14BB3E3E2A8FBF6800F55820 /* vdo.mp4 in Resources */,
+				14BB3E3C2A8FBE5D00F55820 /* v5.mp4 in Resources */,
+				14BB3E3B2A8FBE5800F55820 /* v4.mp4 in Resources */,
+				14BB3E3A2A8FBE5400F55820 /* v3.mp4 in Resources */,
+				14BB3E392A8FBE4E00F55820 /* v2.mp4 in Resources */,
+				14BB3E382A8FBE4200F55820 /* v1.mp4 in Resources */,
+				14A6B85029264D5000AFA629 /* YogaTableViewCell.xib in Resources */,
+				14941C9E290277F80002F0A7 /* DoctorListTableViewCell.xib in Resources */,
+				387806692952F2E300A768B1 /* Bipolar Disorder.plist in Resources */,
+				3838C15A295C3DC1004C7FFA /* ThumbnailImageMHPVC.plist in Resources */,
+				38F161DE2960AC2200FA7A83 /* MentalHealthTableViewCell.xib in Resources */,
+				143DE276286F2FB600B71C05 /* counselling.png in Resources */,
+				144BBF392A3CA7AB00889738 /* menu-icon-png-3-lines-11552729023jws2rdggar.png in Resources */,
+				145A05B62A7D477D004CA66D /* BMI.cms.png in Resources */,
+				3851C68829A7478200D32021 /* LabelTableViewCell.xib in Resources */,
+				387806652952F2BA00A768B1 /* Depression.plist in Resources */,
+				385C981B29617CC7009D4D6F /* MentalHealthProbTableViewCell.xib in Resources */,
+				14A8FA7F28A2628300D1C331 /* mentalhealth.jpeg in Resources */,
+				14668E2C292E655100FD57C0 /* stopsound.png in Resources */,
+				145A05B92A7D4BED004CA66D /* Understanding-Your-BMI-A-Guide-to-Reading-a-BMI-Chart.jpeg in Resources */,
+				149D9E1C29F81F05006CCD09 /* female.png in Resources */,
+				3878066D2952F57000A768B1 /* Psychosis.plist in Resources */,
+				143DE272286F2E4100B71C05 /* psychtristnearme.jpeg in Resources */,
+				144A31202875A500008081DF /* doctor.plist in Resources */,
+				3851C69229A7696400D32021 /* LastTableViewCell.xib in Resources */,
+				C25D6DAD26B12B7000567C3D /* launchscreen.png in Resources */,
+				143D6FA4291E3864004B9F95 /* sound.mpeg in Resources */,
+				38769F49296805B600803258 /* YogaVideoTableViewCell.xib in Resources */,
+				143F891028F0302800A1D206 /* meditation.jpeg in Resources */,
+				14C8B72128F5557A00A0CE37 /* bg2.jpeg in Resources */,
+				C2A84D0C26A97AA30002801F /* two.jpg in Resources */,
+				143F890A28F015D400A1D206 /* doctor.jpg in Resources */,
+				38BD90232960430C00C616D6 /* MentalHealthContentsTableViewCell.xib in Resources */,
+				387806852953036800A768B1 /* otherpsychotic.jpeg in Resources */,
+				387806832953036800A768B1 /* phycosis.jpg in Resources */,
+				1421432729A8D1D5008AD1AF /* medi.jpeg in Resources */,
+				387806672952F2D400A768B1 /* Addiction.plist in Resources */,
+				C2A84CFF26A9791D0002801F /* LaunchScreen.storyboard in Resources */,
+				385F102529432AE100388A28 /* MHPTableViewCell.xib in Resources */,
+				38177A4829A739BA001E85AE /* HeaderTableViewCell.xib in Resources */,
+				14668E2A292E609000FD57C0 /* soundplay.tiff in Resources */,
+				3878066B2952F2FE00A768B1 /* Anxiety.plist in Resources */,
+				14CA9FCD2A83E7EB00AA3605 /* Screenshot 2023-08-09 at 8.57.20 PM.png in Resources */,
+				C2DF41652B528D9C0097B8AB /* GoogleService-Info.plist in Resources */,
+				3851C69629A76A7800D32021 /* LastCollectionViewCell.xib in Resources */,
+				C2A84CFC26A9791D0002801F /* Assets.xcassets in Resources */,
+				14C8B71D28F5556B00A0CE37 /* bg4.jpeg in Resources */,
+				14C4BA0C2B2C29F800E50353 /* CollectionYoga.xib in Resources */,
+				3850105D295EC8FA00A929C2 /* YogaTextTableViewCell.xib in Resources */,
+				387806812953036800A768B1 /* bipolardisorder.jpg in Resources */,
+				3851C68C29A74F0700D32021 /* CollectionTableViewCell.xib in Resources */,
+				14A8FA7B28A25F5000D1C331 /* helpapp.jpeg in Resources */,
+				387806842953036800A768B1 /* Addiction.png in Resources */,
+				14A8FA7D28A260CB00D1C331 /* yog.png in Resources */,
+				143B2D462B0CA0BD00EAB11A /* ExpertsTableViewCell.xib in Resources */,
+				C25D6DC026B141BC00567C3D /* eleven.jpg in Resources */,
+				38C7C949295B527900B21FEB /* cross.png in Resources */,
+				C2A84CFA26A9791B0002801F /* Main.storyboard in Resources */,
+				3857F88229A610E10095CE0B /* FieldCollectionViewCell.xib in Resources */,
+				143F890C28F0217A00A1D206 /* bg.png in Resources */,
+				149C9B79289176AC00BD4D9E /* images3.jpeg in Resources */,
+				C25D6DB926B1320700567C3D /* ten.png in Resources */,
+				14C8B71B28F5556600A0CE37 /* bg5.jpeg in Resources */,
+				38483E1829DC9ADC00BD377C /* ShowDiseaseTableViewCell.xib in Resources */,
+				14C77A282B21B7A900DA51BF /* CollectionViewCell.xib in Resources */,
+				387806822953036800A768B1 /* anxiety.jpg in Resources */,
+				14AF1B1B28A2416200503730 /* Mental.jpeg in Resources */,
+				387806862953036800A768B1 /* depression.jpg in Resources */,
+				14C8B71F28F5557500A0CE37 /* bg3.jpeg in Resources */,
+				149C9B7D28917BC300BD4D9E /* images5.png in Resources */,
+				14841B1D2928D95C002E867C /* Yoga Data.plist in Resources */,
+				14668E20292E210100FD57C0 /* videoImage.png in Resources */,
+				14C8B71928F5556100A0CE37 /* bg6.jpeg in Resources */,
+				144757C42ACC08BF00515C2A /* SoundMedTableViewCel.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		1A6FF3BC403ADE1C405C3762 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-MindWellness-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		26567CAC608817F15436001F /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-MindWellness/Pods-MindWellness-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-MindWellness/Pods-MindWellness-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-MindWellness/Pods-MindWellness-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		C2A84CEB26A9791B0002801F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3852D69729A8F9C500E3B5DB /* SoundViewController.swift in Sources */,
+				3857F87529A5F28F0095CE0B /* MeditationViewController.swift in Sources */,
+				14C77A272B21B7A900DA51BF /* CollectionViewCell.swift in Sources */,
+				C2EA1A6A2B52821600DD7BCA /* Login.swift in Sources */,
+				14C5EB182BC57100006D9153 /* PrivacyViewController.swift in Sources */,
+				14941C95290276660002F0A7 /* CarouselViewController.swift in Sources */,
+				14E0C59E28ACD68B00B93C24 /* PaidViewController.swift in Sources */,
+				C25D6DB226B12E4400567C3D /* StressScreenTableViewCell.swift in Sources */,
+				147D322A28ACEA200033C686 /* AssessmentViewController.swift in Sources */,
+				385C981A29617CC7009D4D6F /* MentalHealthProbTableViewCell.swift in Sources */,
+				C2A84D2A26A98F840002801F /* PossibleInvestigationViewController.swift in Sources */,
+				38483E1B29DCACB100BD377C /* UIView+Extension.swift in Sources */,
+				14D5A2922B74EB87001504BB /* LabelCollectionViewCell.swift in Sources */,
+				3851C68729A7478200D32021 /* LabelTableViewCell.swift in Sources */,
+				38177A4729A739BA001E85AE /* HeaderTableViewCell.swift in Sources */,
+				14A6B18E289BFA2100E5FCCB /* MoreQuizViewController.swift in Sources */,
+				C2A84CF326A9791B0002801F /* AppDelegate.swift in Sources */,
+				144757C32ACC08BF00515C2A /* SoundMedTableViewCel.swift in Sources */,
+				C2A84D1F26A97D120002801F /* HomeScreenTableViewCell.swift in Sources */,
+				14941C9D290277F80002F0A7 /* DoctorListTableViewCell.swift in Sources */,
+				3851C69129A7696400D32021 /* LastTableViewCell.swift in Sources */,
+				385F102429432AE100388A28 /* MHPTableViewCell.swift in Sources */,
+				3840FD1829E2E34B00A0E404 /* BMIViewController.swift in Sources */,
+				3857F88129A610E10095CE0B /* FieldCollectionViewCell.swift in Sources */,
+				14C4BA0B2B2C29F800E50353 /* CollectionYoga.swift in Sources */,
+				38483E1729DC9ADC00BD377C /* ShowDiseaseTableViewCell.swift in Sources */,
+				14B4374828B4EB5B0042AD31 /* MentalHealthViewController.swift in Sources */,
+				C25F383726FDE723001CD63C /* GaugeMeterViewController.swift in Sources */,
+				3851C68B29A74F0700D32021 /* CollectionTableViewCell.swift in Sources */,
+				38F63B53295037F70086B53C /* AasanTextViewController.swift in Sources */,
+				C25D6DBD26B13E3700567C3D /* PossibleTreatmentTableViewCell.swift in Sources */,
+				1441CCA72877152A006BCBF2 /* CommonResultViewController.swift in Sources */,
+				1492057F2ACFFCA6004BF349 /* FoodViewController.swift in Sources */,
+				C2EA1A642B5266EA00DD7BCA /* Utilities.swift in Sources */,
+				C2A84CF526A9791B0002801F /* SceneDelegate.swift in Sources */,
+				C2EA1A662B5266F500DD7BCA /* Signup.swift in Sources */,
+				1441A04F286DE67200D740E5 /* AfterResultQuestionViewController.swift in Sources */,
+				14C77A2C2B21ECEA00DA51BF /* MentalBlogsViewController.swift in Sources */,
+				38769F48296805B600803258 /* YogaVideoTableViewCell.swift in Sources */,
+				C2A84D2726A98E5C0002801F /* PossibleTreatmentViewController.swift in Sources */,
+				3851C69529A76A7800D32021 /* LastCollectionViewCell.swift in Sources */,
+				385F10212943286B00388A28 /* MentalHealthProblemViewController.swift in Sources */,
+				14A6B84F29264D5000AFA629 /* YogaTableViewCell.swift in Sources */,
+				143B2D452B0CA0BD00EAB11A /* ExpertsTableViewCell.swift in Sources */,
+				38F161DD2960AC2200FA7A83 /* MentalHealthTableViewCell.swift in Sources */,
+				14D5A28E2B74EA75001504BB /* CardsCollectionViewLayout.swift in Sources */,
+				14413CA72B1F4E90002C89F2 /* ExpertViewController.swift in Sources */,
+				1495980F2AC6F7D400B11449 /* MedSoundViewController.swift in Sources */,
+				C2A84D0826A979AE0002801F /* IntroViewController.swift in Sources */,
+				C293BAD726F1EA260092AC9C /* QuestionAnswerViewController.swift in Sources */,
+				14C7E2992B2B3B1500FBC461 /* YogaController.swift in Sources */,
+				C2EA1A622B5266DD00DD7BCA /* Constants.swift in Sources */,
+				1441CCAB28771910006BCBF2 /* ExTableViewCell.swift in Sources */,
+				3850105C295EC8FA00A929C2 /* YogaTextTableViewCell.swift in Sources */,
+				C25D6DCE26B1482D00567C3D /* PossibleInvestigationTableViewCell.swift in Sources */,
+				C2EA1A602B5266CE00DD7BCA /* ViewController.swift in Sources */,
+				14941CA229027DAB0002F0A7 /* DoctorListViewController.swift in Sources */,
+				38F161E02960B19900FA7A83 /* DesignableImageClass.swift in Sources */,
+				38336FBE295AC8EC004B0E51 /* SideBarTableViewCell.swift in Sources */,
+				38BD90222960430C00C616D6 /* MentalHealthContentsTableViewCell.swift in Sources */,
+				3876A033294B0E1600B3C964 /* MHPDetailsViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		C2A84CF826A9791B0002801F /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C2A84CF926A9791B0002801F /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		C2A84CFD26A9791D0002801F /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C2A84CFE26A9791D0002801F /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		C2A84D0126A9791D0002801F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		C2A84D0226A9791D0002801F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		C2A84D0426A9791D0002801F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8902A7AB73125F132A5CB4C2 /* Pods-MindWellness.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = 2C8DUS7BNG;
+				"DEVELOPMENT_TEAM[sdk=iphoneos*]" = 2C8DUS7BNG;
+				INFOPLIST_FILE = MindWellness/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.ev.cc.main;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "CC Main Dev Provisioning Profile";
+				"PROVISIONING_PROFILE_SPECIFIER[sdk=iphoneos*]" = "CC Main Dev Provisioning Profile";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		C2A84D0526A9791D0002801F /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4C7EFC6B738CC2FCA9FF8241 /* Pods-MindWellness.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = 2C8DUS7BNG;
+				"DEVELOPMENT_TEAM[sdk=iphoneos*]" = 2C8DUS7BNG;
+				INFOPLIST_FILE = MindWellness/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.ev.cc.main;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "CC Main Dev Provisioning Profile";
+				"PROVISIONING_PROFILE_SPECIFIER[sdk=iphoneos*]" = "CC Main Dev Provisioning Profile";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		C2A84CEA26A9791B0002801F /* Build configuration list for PBXProject "MindWellness" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C2A84D0126A9791D0002801F /* Debug */,
+				C2A84D0226A9791D0002801F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C2A84D0326A9791D0002801F /* Build configuration list for PBXNativeTarget "MindWellness" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C2A84D0426A9791D0002801F /* Debug */,
+				C2A84D0526A9791D0002801F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = C2A84CE726A9791B0002801F /* Project object */;
+}

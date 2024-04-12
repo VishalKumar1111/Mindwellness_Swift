@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="140" id="KGk-i7-Jjw" customClass="MHPTableViewCell" customModule="MindWellness" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="350" height="140"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="350" height="140"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eIP-mX-5Gw">
+                        <rect key="frame" x="190" y="10" width="150" height="100"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="100" id="SjU-k0-hF7"/>
+                            <constraint firstAttribute="width" constant="150" id="umj-jI-4H4"/>
+                        </constraints>
+                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                        <state key="normal" image="Addiction.png"/>
+                        <connections>
+                            <action selector="rightbtnMHP:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="J6e-IP-v7b"/>
+                        </connections>
+                    </button>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RRM-cM-2U5">
+                        <rect key="frame" x="10" y="110" width="150" height="25"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="150" id="4Rs-2g-lVl"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TDe-hc-Rcx">
+                        <rect key="frame" x="190" y="110" width="150" height="25"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="150" id="HDR-8W-IiJ"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NtD-9A-exM">
+                        <rect key="frame" x="10" y="10" width="150" height="100"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="100" id="EyM-YA-7G7"/>
+                            <constraint firstAttribute="width" constant="150" id="mrZ-cT-Kan"/>
+                        </constraints>
+                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                        <state key="normal" image="Addiction.png"/>
+                        <connections>
+                            <action selector="leftbtnMHP:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="yZD-SU-qqy"/>
+                        </connections>
+                    </button>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="bottom" secondItem="RRM-cM-2U5" secondAttribute="bottom" constant="5" id="7SF-ef-FNW"/>
+                    <constraint firstAttribute="trailing" secondItem="TDe-hc-Rcx" secondAttribute="trailing" constant="10" id="NbQ-6p-M9T"/>
+                    <constraint firstAttribute="bottom" secondItem="TDe-hc-Rcx" secondAttribute="bottom" constant="5" id="ScW-2n-BaX"/>
+                    <constraint firstItem="NtD-9A-exM" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="10" id="YaW-ls-h2N"/>
+                    <constraint firstAttribute="trailing" secondItem="eIP-mX-5Gw" secondAttribute="trailing" constant="10" id="aId-FQ-RsY"/>
+                    <constraint firstItem="RRM-cM-2U5" firstAttribute="top" secondItem="NtD-9A-exM" secondAttribute="bottom" id="bhH-IT-xZx"/>
+                    <constraint firstItem="TDe-hc-Rcx" firstAttribute="top" secondItem="eIP-mX-5Gw" secondAttribute="bottom" id="dhl-qn-3ZS"/>
+                    <constraint firstItem="RRM-cM-2U5" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="10" id="mMC-l5-d5r"/>
+                    <constraint firstItem="NtD-9A-exM" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="10" id="ufK-Dz-Sy1"/>
+                    <constraint firstItem="eIP-mX-5Gw" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="10" id="zff-OI-7HF"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="leftbtnMHP" destination="NtD-9A-exM" id="Q5v-Hm-OWl"/>
+                <outlet property="leftlblname" destination="RRM-cM-2U5" id="flB-6z-LpD"/>
+                <outlet property="rightbtnMHP" destination="eIP-mX-5Gw" id="jY8-oo-cTI"/>
+                <outlet property="rightlblname" destination="TDe-hc-Rcx" id="0Ek-kQ-Elz"/>
+            </connections>
+            <point key="canvasLocation" x="153.62318840579712" y="75"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="Addiction.png" width="150" height="100"/>
+    </resources>
+</document>

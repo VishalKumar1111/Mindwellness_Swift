@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="YogaTableViewCell" rowHeight="73" id="KGk-i7-Jjw" customClass="YogaTableViewCell" customModule="MindWellness" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="347" height="73"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="347" height="73"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bg3.jpeg" translatesAutoresizingMaskIntoConstraints="NO" id="uAM-QR-GUv">
+                        <rect key="frame" x="3" y="6" width="60" height="60"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="60" id="8dS-r0-QNH"/>
+                            <constraint firstAttribute="width" constant="60" id="RSl-sU-b5L"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="l15-EQ-ART">
+                        <rect key="frame" x="73" y="12" width="220" height="43"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="220" id="S19-Yl-tqA"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="step 1 - Start from a seated position. Sit on a yoga mat, yoga blanket, or bare floor with your legs extended outward." textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sw2-WD-hEn">
+                        <rect key="frame" x="73" y="46" width="172" height="15"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="15" id="rTn-F6-O0F"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="10"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="videoImage.png" translatesAutoresizingMaskIntoConstraints="NO" id="3bn-9b-sBS">
+                        <rect key="frame" x="292" y="18" width="35" height="35"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </imageView>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="l15-EQ-ART" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="12" id="8Zr-vx-eti"/>
+                    <constraint firstItem="sw2-WD-hEn" firstAttribute="leading" secondItem="uAM-QR-GUv" secondAttribute="trailing" constant="10" id="LbD-0V-G8O"/>
+                    <constraint firstItem="uAM-QR-GUv" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="6" id="UUY-GS-lKf"/>
+                    <constraint firstItem="uAM-QR-GUv" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="3" id="c4v-R6-PpH"/>
+                    <constraint firstAttribute="bottom" secondItem="sw2-WD-hEn" secondAttribute="bottom" constant="12" id="cy7-lp-AiG"/>
+                    <constraint firstAttribute="bottom" secondItem="l15-EQ-ART" secondAttribute="bottom" constant="18" id="dIL-O7-fIn"/>
+                    <constraint firstAttribute="trailing" secondItem="sw2-WD-hEn" secondAttribute="trailing" constant="102" id="et1-yH-oxF"/>
+                    <constraint firstItem="l15-EQ-ART" firstAttribute="leading" secondItem="uAM-QR-GUv" secondAttribute="trailing" constant="10" id="lqR-Mf-m2J"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="YogaShortDetailOnCellLabel" destination="sw2-WD-hEn" id="CkO-de-MeJ"/>
+                <outlet property="cellImage" destination="uAM-QR-GUv" id="15I-Ef-Sda"/>
+                <outlet property="lblofName" destination="l15-EQ-ART" id="opl-bJ-EuV"/>
+                <outlet property="textVIdeoimage" destination="3bn-9b-sBS" id="7ps-lz-JX5"/>
+            </connections>
+            <point key="canvasLocation" x="148.55072463768118" y="-1.6741071428571428"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="bg3.jpeg" width="615" height="451"/>
+        <image name="videoImage.png" width="85" height="85"/>
+    </resources>
+</document>

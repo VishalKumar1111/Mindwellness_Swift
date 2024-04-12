@@ -1,0 +1,305 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Bucket
+   uuid = "B2147CF7-6FCC-47BB-8FC3-10A68AE8BB27"
+   type = "0"
+   version = "2.0">
+   <Breakpoints>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "65DE4B2F-F7DA-48E8-9A84-995A057F4552"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "MindWellness/View Controller/Yoga &amp; It&apos;s Benefits/AasanTextViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "40"
+            endingLineNumber = "40"
+            landmarkName = "viewDidLoad()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "F8252807-BF15-4B02-9BDE-68E048D1293B"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "MindWellness/View Controller/Yoga &amp; It&apos;s Benefits/MentalHealthViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "339"
+            endingLineNumber = "339"
+            landmarkName = "tableView(_:cellForRowAt:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "F8252807-BF15-4B02-9BDE-68E048D1293B - aecee5674709a2ee"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "MindWellness.MentalHealthViewController.tableView(_: __C.UITableView, cellForRowAt: Foundation.IndexPath) -&gt; __C.UITableViewCell"
+                  moduleName = "MindWellness"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/reeteshbajpai/Desktop/mind%20wellness%20new/MindWellness/View%20Controller/Yoga%20&amp;%20It&apos;s%20Benefits/MentalHealthViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "339"
+                  endingLineNumber = "339"
+                  offsetFromSymbolStart = "4406">
+               </Location>
+               <Location
+                  uuid = "F8252807-BF15-4B02-9BDE-68E048D1293B - aecee5674709a2ee"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "MindWellness.MentalHealthViewController.tableView(_: __C.UITableView, cellForRowAt: Foundation.IndexPath) -&gt; __C.UITableViewCell"
+                  moduleName = "MindWellness"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/reeteshbajpai/Desktop/mind%20wellness%20new/MindWellness/View%20Controller/Yoga%20&amp;%20It&apos;s%20Benefits/MentalHealthViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "339"
+                  endingLineNumber = "339"
+                  offsetFromSymbolStart = "4667">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "40DE1989-ADDE-443E-B1B9-DE534968E8ED"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "MindWellness/View Controller/Yoga &amp; It&apos;s Benefits/Class/AasanTextViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "11"
+            endingLineNumber = "11"
+            landmarkName = "AasanTextViewController"
+            landmarkType = "3">
+            <Locations>
+               <Location
+                  uuid = "40DE1989-ADDE-443E-B1B9-DE534968E8ED - 587536c37758658d"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "MindWellness.AasanTextViewController.__allocating_init(nibName: Swift.Optional&lt;Swift.String&gt;, bundle: Swift.Optional&lt;__C.NSBundle&gt;) -&gt; MindWellness.AasanTextViewController"
+                  moduleName = "MindWellness"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/reeteshbajpai/Desktop/MlatestCode/MindWellness/View%20Controller/Yoga%20&amp;%20It&apos;s%20Benefits/Class/AasanTextViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "0"
+                  endingLineNumber = "0"
+                  offsetFromSymbolStart = "31">
+               </Location>
+               <Location
+                  uuid = "40DE1989-ADDE-443E-B1B9-DE534968E8ED - 2ee7b754f760ede2"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "MindWellness.AasanTextViewController.init(nibName: Swift.Optional&lt;Swift.String&gt;, bundle: Swift.Optional&lt;__C.NSBundle&gt;) -&gt; MindWellness.AasanTextViewController"
+                  moduleName = "MindWellness"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/reeteshbajpai/Desktop/MlatestCode/MindWellness/View%20Controller/Yoga%20&amp;%20It&apos;s%20Benefits/Class/AasanTextViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "12"
+                  endingLineNumber = "12"
+                  offsetFromSymbolStart = "202">
+               </Location>
+               <Location
+                  uuid = "40DE1989-ADDE-443E-B1B9-DE534968E8ED - d7944be1682cccc1"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "MindWellness.AasanTextViewController.__allocating_init(coder: __C.NSCoder) -&gt; Swift.Optional&lt;MindWellness.AasanTextViewController&gt;"
+                  moduleName = "MindWellness"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/reeteshbajpai/Desktop/MlatestCode/MindWellness/View%20Controller/Yoga%20&amp;%20It&apos;s%20Benefits/Class/AasanTextViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "0"
+                  endingLineNumber = "0"
+                  offsetFromSymbolStart = "23">
+               </Location>
+               <Location
+                  uuid = "40DE1989-ADDE-443E-B1B9-DE534968E8ED - ec4e90c09427a592"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "MindWellness.AasanTextViewController.init(coder: __C.NSCoder) -&gt; Swift.Optional&lt;MindWellness.AasanTextViewController&gt;"
+                  moduleName = "MindWellness"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/reeteshbajpai/Desktop/MlatestCode/MindWellness/View%20Controller/Yoga%20&amp;%20It&apos;s%20Benefits/Class/AasanTextViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "12"
+                  endingLineNumber = "12"
+                  offsetFromSymbolStart = "162">
+               </Location>
+               <Location
+                  uuid = "40DE1989-ADDE-443E-B1B9-DE534968E8ED - 56a9f5c2439cbf13"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "MindWellness.AasanTextViewController.__deallocating_deinit"
+                  moduleName = "MindWellness"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/reeteshbajpai/Desktop/MlatestCode/MindWellness/View%20Controller/Yoga%20&amp;%20It&apos;s%20Benefits/Class/AasanTextViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "0"
+                  endingLineNumber = "0"
+                  offsetFromSymbolStart = "16">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "19C4250A-D016-40C4-88F2-C6C1DAFF7656"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "MindWellness/View Controller/Yoga &amp; It&apos;s Benefits/Class/AasanTextViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "20"
+            endingLineNumber = "20"
+            landmarkName = "AasanTextViewController"
+            landmarkType = "3">
+            <Locations>
+               <Location
+                  uuid = "19C4250A-D016-40C4-88F2-C6C1DAFF7656 - 7422c698709a7a6b"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "MindWellness.AasanTextViewController.aasanImageView.getter : Swift.Optional&lt;__C.UIImageView&gt;"
+                  moduleName = "MindWellness"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/reeteshbajpai/Desktop/MlatestCode/MindWellness/View%20Controller/Yoga%20&amp;%20It&apos;s%20Benefits/Class/AasanTextViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "20"
+                  endingLineNumber = "20"
+                  offsetFromSymbolStart = "85">
+               </Location>
+               <Location
+                  uuid = "19C4250A-D016-40C4-88F2-C6C1DAFF7656 - d26d0c9da9d44e67"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "MindWellness.AasanTextViewController.aasanImageView.setter : Swift.Optional&lt;__C.UIImageView&gt;"
+                  moduleName = "MindWellness"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/reeteshbajpai/Desktop/MlatestCode/MindWellness/View%20Controller/Yoga%20&amp;%20It&apos;s%20Benefits/Class/AasanTextViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "20"
+                  endingLineNumber = "20"
+                  offsetFromSymbolStart = "136">
+               </Location>
+               <Location
+                  uuid = "19C4250A-D016-40C4-88F2-C6C1DAFF7656 - ab333f14afc61776"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "MindWellness.AasanTextViewController.aasanImageView.modify : Swift.Optional&lt;__C.UIImageView&gt;"
+                  moduleName = "MindWellness"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/reeteshbajpai/Desktop/MlatestCode/MindWellness/View%20Controller/Yoga%20&amp;%20It&apos;s%20Benefits/Class/AasanTextViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "20"
+                  endingLineNumber = "20"
+                  offsetFromSymbolStart = "0">
+               </Location>
+               <Location
+                  uuid = "19C4250A-D016-40C4-88F2-C6C1DAFF7656 - c0cf018801450b42"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "MindWellness.AasanTextViewController.aasanImageView.modify : Swift.Optional&lt;__C.UIImageView&gt; with unmangled suffix &quot;.resume.0&quot;"
+                  moduleName = "MindWellness"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/reeteshbajpai/Desktop/MlatestCode/MindWellness/View%20Controller/Yoga%20&amp;%20It&apos;s%20Benefits/Class/AasanTextViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "20"
+                  endingLineNumber = "20"
+                  offsetFromSymbolStart = "26">
+               </Location>
+               <Location
+                  uuid = "19C4250A-D016-40C4-88F2-C6C1DAFF7656 - 2ee7b754f760eaea"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "MindWellness.AasanTextViewController.init(nibName: Swift.Optional&lt;Swift.String&gt;, bundle: Swift.Optional&lt;__C.NSBundle&gt;) -&gt; MindWellness.AasanTextViewController"
+                  moduleName = "MindWellness"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/reeteshbajpai/Desktop/MlatestCode/MindWellness/View%20Controller/Yoga%20&amp;%20It&apos;s%20Benefits/Class/AasanTextViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "20"
+                  endingLineNumber = "20"
+                  offsetFromSymbolStart = "518">
+               </Location>
+               <Location
+                  uuid = "19C4250A-D016-40C4-88F2-C6C1DAFF7656 - ec4e90c09427a29a"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "MindWellness.AasanTextViewController.init(coder: __C.NSCoder) -&gt; Swift.Optional&lt;MindWellness.AasanTextViewController&gt;"
+                  moduleName = "MindWellness"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/reeteshbajpai/Desktop/MlatestCode/MindWellness/View%20Controller/Yoga%20&amp;%20It&apos;s%20Benefits/Class/AasanTextViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "20"
+                  endingLineNumber = "20"
+                  offsetFromSymbolStart = "478">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "790331A9-EB66-4348-AE58-44EBCE41DF18"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "MindWellness/View Controller/Yoga &amp; It&apos;s Benefits/Class/AasanTextViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "31"
+            endingLineNumber = "31"
+            landmarkName = "viewDidLoad()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "D335BB5E-F0DF-410E-B0CE-473EC6F0C9E9"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "MindWellness/View Controller/Yoga &amp; It&apos;s Benefits/Class/AasanTextViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "37"
+            endingLineNumber = "37"
+            landmarkName = "viewDidLoad()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+   </Breakpoints>
+</Bucket>
