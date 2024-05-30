@@ -25,8 +25,8 @@
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Anxiety" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MuU-Ja-gGv">
-                                <rect key="frame" x="9" y="14" width="150" height="30"/>
-                                <fontDescription key="fontDescription" type="italicSystem" pointSize="25"/>
+                                <rect key="frame" x="6" y="6" width="153" height="138"/>
+                                <fontDescription key="fontDescription" type="italicSystem" pointSize="24"/>
                                 <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
@@ -44,10 +44,11 @@
                             <constraint firstAttribute="bottom" secondItem="6Zv-Bp-OZR" secondAttribute="bottom" constant="5" id="Ezn-Kf-roG"/>
                             <constraint firstItem="6Zv-Bp-OZR" firstAttribute="top" secondItem="ZOJ-Ku-BCG" secondAttribute="top" constant="6" id="FAy-kT-7C2"/>
                             <constraint firstItem="q44-1t-om1" firstAttribute="leading" secondItem="ZOJ-Ku-BCG" secondAttribute="leading" id="GDb-Vl-kpI"/>
-                            <constraint firstItem="6Zv-Bp-OZR" firstAttribute="leading" secondItem="MuU-Ja-gGv" secondAttribute="trailing" constant="2" id="QzT-dU-KzC"/>
+                            <constraint firstAttribute="bottom" secondItem="MuU-Ja-gGv" secondAttribute="bottom" constant="6" id="Sps-dl-jxO"/>
                             <constraint firstAttribute="trailing" secondItem="q44-1t-om1" secondAttribute="trailing" id="Wb4-Es-XMq"/>
-                            <constraint firstItem="MuU-Ja-gGv" firstAttribute="top" secondItem="ZOJ-Ku-BCG" secondAttribute="top" constant="14" id="XoY-FV-RrQ"/>
-                            <constraint firstItem="MuU-Ja-gGv" firstAttribute="leading" secondItem="ZOJ-Ku-BCG" secondAttribute="leading" constant="9" id="cBm-ss-4sw"/>
+                            <constraint firstItem="MuU-Ja-gGv" firstAttribute="leading" secondItem="ZOJ-Ku-BCG" secondAttribute="leading" constant="6" id="i0e-e5-Ho0"/>
+                            <constraint firstItem="MuU-Ja-gGv" firstAttribute="top" secondItem="ZOJ-Ku-BCG" secondAttribute="top" constant="6" id="iLp-69-U0Z"/>
+                            <constraint firstItem="6Zv-Bp-OZR" firstAttribute="leading" secondItem="MuU-Ja-gGv" secondAttribute="trailing" constant="2" id="mYH-sA-2vF"/>
                             <constraint firstAttribute="trailing" secondItem="6Zv-Bp-OZR" secondAttribute="trailing" constant="2" id="pH6-Cz-3ol"/>
                         </constraints>
                     </view>

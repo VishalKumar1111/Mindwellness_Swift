@@ -2,18 +2,22 @@
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
+	<key>CLIENT_ID</key>
+	<string>333015386345-5gg6c29e5rkgnbas98667jmkfnqrq8ri.apps.googleusercontent.com</string>
+	<key>REVERSED_CLIENT_ID</key>
+	<string>com.googleusercontent.apps.333015386345-5gg6c29e5rkgnbas98667jmkfnqrq8ri</string>
 	<key>API_KEY</key>
-	<string>AIzaSyBoAzfPGvdqtY6ort92nV3ctA6D-w4-KPk</string>
+	<string>AIzaSyC58KpqD6pa1LOKnLbNQdJg-yNXDs4hQkY</string>
 	<key>GCM_SENDER_ID</key>
-	<string>734159642731</string>
+	<string>333015386345</string>
 	<key>PLIST_VERSION</key>
 	<string>1</string>
 	<key>BUNDLE_ID</key>
 	<string>com.ev.cc.main</string>
 	<key>PROJECT_ID</key>
-	<string>loginapp-b411d</string>
+	<string>mindwellnessios</string>
 	<key>STORAGE_BUCKET</key>
-	<string>loginapp-b411d.appspot.com</string>
+	<string>mindwellnessios.appspot.com</string>
 	<key>IS_ADS_ENABLED</key>
 	<false></false>
 	<key>IS_ANALYTICS_ENABLED</key>
@@ -25,6 +29,6 @@
 	<key>IS_SIGNIN_ENABLED</key>
 	<true></true>
 	<key>GOOGLE_APP_ID</key>
-	<string>1:734159642731:ios:c50bb5ecfa0ade3d01912e</string>
+	<string>1:333015386345:ios:b24e4d3487124c4fcec878</string>
 </dict>
 </plist>

@@ -210,8 +210,9 @@ class GaugeMeterViewController: UIViewController{
     @IBAction func Whohelpyou(_ sender: Any) {
         let CommonVC = UIStoryboard.init(name: "Main", bundle: Bundle.main).instantiateViewController(withIdentifier: "assessment") as? AssessmentViewController
 //        self.(CommonVC!, animated: true)
+        self.navigationController?.pushViewController(CommonVC!, animated: true)
         
-        self.present(CommonVC!, animated: true)
+//        self.present(CommonVC!, animated: true)
     }
     
     

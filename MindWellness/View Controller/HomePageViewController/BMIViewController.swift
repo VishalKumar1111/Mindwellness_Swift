@@ -85,13 +85,35 @@ class BMIViewController: UIViewController {
             let tipText: String = String(format: "%.2f", calculatedBMI)
         
         if calculatedBMI <= 18.5 {
-              let alert = UIAlertController(title: "BMI", message: "•Your Body Mass Index is \(tipText).\n  • You are underweight \n • this may lead to health issues \n • Consult lifestyle experts to know about possible health issues ahow to improve weight", preferredStyle: UIAlertController.Style.alert)
-              alert.addAction(UIAlertAction(title: "Ok", style: UIAlertAction.Style.default, handler: nil))
-              self.present(alert, animated: true, completion: nil)
+              let alert = UIAlertController(title: "BMI", message: "•Your Body Mass Index is \(tipText).\n  • You are underweight \n • This may lead to health issues \n • Consult Lifestyle Experts to know about possible health issues ahow to improve weight", preferredStyle: UIAlertController.Style.alert)
+            
+            if let messageText = alert.view.subviews.first?.subviews.first?.subviews.first as? UILabel {
+                // Set text alignment to left
+                messageText.textAlignment = .left
+            }
+
+            alert.addAction(UIAlertAction(title: "Ok", style: UIAlertAction.Style.default, handler: nil))
+
+            // Present the alert
+            self.present(alert, animated: true, completion: nil)
+            
+            
+//              alert.addAction(UIAlertAction(title: "Ok", style: UIAlertAction.Style.default, handler: nil))
+//              self.present(alert, animated: true, completion: nil)
         }else if calculatedBMI >= 24.9{
-              let alert = UIAlertController(title: "BMI", message: "Your Body Mass Index is \(tipText).\n • You are overweight \n • This may lead to health issue \n • consult lifestyle expert to know about possible health probles due to overweight and for advice on how to reduce weigh", preferredStyle: UIAlertController.Style.alert)
-              alert.addAction(UIAlertAction(title: "Ok", style: UIAlertAction.Style.default, handler: nil))
-              self.present(alert, animated: true, completion: nil)
+              let alert = UIAlertController(title: "BMI", message: "Your Body Mass Index is \(tipText).\n • You are overweight \n • This may lead to health issue \n • Consult Lifestyle Expert to know about possible health probles due to overweight and for advice on how to reduce weight", preferredStyle: UIAlertController.Style.alert)
+            if let messageText = alert.view.subviews.first?.subviews.first?.subviews.first as? UILabel {
+                // Set text alignment to left
+                messageText.textAlignment = .left
+            }
+
+            alert.addAction(UIAlertAction(title: "Ok", style: UIAlertAction.Style.default, handler: nil))
+
+            // Present the alert
+            self.present(alert, animated: true, completion: nil)
+//
+//              alert.addAction(UIAlertAction(title: "Ok", style: UIAlertAction.Style.default, handler: nil))
+//              self.present(alert, animated: true, completion: nil)
           }else{
               let alert = UIAlertController(title: "BMI", message: "Your Body Mass Index is \(tipText).\n You have healthy wieght", preferredStyle: UIAlertController.Style.alert)
               alert.addAction(UIAlertAction(title: "Ok", style: UIAlertAction.Style.default, handler: nil))

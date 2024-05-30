@@ -7,12 +7,13 @@
 
 import UIKit
 import FirebaseAuth
-
+import FirebaseFirestore
 
 class Login: UIViewController {
 
     
-  
+    @IBOutlet weak var btnSignUp: UIButton!
+    
     @IBOutlet weak var emailTextField: UITextField!
     
     @IBOutlet weak var passwordTextField: UITextField!
@@ -30,33 +31,8 @@ class Login: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         presentSecurityAlert()
-//        let isAlertShown = UserDefaults.standard.bool(forKey: "isAlertShown")
-//            if !isAlertShown {
-//                // Alert has not been shown, present it
-//
-//
-//
-//                // Set the flag to indicate that the alert has been shown
-//                UserDefaults.standard.set(true, forKey: "isAlertShown")
-//            }
-        
-//        let refreshAlert = UIAlertController(title: "Security?", message: "We collect your email address solely for account management and communication purposes within our app.Your email address is stored securely and will not be shared with third parties without your explicit consent. We prioritize the protection of your information.", preferredStyle: UIAlertController.Style.alert)
-//
-//        refreshAlert.addAction(UIAlertAction(title: "Ok", style: .default, handler: { (action: UIAlertAction!) in
-//              print("Handle Ok logic here")
-//        }))
-//
-//        refreshAlert.addAction(UIAlertAction(title: "Details & Policies", style: .cancel, handler: { (action: UIAlertAction!) in
-//              print("Handle Cancel Logic here")
-//
-//            let sc = self.storyboard?.instantiateViewController(withIdentifier: "privacy") as? PrivacyViewController
-//            self.navigationController?.pushViewController(sc!, animated: true)
-//        }))
-//
-//        present(refreshAlert, animated: true, completion: nil)
-//
-//
-        
+
+        btnSignUp.titleLabel?.textColor = .blue
         if let backgroundImage = UIImage(named: "Background") {
             let imageView = UIImageView(frame: self.view.bounds)
             imageView.contentMode = .scaleAspectFill
@@ -87,12 +63,14 @@ class Login: UIViewController {
     func setUpElements() {
         
         // Hide the error label
-        errorLabel.alpha = 0
+//        errorLabel.alpha = 0
         
         // Style the elements
         Utilities.styleTextField(emailTextField)
         Utilities.styleTextField(passwordTextField)
-        Utilities.styleFilledButton(loginButton)
+//        Utilities.styleFilledButton(loginButton)
+        loginButton.layer.cornerRadius = 20.0
+        
         
     }
     
@@ -120,7 +98,7 @@ class Login: UIViewController {
       }
   }
 
-//  func retrieveUserChoice() {
+  func retrieveUserChoice() {
 //      guard let currentUserUID = Auth.auth().currentUser?.uid else {
 //          // User not authenticated or UID not available
 //          return
@@ -145,7 +123,7 @@ class Login: UIViewController {
 //              self.showError("Error retrieving user choice: \(error?.localizedDescription ?? "Unknown error")")
 //          }
 //      }
-//  }
+  }
 
   func performActionForTrueChoice() {
       // Perform action for true choice
@@ -182,6 +160,11 @@ class Login: UIViewController {
       errorLabel.alpha = 1
   }
     
+    @IBAction func btnForgotPassword(_ sender: Any) {
+        let storyBoard: UIStoryboard = UIStoryboard(name: "Main", bundle: nil)
+         let vc = storyBoard.instantiateViewController(withIdentifier: "forgot") as! ForgotPassword
+         self.navigationController?.pushViewController(vc, animated: true)
+    }
     
     @IBAction func btnSignup(_ sender: Any) {
         let storyBoard: UIStoryboard = UIStoryboard(name: "Main", bundle: nil)

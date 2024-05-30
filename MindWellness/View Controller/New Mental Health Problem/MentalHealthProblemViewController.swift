@@ -86,7 +86,12 @@ extension MentalHealthProblemViewController: UITableViewDelegate, UITableViewDat
         if indexPath.row == 0{
             BtnName = "Depression"
             Plist(Name: BtnName)
-            let arrDepression = ["Depression ki dawao ka depression hota haii?","Side effect of anti depressant","Kya depression genetically hota hai","Depression ke patient ki lifestyle kaise honi chahiye"," how family can help depression","Three indications for cure of depression ","Brain changes in patients of Depression ","depression counselling se theek hota hai?","Why depression is increasing in Society?"," Depression ka ilaaj Kab tak chalega ?","Kaise Pata Chalega Depression Hai Ya Nahi", "Why one get Depression"]
+            
+            
+            let arrDepression = ["Depression ki dawao ka depression hota haii","Side effect of anti depressant","Kya depression genetically hota hai","Depression ke patient ki lifestyle kaise honi chahiye","Aap depression ke patient ki kaise help kar sakte hain/ how family can help depression","Teen Cheezin Jo Batati Hain Depression Theek hoga","Brain changes in patients of Depression ","Depression counselling se theek hota hai","Why depression is increasing in Society ? "," Depression ka ilaaj Kab tak chalega ?","Kaise Pata Chalega Depression Hai Ya Nahi ","Why one get Depression"]
+            
+//
+//            let arrDepression = ["Depression ki dawao ka depression hota haii?","Side effect of anti depressant","Kya depression genetically hota hai","Depression ke patient ki lifestyle kaise honi chahiye"," how family can help depression","Three indications for cure of depression ","Brain changes in patients of Depression ","depression counselling se theek hota hai?","Why depression is increasing in Society?"," Depression ka ilaaj Kab tak chalega ?","Kaise Pata Chalega Depression Hai Ya Nahi", "Why one get Depression"]
             var arrProblems = ["What is Depression","Discuss Your Depression","Manage Your Depression In WorkPlace","Strategies","therapy"]
             MHPVC?.HeadingLblNameOfView = BtnName
 //            MHPVC?.arrOfDataFromMHPVC = arrPlistData

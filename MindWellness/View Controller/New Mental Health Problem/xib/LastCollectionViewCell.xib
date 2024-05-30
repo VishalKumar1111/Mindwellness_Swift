@@ -23,42 +23,43 @@
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bg.png" translatesAutoresizingMaskIntoConstraints="NO" id="fKP-OY-loC">
                                 <rect key="frame" x="0.0" y="0.0" width="250" height="150"/>
                             </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Anxiety" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GHc-bZ-ekh">
-                                <rect key="frame" x="9" y="16" width="131" height="30"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Anxiety" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GHc-bZ-ekh">
+                                <rect key="frame" x="6" y="6" width="131" height="138"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="25"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="meditation.jpeg" translatesAutoresizingMaskIntoConstraints="NO" id="hjZ-q1-uEe">
+                                <rect key="frame" x="143" y="6" width="101" height="138"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="101" id="faw-sr-1Dd"/>
+                                </constraints>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
-                            <constraint firstAttribute="trailing" secondItem="fKP-OY-loC" secondAttribute="trailing" id="3FT-tx-eZW"/>
-                            <constraint firstItem="GHc-bZ-ekh" firstAttribute="top" secondItem="xYs-AG-nDF" secondAttribute="top" constant="16" id="7TG-Sa-ecl"/>
-                            <constraint firstItem="GHc-bZ-ekh" firstAttribute="leading" secondItem="xYs-AG-nDF" secondAttribute="leading" constant="9" id="DhV-5X-w9d"/>
-                            <constraint firstAttribute="bottom" secondItem="fKP-OY-loC" secondAttribute="bottom" id="KIO-Kc-2VH"/>
-                            <constraint firstItem="fKP-OY-loC" firstAttribute="top" secondItem="xYs-AG-nDF" secondAttribute="top" id="R8a-0w-gmB"/>
-                            <constraint firstItem="fKP-OY-loC" firstAttribute="leading" secondItem="xYs-AG-nDF" secondAttribute="leading" id="fzc-KO-jTM"/>
-                            <constraint firstAttribute="trailing" secondItem="GHc-bZ-ekh" secondAttribute="trailing" constant="110" id="zR1-en-9nA"/>
+                            <constraint firstItem="fKP-OY-loC" firstAttribute="top" secondItem="xYs-AG-nDF" secondAttribute="top" id="3v2-IQ-fwn"/>
+                            <constraint firstAttribute="bottom" secondItem="hjZ-q1-uEe" secondAttribute="bottom" constant="6" id="65V-UA-UJY"/>
+                            <constraint firstItem="GHc-bZ-ekh" firstAttribute="leading" secondItem="xYs-AG-nDF" secondAttribute="leading" constant="6" id="7ZF-c0-GXs"/>
+                            <constraint firstAttribute="trailing" secondItem="fKP-OY-loC" secondAttribute="trailing" id="EAD-EB-uNb"/>
+                            <constraint firstAttribute="bottom" secondItem="fKP-OY-loC" secondAttribute="bottom" id="Wxd-8r-pem"/>
+                            <constraint firstItem="hjZ-q1-uEe" firstAttribute="leading" secondItem="GHc-bZ-ekh" secondAttribute="trailing" constant="6" id="dwJ-Oz-rI0"/>
+                            <constraint firstItem="GHc-bZ-ekh" firstAttribute="top" secondItem="xYs-AG-nDF" secondAttribute="top" constant="6" id="hx4-7D-K3z"/>
+                            <constraint firstAttribute="bottom" secondItem="GHc-bZ-ekh" secondAttribute="bottom" constant="6" id="ltj-ff-Qzz"/>
+                            <constraint firstAttribute="trailing" secondItem="hjZ-q1-uEe" secondAttribute="trailing" constant="6" id="p4i-zw-vti"/>
+                            <constraint firstItem="hjZ-q1-uEe" firstAttribute="top" secondItem="xYs-AG-nDF" secondAttribute="top" constant="6" id="xEr-V5-jFN"/>
+                            <constraint firstItem="fKP-OY-loC" firstAttribute="leading" secondItem="xYs-AG-nDF" secondAttribute="leading" id="yqt-oT-feC"/>
                         </constraints>
                     </view>
-                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="meditation.jpeg" translatesAutoresizingMaskIntoConstraints="NO" id="hjZ-q1-uEe">
-                        <rect key="frame" x="161" y="6" width="87" height="138"/>
-                        <constraints>
-                            <constraint firstAttribute="width" constant="87" id="0vO-tF-QBe"/>
-                        </constraints>
-                    </imageView>
                 </subviews>
             </view>
             <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
             <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
             <constraints>
-                <constraint firstItem="hjZ-q1-uEe" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" constant="6" id="70W-xg-9JU"/>
-                <constraint firstItem="xYs-AG-nDF" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="RHh-YE-rpj"/>
-                <constraint firstAttribute="bottom" secondItem="xYs-AG-nDF" secondAttribute="bottom" id="TI8-1M-o01"/>
-                <constraint firstAttribute="trailing" secondItem="hjZ-q1-uEe" secondAttribute="trailing" constant="2" id="bD3-Oa-c4g"/>
-                <constraint firstAttribute="bottom" secondItem="hjZ-q1-uEe" secondAttribute="bottom" constant="6" id="mrQ-1u-iDz"/>
-                <constraint firstItem="xYs-AG-nDF" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="slK-rF-VHp"/>
-                <constraint firstAttribute="trailing" secondItem="xYs-AG-nDF" secondAttribute="trailing" id="yuZ-ox-PdC"/>
+                <constraint firstAttribute="bottom" secondItem="xYs-AG-nDF" secondAttribute="bottom" id="Eur-Mr-ece"/>
+                <constraint firstItem="xYs-AG-nDF" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="HIo-Mo-ie3"/>
+                <constraint firstAttribute="trailing" secondItem="xYs-AG-nDF" secondAttribute="trailing" id="VxY-5S-Sgh"/>
+                <constraint firstItem="xYs-AG-nDF" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="dFR-Ot-r8D"/>
             </constraints>
             <connections>
                 <outlet property="backgroundImgViewOutlet" destination="fKP-OY-loC" id="CI6-d0-PBA"/>

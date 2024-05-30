@@ -13,12 +13,14 @@ class ExpertViewController: UIViewController,UITableViewDelegate,UITableViewData
    
     @IBOutlet weak var tblView: UITableView!
     var arr:NSArray?
+    var heading:String = ""
     
     
     override func viewDidLoad() {
         super.viewDidLoad()
         if let path = Bundle.main.path(forResource: "doctor", ofType: "plist") {
            arr = NSArray(contentsOfFile: path)
+            print(heading)
             print(arr!)
             
             tblView.delegate = self
@@ -61,22 +63,44 @@ class ExpertViewController: UIViewController,UITableViewDelegate,UITableViewData
             
             
         }
-        cell?.txtName.text = nam
-        cell?.txtClinic.text = clinic
-        cell?.txtAddress.text = address
-        cell?.txtSpeciality.text = specialist
-        cell?.txtCourse.text = degree
-        cell?.txtPhone.text = phone
-        cell?.img.image = UIImage(named: "professional" )
-        
-        
-        
-        return cell!
+ 
+        if specialist.contains(heading) {
+               cell?.txtName.text = nam
+               cell?.txtClinic.text = clinic
+               cell?.txtAddress.text = address
+               cell?.txtSpeciality.text = specialist
+               cell?.txtCourse.text = degree
+               cell?.txtPhone.text = phone
+               cell?.img.image = UIImage(named: "professional")
+               return cell!
+        }else if heading.isEmpty{
+            cell?.txtName.text = nam
+            cell?.txtClinic.text = clinic
+            cell?.txtAddress.text = address
+            cell?.txtSpeciality.text = specialist
+            cell?.txtCourse.text = degree
+            cell?.txtPhone.text = phone
+            cell?.img.image = UIImage(named: "professional")
+            return cell!
+        }else {
+            let emptyCell = UITableViewCell()
+               emptyCell.backgroundColor = .clear // Set background color to clear
+               return emptyCell
+           }
+    }
+
+    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+        let dic = arr?[indexPath.row] as? NSDictionary
+           let specialist = dic?["Specialist"] as? String ?? ""
+           
+           // Check if the specialist contains the heading or if the heading is empty
+           if specialist.contains(heading) || heading.isEmpty {
+               return 320.0 // Return the normal height if the condition is met or if heading is empty
+           } else {
+               return 0 // Return 0 height for the row if the condition is not met
+           }
     }
     
-    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-        250.0
-    }
     
     @IBAction func btnBack(_ sender: Any) {
         self.navigationController?.popViewController(animated: true)

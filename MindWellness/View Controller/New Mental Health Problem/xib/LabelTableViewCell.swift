@@ -17,7 +17,7 @@ class LabelTableViewCell: UITableViewCell {
         self.backgroundViewOutlet.backgroundColor = UIColor(patternImage: UIImage(named: "Background")!)
         
         // Initialization code
-        backgroundViewOutlet.layer.cornerRadius = 20
+//        backgroundViewOutlet.layer.cornerRadius = 20
        
     }
 

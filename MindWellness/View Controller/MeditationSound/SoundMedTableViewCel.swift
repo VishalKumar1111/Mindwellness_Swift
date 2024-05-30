@@ -25,7 +25,7 @@ class SoundMedTableViewCel: UITableViewCell {
        
         imgView.layer.borderWidth = 3.0
         imgView.layer.borderColor = UIColor.orange.cgColor
-        // Configure the view for the selected state
+//         Configure the view for the selected state
         
         
     }

@@ -90,6 +90,8 @@ class CarouselViewController: UIViewController, GoToCaroselDelegate{
     @objc func timerFired() {
         // Toggle the visibility of tapView
         toggleTapViewVisibility()
+        
+        stopBlinking()
     }
 
     // Start the blinking timer
@@ -333,14 +335,14 @@ extension CarouselViewController: CircularCarouselDelegate,CircularCarouselDataS
             imageView.image = UIImage(named:"Bottam_Icon_Placehoolder")
         }
         else if indexPath.row == 1{
-            imageView.image = UIImage(named:"two.jpg")
+            imageView.image = UIImage(named:"Stress_Small.jpg")
             
         }
         else if indexPath.row == 2{
-            imageView.image = UIImage(named:"yog.png")
+            imageView.image = UIImage(named:"yoga_bottom")
         }
         else if indexPath.row == 3{
-            imageView.image = UIImage(named:"Mental.jpeg")
+            imageView.image = UIImage(named:"MHP_Small.jpeg")
             
         }
 //        else if indexPath.row == 4{
@@ -348,7 +350,7 @@ extension CarouselViewController: CircularCarouselDelegate,CircularCarouselDataS
 //
 //        }
         else if indexPath.row == 4{
-            imageView.image = UIImage(named:"doctor.jpg")
+            imageView.image = UIImage(named:"doctor.png")
         }
         viewCarousel?.addSubview(imageView)
         return viewCarousel!
@@ -360,6 +362,8 @@ extension CarouselViewController: CircularCarouselDelegate,CircularCarouselDataS
         //        /* Handle selection of the selected carousel item */
         //
         print(index)
+       
+              
         if index == 0{
 //            imgBackground.image = UIImage(named: "bg4.jpeg")
             print(index)
@@ -409,13 +413,59 @@ extension CarouselViewController: CircularCarouselDelegate,CircularCarouselDataS
             print(index)
             
             let CommonVC = UIStoryboard.init(name: "Main", bundle: Bundle.main).instantiateViewController(withIdentifier: "doctor") as? ExpertViewController
+            
             self.navigationController?.pushViewController(CommonVC!, animated: true)
         }
     }
     
+    
+    @objc func bigImageTapped(_ gesture: UITapGestureRecognizer) {
+            guard let index = gesture.view?.tag else {
+                return
+            }
+            
+            // Perform navigation to the new view controller based on the index
+            switch index {
+            case 0:
+                print(index)
+            case 1:
+                let Questionvc = UIStoryboard.init(name: "Main", bundle: Bundle.main).instantiateViewController(withIdentifier: "question") as? QuestionAnswerViewController
+                Questionvc!.delegate = self
+                
+                self.navigationController?.pushViewController(Questionvc!, animated:true)
+                
+                
+            case 2:
+                print(index)
+                let Yogavc = UIStoryboard.init(name: "Main", bundle: Bundle.main).instantiateViewController(withIdentifier: "Yoga") as? YogaController
+                
+                self.navigationController?.pushViewController(Yogavc!, animated: true)
+            case 3:
+                let MentalHealthProblem = UIStoryboard.init(name: "Main", bundle: Bundle.main).instantiateViewController(withIdentifier: "MentalHealthProblemViewController") as? MentalHealthProblemViewController
+                self.navigationController?.pushViewController(MentalHealthProblem!, animated: true)
+            case 4:
+                let CommonVC = UIStoryboard.init(name: "Main", bundle: Bundle.main).instantiateViewController(withIdentifier: "doctor") as? ExpertViewController
+                
+                self.navigationController?.pushViewController(CommonVC!, animated: true)
+            default:
+                break
+            }
+            
+            // Present or push the view controller
+            // Example: navigationController?.pushViewController(viewController, animated: true)
+        }
+        
+    
     func carousel(_ carousel: CircularCarousel, willBeginScrollingToIndex index: Int) {
         
         print(index)
+        
+        let tapGesture = UITapGestureRecognizer(target: self, action: #selector(bigImageTapped(_:)))
+              bigImage.addGestureRecognizer(tapGesture)
+              bigImage.isUserInteractionEnabled = true
+              bigImage.tag = index // Assign a tag to identify the index
+        
+        
         if index == 0{
             stressResultView.isHidden = true
 //            imgBackground.image = UIImage(named: "bg4.jpeg")
@@ -423,7 +473,8 @@ extension CarouselViewController: CircularCarouselDelegate,CircularCarouselDataS
             titleLabel.text = "How this app can help you"
             carouselLabel.text = "How this app can help you"
             bigImage.image = UIImage(named: "placeholede_banner_Icon")
-            textView.text = "• Help You Know Your Stress Level.\n• Help You Manage Your Stress.\n• Help You Know Possible Treatment You Can Seek.\n• Help You De-Stress With Yoga.\n• Know About Mental Health Problem.\n• Help You Connect To An Expert.\n • Health Tips."
+            
+            textView.text = "• Help You Know Your Stress Level.\n• Help You Manage Your Stress.\n• Help You Know Possible Treatment You \n   Can Seek.\n• Help You De-Stress With Yoga.\n• Know About Mental Health Problem.\n• Help You Connect To An Expert.\n• Health Tips."
             
             
         }
@@ -434,7 +485,7 @@ extension CarouselViewController: CircularCarouselDelegate,CircularCarouselDataS
             print(index)
             titleLabel.text = "Are You Stressed ?"
             carouselLabel.text = "Let Us Calculate Your Stress Levels"
-            bigImage.image = UIImage(named: "two.jpg")
+            bigImage.image = UIImage(named: "StressA.jpg")
             textView.text = ""
         }
         
@@ -444,8 +495,8 @@ extension CarouselViewController: CircularCarouselDelegate,CircularCarouselDataS
             stressResultView.isHidden = true
             titleLabel.text = "Yoga For Mental Health"
             carouselLabel.text = "Yoga & Its Benefits"
-            bigImage.image = UIImage(named: "yog.png")
-            textView.text = "                    Benefits Of Yoga                                • Relief from depression and anxiety.\n• Reduce the effects of PTSD and similar conditions.\n• Boost concentration, focus, and memory.\n• Improve your mood.\n• Keep your brain young"
+            bigImage.image = UIImage(named: "yoga_banner")
+            textView.text = "                    Benefits Of Yoga                                \n\n• Relief from depression and anxiety.\n• Reduce the effects of PTSD and similar \n   conditions.\n• Boost concentration, focus, and memory.\n• Improve your mood.\n• Keep your brain young"
         }
         else if index == 3 {
 //            imgBackground.image = UIImage(named: "bg3.jpeg")
@@ -453,7 +504,7 @@ extension CarouselViewController: CircularCarouselDelegate,CircularCarouselDataS
             stressResultView.isHidden = true
             titleLabel.text = "Mental Health Problems"
             carouselLabel.text = "Mental Health Problems"
-            bigImage.image = UIImage(named: "Mental.jpeg")
+            bigImage.image = UIImage(named: "MHP.jpeg")
             textView.text = "• Depression \n• Anxiety disorders. \n• Bipolar affective disorder.\n• Psychosis\n• Addiction"
         }
         
@@ -474,7 +525,7 @@ extension CarouselViewController: CircularCarouselDelegate,CircularCarouselDataS
             stressResultView.isHidden = true
             titleLabel.text = "Connect To An Expert"
             carouselLabel.text = "Connect To An Expert"
-            bigImage.image = UIImage(named: "doctor.jpg")
+            bigImage.image = UIImage(named: "doctor.png")
             textView.text = "Counsellors work with clients experiencing a wide range of emotional and psychological difficulties to help them bring about effective change and/or enhance their wellbeing. Clients could have issues such as depression, anxiety, stress, loss and relationship difficulties that are affecting their ability to manage life."
         }
     }

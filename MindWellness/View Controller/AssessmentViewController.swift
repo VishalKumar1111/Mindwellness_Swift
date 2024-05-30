@@ -42,18 +42,18 @@ class AssessmentViewController: UIViewController {
         imgPsychatristOlt.layer.cornerRadius = imgPsychatristOlt.frame.size.height/2
         imgPsychatristOlt.clipsToBounds = true
         
-        self.psychotherapistBtnOlt.layer.cornerRadius = 20
-        imgPsychotherapist.layer.cornerRadius = imgPsychatristOlt.frame.size.height/2
-        imgPsychotherapist.clipsToBounds = true
+//         imgPsychatristOlt.frame.size.height/2
+//        imgPsychotherapist.clipsToBounds = true
         
         
     }
     
     @IBAction func btnBack(_ sender: Any) {
-        let presentingVC = self.presentingViewController
-          self.dismiss(animated: true) {
-              presentingVC?.navigationController?.popToRootViewController(animated: false)
-          }
+        self.navigationController?.popViewController(animated: true)
+//        let presentingVC = self.presentingViewController
+//          self.dismiss(animated: true) {
+//              presentingVC?.navigationController?.popToRootViewController(animated: false)
+//          }
     }
     
     @IBAction func btnmentalHealth(_ sender: UIButton) {
@@ -83,6 +83,42 @@ class AssessmentViewController: UIViewController {
 //            btnNutrition.isHidden = true
 //        }
     }
+    
+    
+    
+    @IBAction func btnPsychiatrist(_ sender: UIButton) {
+
+        let CommonVC = storyboard?.instantiateViewController(withIdentifier: "doctor") as? ExpertViewController
+        CommonVC?.heading = "psychiatrist"
+
+        navigationController?.pushViewController(CommonVC!, animated: true)
+        
+        
+    }
+    @IBAction func btnPsychotherapist(_ sender: UIButton) {
+        let CommonVC = storyboard?.instantiateViewController(withIdentifier: "doctor") as? ExpertViewController
+        CommonVC?.heading = "psychotherapist"
+       
+        navigationController?.pushViewController(CommonVC!, animated: true)
+           
+    }
+    @IBAction func btnYoga(_ sender: Any) {
+        let CommonVC = storyboard?.instantiateViewController(withIdentifier: "doctor") as? ExpertViewController
+        CommonVC?.heading = "yoga"
+       
+        navigationController?.pushViewController(CommonVC!, animated: true)
+        
+    }
+    
+    @IBAction func btnNutrioist(_ sender: Any) {
+        let CommonVC = storyboard?.instantiateViewController(withIdentifier: "doctor") as? ExpertViewController
+        CommonVC?.heading = "nutritionist"
+        navigationController?.pushViewController(CommonVC!, animated: true)
+        
+    }
+    
+    
+    
     
     
 }

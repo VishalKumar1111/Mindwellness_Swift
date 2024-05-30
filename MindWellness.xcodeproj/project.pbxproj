@@ -13,7 +13,6 @@
 		143D6FA4291E3864004B9F95 /* sound.mpeg in Resources */ = {isa = PBXBuildFile; fileRef = 143D6FA3291E3864004B9F95 /* sound.mpeg */; };
 		143DE272286F2E4100B71C05 /* psychtristnearme.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 143DE271286F2E4100B71C05 /* psychtristnearme.jpeg */; };
 		143DE276286F2FB600B71C05 /* counselling.png in Resources */ = {isa = PBXBuildFile; fileRef = 143DE275286F2FB600B71C05 /* counselling.png */; };
-		143F890A28F015D400A1D206 /* doctor.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 143F890928F015D400A1D206 /* doctor.jpg */; };
 		143F890C28F0217A00A1D206 /* bg.png in Resources */ = {isa = PBXBuildFile; fileRef = 143F890B28F0217A00A1D206 /* bg.png */; };
 		143F891028F0302800A1D206 /* meditation.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 143F890F28F0302800A1D206 /* meditation.jpeg */; };
 		14413CA72B1F4E90002C89F2 /* ExpertViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14413CA62B1F4E90002C89F2 /* ExpertViewController.swift */; };
@@ -44,7 +43,6 @@
 		14A6B84F29264D5000AFA629 /* YogaTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14A6B84D29264D5000AFA629 /* YogaTableViewCell.swift */; };
 		14A6B85029264D5000AFA629 /* YogaTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 14A6B84E29264D5000AFA629 /* YogaTableViewCell.xib */; };
 		14A8FA7B28A25F5000D1C331 /* helpapp.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 14A8FA7A28A25F5000D1C331 /* helpapp.jpeg */; };
-		14A8FA7D28A260CB00D1C331 /* yog.png in Resources */ = {isa = PBXBuildFile; fileRef = 14A8FA7C28A260CB00D1C331 /* yog.png */; };
 		14A8FA7F28A2628300D1C331 /* mentalhealth.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 14A8FA7E28A2628300D1C331 /* mentalhealth.jpeg */; };
 		14AF1B1B28A2416200503730 /* Mental.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 14AF1B1A28A2416200503730 /* Mental.jpeg */; };
 		14B4374828B4EB5B0042AD31 /* MentalHealthViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14B4374728B4EB5B0042AD31 /* MentalHealthViewController.swift */; };
@@ -67,8 +65,14 @@
 		14C8B71F28F5557500A0CE37 /* bg3.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 14C8B71E28F5557500A0CE37 /* bg3.jpeg */; };
 		14C8B72128F5557A00A0CE37 /* bg2.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 14C8B72028F5557A00A0CE37 /* bg2.jpeg */; };
 		14CA9FCD2A83E7EB00AA3605 /* Screenshot 2023-08-09 at 8.57.20 PM.png in Resources */ = {isa = PBXBuildFile; fileRef = 14CA9FCC2A83E7EB00AA3605 /* Screenshot 2023-08-09 at 8.57.20 PM.png */; };
+		14D3A41A2BFA554E00E62E52 /* doctor.png in Resources */ = {isa = PBXBuildFile; fileRef = 14D3A4192BFA554E00E62E52 /* doctor.png */; };
+		14D3A41C2BFA556900E62E52 /* yog.png in Resources */ = {isa = PBXBuildFile; fileRef = 14D3A41B2BFA556900E62E52 /* yog.png */; };
 		14D5A28E2B74EA75001504BB /* CardsCollectionViewLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14D5A28D2B74EA75001504BB /* CardsCollectionViewLayout.swift */; };
 		14D5A2922B74EB87001504BB /* LabelCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14D5A2912B74EB87001504BB /* LabelCollectionViewCell.swift */; };
+		14D60FEA2BD113FC001CB411 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 14D60FE92BD113FC001CB411 /* GoogleService-Info.plist */; };
+		14DA7D172BF5FEEB0007EEF9 /* DoctorTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14DA7D152BF5FEEB0007EEF9 /* DoctorTableViewCell.swift */; };
+		14DA7D182BF5FEEB0007EEF9 /* DoctorTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 14DA7D162BF5FEEB0007EEF9 /* DoctorTableViewCell.xib */; };
+		14DB30202BFDBC2400E33791 /* ForgotPassword.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14DB301F2BFDBC2300E33791 /* ForgotPassword.swift */; };
 		14E0C59E28ACD68B00B93C24 /* PaidViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14E0C59D28ACD68B00B93C24 /* PaidViewController.swift */; };
 		15E39AD46A3E6B2EA9A7B267 /* Pods_MindWellness.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 69A8816889378E4842AED78D /* Pods_MindWellness.framework */; };
 		38177A4729A739BA001E85AE /* HeaderTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38177A4529A739BA001E85AE /* HeaderTableViewCell.swift */; };
@@ -137,7 +141,6 @@
 		C2A84D1F26A97D120002801F /* HomeScreenTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2A84D1E26A97D120002801F /* HomeScreenTableViewCell.swift */; };
 		C2A84D2726A98E5C0002801F /* PossibleTreatmentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2A84D2626A98E5C0002801F /* PossibleTreatmentViewController.swift */; };
 		C2A84D2A26A98F840002801F /* PossibleInvestigationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2A84D2926A98F840002801F /* PossibleInvestigationViewController.swift */; };
-		C2DF41652B528D9C0097B8AB /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = C2DF41642B528D9C0097B8AB /* GoogleService-Info.plist */; };
 		C2EA1A602B5266CE00DD7BCA /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2EA1A5F2B5266CE00DD7BCA /* ViewController.swift */; };
 		C2EA1A622B5266DD00DD7BCA /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2EA1A612B5266DC00DD7BCA /* Constants.swift */; };
 		C2EA1A642B5266EA00DD7BCA /* Utilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2EA1A632B5266E900DD7BCA /* Utilities.swift */; };
@@ -157,7 +160,6 @@
 		143D6FA3291E3864004B9F95 /* sound.mpeg */ = {isa = PBXFileReference; lastKnownFileType = video.mpeg; path = sound.mpeg; sourceTree = "<group>"; };
 		143DE271286F2E4100B71C05 /* psychtristnearme.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = psychtristnearme.jpeg; sourceTree = "<group>"; };
 		143DE275286F2FB600B71C05 /* counselling.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = counselling.png; sourceTree = "<group>"; };
-		143F890928F015D400A1D206 /* doctor.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = doctor.jpg; sourceTree = "<group>"; };
 		143F890B28F0217A00A1D206 /* bg.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bg.png; sourceTree = "<group>"; };
 		143F890F28F0302800A1D206 /* meditation.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = meditation.jpeg; sourceTree = "<group>"; };
 		14413CA62B1F4E90002C89F2 /* ExpertViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExpertViewController.swift; sourceTree = "<group>"; };
@@ -188,7 +190,6 @@
 		14A6B84D29264D5000AFA629 /* YogaTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YogaTableViewCell.swift; sourceTree = "<group>"; };
 		14A6B84E29264D5000AFA629 /* YogaTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = YogaTableViewCell.xib; sourceTree = "<group>"; };
 		14A8FA7A28A25F5000D1C331 /* helpapp.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = helpapp.jpeg; sourceTree = "<group>"; };
-		14A8FA7C28A260CB00D1C331 /* yog.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = yog.png; sourceTree = "<group>"; };
 		14A8FA7E28A2628300D1C331 /* mentalhealth.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = mentalhealth.jpeg; sourceTree = "<group>"; };
 		14AF1B1A28A2416200503730 /* Mental.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Mental.jpeg; sourceTree = "<group>"; };
 		14B4374728B4EB5B0042AD31 /* MentalHealthViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MentalHealthViewController.swift; sourceTree = "<group>"; };
@@ -206,8 +207,14 @@
 		14C8B71E28F5557500A0CE37 /* bg3.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = bg3.jpeg; sourceTree = "<group>"; };
 		14C8B72028F5557A00A0CE37 /* bg2.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = bg2.jpeg; sourceTree = "<group>"; };
 		14CA9FCC2A83E7EB00AA3605 /* Screenshot 2023-08-09 at 8.57.20 PM.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Screenshot 2023-08-09 at 8.57.20 PM.png"; sourceTree = "<group>"; };
+		14D3A4192BFA554E00E62E52 /* doctor.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = doctor.png; sourceTree = "<group>"; };
+		14D3A41B2BFA556900E62E52 /* yog.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = yog.png; sourceTree = "<group>"; };
 		14D5A28D2B74EA75001504BB /* CardsCollectionViewLayout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardsCollectionViewLayout.swift; sourceTree = "<group>"; };
 		14D5A2912B74EB87001504BB /* LabelCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LabelCollectionViewCell.swift; sourceTree = "<group>"; };
+		14D60FE92BD113FC001CB411 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		14DA7D152BF5FEEB0007EEF9 /* DoctorTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DoctorTableViewCell.swift; sourceTree = "<group>"; };
+		14DA7D162BF5FEEB0007EEF9 /* DoctorTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DoctorTableViewCell.xib; sourceTree = "<group>"; };
+		14DB301F2BFDBC2300E33791 /* ForgotPassword.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForgotPassword.swift; sourceTree = "<group>"; };
 		14E0C59D28ACD68B00B93C24 /* PaidViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaidViewController.swift; sourceTree = "<group>"; };
 		14F7E8902A8532FA006BEB98 /* v1.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = v1.mp4; sourceTree = "<group>"; };
 		14F7E8912A853310006BEB98 /* v3.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = v3.mp4; sourceTree = "<group>"; };
@@ -285,7 +292,6 @@
 		C2A84D1E26A97D120002801F /* HomeScreenTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeScreenTableViewCell.swift; sourceTree = "<group>"; };
 		C2A84D2626A98E5C0002801F /* PossibleTreatmentViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PossibleTreatmentViewController.swift; sourceTree = "<group>"; };
 		C2A84D2926A98F840002801F /* PossibleInvestigationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PossibleInvestigationViewController.swift; sourceTree = "<group>"; };
-		C2DF41642B528D9C0097B8AB /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		C2EA1A5F2B5266CE00DD7BCA /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		C2EA1A612B5266DC00DD7BCA /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		C2EA1A632B5266E900DD7BCA /* Utilities.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Utilities.swift; sourceTree = "<group>"; };
@@ -366,6 +372,8 @@
 				143B2D432B0CA0BD00EAB11A /* ExpertsTableViewCell.swift */,
 				143B2D442B0CA0BD00EAB11A /* ExpertsTableViewCell.xib */,
 				14413CA62B1F4E90002C89F2 /* ExpertViewController.swift */,
+				14DA7D152BF5FEEB0007EEF9 /* DoctorTableViewCell.swift */,
+				14DA7D162BF5FEEB0007EEF9 /* DoctorTableViewCell.xib */,
 			);
 			path = DoctorList;
 			sourceTree = "<group>";
@@ -588,7 +596,7 @@
 				C2A84CF826A9791B0002801F /* Main.storyboard */,
 				C2A84CFB26A9791D0002801F /* Assets.xcassets */,
 				C2A84CFD26A9791D0002801F /* LaunchScreen.storyboard */,
-				C2DF41642B528D9C0097B8AB /* GoogleService-Info.plist */,
+				14D60FE92BD113FC001CB411 /* GoogleService-Info.plist */,
 				C2A84D0026A9791D0002801F /* Info.plist */,
 			);
 			path = MindWellness;
@@ -620,9 +628,9 @@
 				3878067F2953036800A768B1 /* otherpsychotic.jpeg */,
 				3878067D2953036800A768B1 /* phycosis.jpg */,
 				387806802953036800A768B1 /* depression.jpg */,
-				14A8FA7C28A260CB00D1C331 /* yog.png */,
 				1421432629A8D1D5008AD1AF /* medi.jpeg */,
 				149C9B78289176AC00BD4D9E /* images3.jpeg */,
+				14D3A41B2BFA556900E62E52 /* yog.png */,
 				143DE271286F2E4100B71C05 /* psychtristnearme.jpeg */,
 				149C9B7C28917BC300BD4D9E /* images5.png */,
 				C2A84D0B26A97AA30002801F /* two.jpg */,
@@ -632,8 +640,8 @@
 				1421432529A8D153008AD1AF /* meditationBg.webp */,
 				143DE275286F2FB600B71C05 /* counselling.png */,
 				14668E2B292E655100FD57C0 /* stopsound.png */,
-				143F890928F015D400A1D206 /* doctor.jpg */,
 				C25D6DAC26B12B6F00567C3D /* launchscreen.png */,
+				14D3A4192BFA554E00E62E52 /* doctor.png */,
 				14668E29292E609000FD57C0 /* soundplay.tiff */,
 			);
 			path = Images;
@@ -683,6 +691,7 @@
 				C2EA1A612B5266DC00DD7BCA /* Constants.swift */,
 				C2EA1A5F2B5266CE00DD7BCA /* ViewController.swift */,
 				C2EA1A652B5266F500DD7BCA /* Signup.swift */,
+				14DB301F2BFDBC2300E33791 /* ForgotPassword.swift */,
 			);
 			path = login;
 			sourceTree = "<group>";
@@ -775,6 +784,7 @@
 				3838C15A295C3DC1004C7FFA /* ThumbnailImageMHPVC.plist in Resources */,
 				38F161DE2960AC2200FA7A83 /* MentalHealthTableViewCell.xib in Resources */,
 				143DE276286F2FB600B71C05 /* counselling.png in Resources */,
+				14D3A41C2BFA556900E62E52 /* yog.png in Resources */,
 				144BBF392A3CA7AB00889738 /* menu-icon-png-3-lines-11552729023jws2rdggar.png in Resources */,
 				145A05B62A7D477D004CA66D /* BMI.cms.png in Resources */,
 				3851C68829A7478200D32021 /* LabelTableViewCell.xib in Resources */,
@@ -783,6 +793,7 @@
 				14A8FA7F28A2628300D1C331 /* mentalhealth.jpeg in Resources */,
 				14668E2C292E655100FD57C0 /* stopsound.png in Resources */,
 				145A05B92A7D4BED004CA66D /* Understanding-Your-BMI-A-Guide-to-Reading-a-BMI-Chart.jpeg in Resources */,
+				14D3A41A2BFA554E00E62E52 /* doctor.png in Resources */,
 				149D9E1C29F81F05006CCD09 /* female.png in Resources */,
 				3878066D2952F57000A768B1 /* Psychosis.plist in Resources */,
 				143DE272286F2E4100B71C05 /* psychtristnearme.jpeg in Resources */,
@@ -794,7 +805,6 @@
 				143F891028F0302800A1D206 /* meditation.jpeg in Resources */,
 				14C8B72128F5557A00A0CE37 /* bg2.jpeg in Resources */,
 				C2A84D0C26A97AA30002801F /* two.jpg in Resources */,
-				143F890A28F015D400A1D206 /* doctor.jpg in Resources */,
 				38BD90232960430C00C616D6 /* MentalHealthContentsTableViewCell.xib in Resources */,
 				387806852953036800A768B1 /* otherpsychotic.jpeg in Resources */,
 				387806832953036800A768B1 /* phycosis.jpg in Resources */,
@@ -806,7 +816,7 @@
 				14668E2A292E609000FD57C0 /* soundplay.tiff in Resources */,
 				3878066B2952F2FE00A768B1 /* Anxiety.plist in Resources */,
 				14CA9FCD2A83E7EB00AA3605 /* Screenshot 2023-08-09 at 8.57.20 PM.png in Resources */,
-				C2DF41652B528D9C0097B8AB /* GoogleService-Info.plist in Resources */,
+				14D60FEA2BD113FC001CB411 /* GoogleService-Info.plist in Resources */,
 				3851C69629A76A7800D32021 /* LastCollectionViewCell.xib in Resources */,
 				C2A84CFC26A9791D0002801F /* Assets.xcassets in Resources */,
 				14C8B71D28F5556B00A0CE37 /* bg4.jpeg in Resources */,
@@ -816,11 +826,11 @@
 				3851C68C29A74F0700D32021 /* CollectionTableViewCell.xib in Resources */,
 				14A8FA7B28A25F5000D1C331 /* helpapp.jpeg in Resources */,
 				387806842953036800A768B1 /* Addiction.png in Resources */,
-				14A8FA7D28A260CB00D1C331 /* yog.png in Resources */,
 				143B2D462B0CA0BD00EAB11A /* ExpertsTableViewCell.xib in Resources */,
 				C25D6DC026B141BC00567C3D /* eleven.jpg in Resources */,
 				38C7C949295B527900B21FEB /* cross.png in Resources */,
 				C2A84CFA26A9791B0002801F /* Main.storyboard in Resources */,
+				14DA7D182BF5FEEB0007EEF9 /* DoctorTableViewCell.xib in Resources */,
 				3857F88229A610E10095CE0B /* FieldCollectionViewCell.xib in Resources */,
 				143F890C28F0217A00A1D206 /* bg.png in Resources */,
 				149C9B79289176AC00BD4D9E /* images3.jpeg in Resources */,
@@ -923,6 +933,7 @@
 				1441CCA72877152A006BCBF2 /* CommonResultViewController.swift in Sources */,
 				1492057F2ACFFCA6004BF349 /* FoodViewController.swift in Sources */,
 				C2EA1A642B5266EA00DD7BCA /* Utilities.swift in Sources */,
+				14DA7D172BF5FEEB0007EEF9 /* DoctorTableViewCell.swift in Sources */,
 				C2A84CF526A9791B0002801F /* SceneDelegate.swift in Sources */,
 				C2EA1A662B5266F500DD7BCA /* Signup.swift in Sources */,
 				1441A04F286DE67200D740E5 /* AfterResultQuestionViewController.swift in Sources */,
@@ -941,6 +952,7 @@
 				C293BAD726F1EA260092AC9C /* QuestionAnswerViewController.swift in Sources */,
 				14C7E2992B2B3B1500FBC461 /* YogaController.swift in Sources */,
 				C2EA1A622B5266DD00DD7BCA /* Constants.swift in Sources */,
+				14DB30202BFDBC2400E33791 /* ForgotPassword.swift in Sources */,
 				1441CCAB28771910006BCBF2 /* ExTableViewCell.swift in Sources */,
 				3850105C295EC8FA00A929C2 /* YogaTextTableViewCell.swift in Sources */,
 				C25D6DCE26B1482D00567C3D /* PossibleInvestigationTableViewCell.swift in Sources */,

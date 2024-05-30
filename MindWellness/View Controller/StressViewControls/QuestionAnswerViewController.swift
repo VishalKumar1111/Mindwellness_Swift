@@ -139,7 +139,7 @@ class QuestionAnswerViewController: UIViewController,demoDelegate{
 //                   self.present(actionSheet, animated: true, completion: nil)
             
             
-            let alertController = UIAlertController(title: "Serious", message: "You Need to concern to a Mental health Expert immediately in person", preferredStyle: .actionSheet)
+            let alertController = UIAlertController(title: "Serious", message: "You need to concert a Mental Health Expert at the earliest in person", preferredStyle: .actionSheet)
 
             let action1 = UIAlertAction(title: "OK", style: .default) { _ in
                 print("Action 1 selected")
