@@ -17,6 +17,7 @@ class MoreQuizViewController: UIViewController {
     @IBOutlet weak var progressview: UIProgressView!
     @IBOutlet weak var progressreport: UILabel!
     
+    @IBOutlet weak var lblTitle: UILabel!
     
     //MARK: Properties
     
@@ -45,16 +46,24 @@ class MoreQuizViewController: UIViewController {
             imageView.contentMode = .scaleAspectFill
             imageView.image = backgroundImage
             self.view.insertSubview(imageView, at: 0)
+            
+            lblTitle.text = "We Need To Know More About You".localizableString(forLocalization:  UserDefaults.standard.string(forKey: "currentLanguage") ?? "")
+            
         }
         
-        questions = ["Have you suffered similar low mood problem in the past for more than two weeks? " ,  "Has there been a time for more than a week when you were more energetic, more happy or angry, more talkative or more confident than usual in the past" , " have you ever felt you are being followed , or people are plotting against you or talking foul about you" , " Do you ever hear voices which no one else does hear " , "Do you take any substance like alcohol, cannabis, cigarette , heroine etc " , "do you get intense desire to take the said substance when you don’t take it or you get some problems (withdrawls) when you stop it or cant limit the amount taken when you try to reduce it" , " Do you wash your hands often and more than usual, or keep checking doors, handles etc repeatedly (more than two weeks)" , "Do you have unwanted , unintentional thoughts which you try to stop but they don’t go " , "Do you have sudden severe attacks of anxiety in which you feel you are likely to die or go crazy"
+        
+//
+//        questions = ["Have you suffered similar low mood problem in the past for more than two weeks? " ,  "Has there been a time for more than a week when you were more energetic, more happy or angry, more talkative or more confident than usual in the past" , " have you ever felt you are being followed , or people are plotting against you or talking foul about you" , " Do you ever hear voices which no one else does hear " , "Do you take any substance like alcohol, cannabis, cigarette , heroine etc " , "do you get intense desire to take the said substance when you don’t take it or you get some problems (withdrawls) when you stop it or cant limit the amount taken when you try to reduce it" , " Do you wash your hands often and more than usual, or keep checking doors, handles etc repeatedly (more than two weeks)" , "Do you have unwanted , unintentional thoughts which you try to stop but they don’t go " , "Do you have sudden severe attacks of anxiety in which you feel you are likely to die or go crazy"
+//        ]
+        questions =  ["Have you suffered similar low mood problems in the past for more than two weeks?" ,  "Has there been a time for more than a week when you were more energetic, more happy or angry, more talkative or more confident than usual in the past?", "Have you ever felt you are being followed , or people are plotting against you or talking foul about you?" , "Do you ever hear voices which no one else does hear?" , "Do you take any substance like alcohol, cannabis, cigarette , heroine etc?" , "Do you get intense desire to take the said substance when you don’t take it or you get some problems (withdrawal) when you stop it or can’t limit the amount taken when you try to reduce it?" , "Do you wash your hands often and more than usual, or keep checking doors, handles etc repeatedly (more than two weeks)?" , "Do you have unwanted , unintentional thoughts which you try to stop but they don’t go ?" , "Do you have sudden severe attacks of anxiety in which you feel you are likely to die or go crazy?"
         ]
+
         diseaseNameCollection = ["Depression" ,  "Bipolar Disorder" , "Psychosis" , "Psychosis" , "Substance Use" , "Substance use" , " OCD" , "OCD" , "Panic Attack"
         ]
         
-        arrdiseaseNameCollection = ["Recurrent Depression" ,  "Bipolar Disorder" , "Psychosis" , "Psychosis" , "Substance Use" , "Substance Abuse" , " OCD" ,"Panic Attack"]
-        arrdiseaseNameCollection2 = ["Depression" ,  "Bipolar Disorder" , "Psychosis" , "Psychosis" , "Substance Use" , "Substance Use" , " OCD" , "Panic Attack"]
-        arrDipressionAndBipolarBothFound =  ["Bipolar disorder current episode Depression", "Bipolar disorder current episode Depression", "Psychosis" , "Psychosis" , "Substance Use" , "Substance Use" , " OCD" , "Panic Attack"]
+        arrdiseaseNameCollection = ["Recurrent Depression" ,  "Bipolar Disorder" , "Psychosis" , "Psychosis" , "Substance Use" , "Substance Abuse" , "OCD" ,"Panic Attack"]
+        arrdiseaseNameCollection2 = ["Depression" ,  "Bipolar Disorder" , "Psychosis" , "Psychosis" , "Substance Use" , "Substance Use" , "OCD" , "Panic Attack"]
+        arrDipressionAndBipolarBothFound =  ["Bipolar disorder current episode Depression", "Bipolar disorder current episode Depression", "Psychosis" , "Psychosis" , "Substance Use" , "Substance Use" , "OCD" , "Panic Attack"]
         
         
         btnoneoutlet.layer.cornerRadius = btnoneoutlet.bounds.height/2
@@ -62,7 +71,7 @@ class MoreQuizViewController: UIViewController {
         progressreport.layer.cornerRadius = 8 //your desire radius
         progressreport.layer.masksToBounds = true
         progressreport.text = " Question"+" \(currentQuestion + 1) out of 09"
-        Lblquestion.text = questions[currentQuestion]
+        Lblquestion.text = questions[currentQuestion].localizableString(forLocalization:  UserDefaults.standard.string(forKey: "currentLanguage") ?? "")
         buttonTitle()
     }
     
@@ -70,8 +79,8 @@ class MoreQuizViewController: UIViewController {
     
     func buttonTitle() {
         print(answers[currentQuestion][x])
-        btnoneoutlet.setTitle(answers[currentQuestion][x], for: .normal)
-        btntwooutlet.setTitle(answers[currentQuestion][1], for: .normal)
+        btnoneoutlet.setTitle(answers[currentQuestion][x].localizableString(forLocalization:  UserDefaults.standard.string(forKey: "currentLanguage") ?? ""), for: .normal)
+        btntwooutlet.setTitle(answers[currentQuestion][1].localizableString(forLocalization:  UserDefaults.standard.string(forKey: "currentLanguage") ?? ""), for: .normal)
     }
     
     func questionChange() {
@@ -83,7 +92,7 @@ class MoreQuizViewController: UIViewController {
         }
         else {
             currentQuestion += 1
-            Lblquestion.text = questions[currentQuestion]
+            Lblquestion.text = questions[currentQuestion].localizableString(forLocalization:  UserDefaults.standard.string(forKey: "currentLanguage") ?? "")
         }
     }
     

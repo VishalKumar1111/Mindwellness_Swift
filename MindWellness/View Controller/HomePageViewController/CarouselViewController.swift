@@ -11,9 +11,13 @@ import AVKit
 class CarouselViewController: UIViewController, GoToCaroselDelegate{
     @IBOutlet weak var tapView: UIView!
     
+    @IBOutlet weak var lblTapTOProceed: UILabel!
     @IBOutlet weak var appName: UILabel!
     
-    var   arrOfSideMenuContents = ["Your Profile","Calc Your BMI","Food & Diet","Meditation Sounds","Share"]
+    @IBOutlet weak var lblMore: UILabel!
+//    var   arrOfSideMenuContents = ["Your Profile","Calc Your BMI","Food & Diet","Meditation Sounds","Share"]
+    var   arrOfSideMenuContents = ["yourProfile","calcBmi","foodDiet","meditationSounds","share"]
+    
     var color = ["bg3.jpeg", "bg4.jpeg" , "bg5.jpeg" , "bg6.jpeg" ]
     var music = [String]()
     @IBOutlet weak var soundbtn: UIButton!
@@ -47,6 +51,8 @@ class CarouselViewController: UIViewController, GoToCaroselDelegate{
         super.viewDidLoad()
         
        
+        setUpLocalization()
+        
         
         
         startBlinking()
@@ -77,8 +83,27 @@ class CarouselViewController: UIViewController, GoToCaroselDelegate{
         tblView.delegate = self
         tblView.dataSource = self
         tblView.layer.cornerRadius = 15
-        yourStressLblIs.text = "Your Stress Result Will Display Here."
+//        yourStressLblIs.text = "Your Stress Result Will Display Here."
+        yourStressLblIs.text = "stress_level".localizableString(forLocalization: UserDefaults.standard.string(forKey: "currentLanguage") ?? "" )
+        lblMore.text = "more".localizableString(forLocalization: UserDefaults.standard.string(forKey: "currentLanguage") ?? "")
+        lblTapTOProceed.text = "Tap To Proceed".localizableString(forLocalization: UserDefaults.standard.string(forKey: "currentLanguage") ?? "")
     }
+    
+    func setUpLocalization() {
+        // Retrieve saved language choice
+        if let savedLanguage = UserDefaults.standard.string(forKey: "currentLanguage") {
+            LanguageChange(language: savedLanguage)
+        }
+    }
+    
+    
+    func LanguageChange(language: String) {
+        appName.text = "Mindwellness".localizableString(forLocalization: language)
+        
+        
+       
+    }
+
     
     
     //Timer On View
@@ -92,6 +117,7 @@ class CarouselViewController: UIViewController, GoToCaroselDelegate{
         toggleTapViewVisibility()
         
         stopBlinking()
+        
     }
 
     // Start the blinking timer
@@ -162,8 +188,9 @@ class CarouselViewController: UIViewController, GoToCaroselDelegate{
         let StressVal = gaugeData
         let strVal = String(StressVal)
         stressResultlbl.text = "\(strVal)"+"%"
-        yourStressLblIs.text = "Your Stress Level"
+        yourStressLblIs.text = "Your Stress Level".localizableString(forLocalization: UserDefaults.standard.string(forKey: "currentLanguage") ?? "" )
         stressResultlbl.isHighlighted = false
+        
     }
     
     @IBAction func soundbtn(_ sender: Any) {
@@ -252,7 +279,7 @@ extension CarouselViewController: UITableViewDelegate,UITableViewDataSource{
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = (tableView.dequeueReusableCell(withIdentifier: "SideBarTableViewCell", for: indexPath) as? SideBarTableViewCell)!
-        cell.lblOfContents.text = arrOfSideMenuContents[indexPath.row]
+        cell.lblOfContents.text = arrOfSideMenuContents[indexPath.row].localizableString(forLocalization: UserDefaults.standard.string(forKey: "currentLanguage") ?? "")
         
         
         return cell
@@ -311,6 +338,8 @@ extension CarouselViewController: UITableViewDelegate,UITableViewDataSource{
 
 
 extension CarouselViewController: CircularCarouselDelegate,CircularCarouselDataSource{
+    
+    
     
     func numberOfItems(inCarousel carousel: CircularCarousel) -> Int {
         return 5/* Number of carousel items */
@@ -458,6 +487,17 @@ extension CarouselViewController: CircularCarouselDelegate,CircularCarouselDataS
     
     func carousel(_ carousel: CircularCarousel, willBeginScrollingToIndex index: Int) {
         
+        
+        
+        
+         let savedLanguage = UserDefaults.standard.string(forKey: "currentLanguage")
+        if savedLanguage == "hi"{
+            titleLabel.font = UIFont(name: titleLabel.font.fontName, size: 24)
+        }
+        
+                
+        
+        
         print(index)
         
         let tapGesture = UITapGestureRecognizer(target: self, action: #selector(bigImageTapped(_:)))
@@ -470,11 +510,23 @@ extension CarouselViewController: CircularCarouselDelegate,CircularCarouselDataS
             stressResultView.isHidden = true
 //            imgBackground.image = UIImage(named: "bg4.jpeg")
             print(index)
-            titleLabel.text = "How this app can help you"
-            carouselLabel.text = "How this app can help you"
+            
+//            titleLabel.text = "How this app can help you"
+//            titleLabel.text = "How this app can help you"
+//            carouselLabel.text = "How this app can help you"
+//            bigImage.image = UIImage(named: "placeholede_banner_Icon")
+//
+//            textView.text = "• Help You Know Your Stress Level.\n• Help You Manage Your Stress.\n• Help You Know Possible Treatment You \n   Can Seek.\n• Help You De-Stress With Yoga.\n• Know About Mental Health Problem.\n• Help You Connect To An Expert.\n• Health Tips.
+            
+            
+            titleLabel.text = "how this app".localizableString(forLocalization: savedLanguage ?? "")
+            carouselLabel.text = "how this app".localizableString(forLocalization: savedLanguage ?? "")
             bigImage.image = UIImage(named: "placeholede_banner_Icon")
             
-            textView.text = "• Help You Know Your Stress Level.\n• Help You Manage Your Stress.\n• Help You Know Possible Treatment You \n   Can Seek.\n• Help You De-Stress With Yoga.\n• Know About Mental Health Problem.\n• Help You Connect To An Expert.\n• Health Tips."
+            textView.text = "help_detail".localizableString(forLocalization: savedLanguage ?? "")
+            
+            
+            
             
             
         }
@@ -483,8 +535,14 @@ extension CarouselViewController: CircularCarouselDelegate,CircularCarouselDataS
 //            imgBackground.image = UIImage(named: "bg5.jpeg")
             stressResultView.isHidden = false
             print(index)
-            titleLabel.text = "Are You Stressed ?"
-            carouselLabel.text = "Let Us Calculate Your Stress Levels"
+//            titleLabel.text = "Are You Stressed ?"
+//            carouselLabel.text = "Let Us Calculate Your Stress Levels"
+//            bigImage.image = UIImage(named: "StressA.jpg")
+//            textView.text = ""
+            
+            
+            titleLabel.text = "Stress".localizableString(forLocalization: savedLanguage ?? "")
+            carouselLabel.text = "let us calculate".localizableString(forLocalization: savedLanguage ?? "")
             bigImage.image = UIImage(named: "StressA.jpg")
             textView.text = ""
         }
@@ -493,19 +551,31 @@ extension CarouselViewController: CircularCarouselDelegate,CircularCarouselDataS
 //            imgBackground.image = UIImage(named: "bg6.jpeg")
             print(index)
             stressResultView.isHidden = true
-            titleLabel.text = "Yoga For Mental Health"
-            carouselLabel.text = "Yoga & Its Benefits"
+//            titleLabel.text = "Yoga For Mental Health"
+//            carouselLabel.text = "Yoga & Its Benefits"
+//            bigImage.image = UIImage(named: "yoga_banner")
+//            textView.text = "                    Benefits Of Yoga                                \n• Relief from depression and anxiety.\n• Reduce the effects of PTSD and similar \n   conditions.\n• Boost concentration, focus, and\n   memory.\n• Improve your mood.\n• Keep your brain young"
+           
+            
+            titleLabel.text = "yoga mental".localizableString(forLocalization: savedLanguage ?? "")
+            carouselLabel.text = "yoga mental".localizableString(forLocalization: savedLanguage ?? "")
             bigImage.image = UIImage(named: "yoga_banner")
-            textView.text = "                    Benefits Of Yoga                                \n\n• Relief from depression and anxiety.\n• Reduce the effects of PTSD and similar \n   conditions.\n• Boost concentration, focus, and memory.\n• Improve your mood.\n• Keep your brain young"
+            textView.text = "yoga detail".localizableString(forLocalization: savedLanguage ?? "")
         }
         else if index == 3 {
 //            imgBackground.image = UIImage(named: "bg3.jpeg")
             print(index)
             stressResultView.isHidden = true
-            titleLabel.text = "Mental Health Problems"
-            carouselLabel.text = "Mental Health Problems"
+//            titleLabel.text = "Mental Health Problems"
+//            carouselLabel.text = "Mental Health Problems"
+//            bigImage.image = UIImage(named: "MHP.jpeg")
+//            textView.text = "• Depression \n• Anxiety disorders. \n• Bipolar affective disorder.\n• Psychosis\n• Addiction"
+//
+            
+            titleLabel.text = "mental health".localizableString(forLocalization: savedLanguage ?? "")
+            carouselLabel.text = "mental health".localizableString(forLocalization: savedLanguage ?? "")
             bigImage.image = UIImage(named: "MHP.jpeg")
-            textView.text = "• Depression \n• Anxiety disorders. \n• Bipolar affective disorder.\n• Psychosis\n• Addiction"
+            textView.text = "mental_health_detail".localizableString(forLocalization: savedLanguage ?? "")
         }
         
 //        else if index == 4 {
@@ -523,10 +593,15 @@ extension CarouselViewController: CircularCarouselDelegate,CircularCarouselDataS
 //            imgBackground.image = UIImage(named: "bg4.jpeg")
             print(index)
             stressResultView.isHidden = true
-            titleLabel.text = "Connect To An Expert"
-            carouselLabel.text = "Connect To An Expert"
+//            titleLabel.text = "Connect To An Expert"
+//            carouselLabel.text = "Connect To An Expert"
+//            bigImage.image = UIImage(named: "doctor.png")
+//            textView.text = "Counsellors work with clients experiencing a wide range of emotional and psychological difficulties to help them bring about effective change and/or enhance their wellbeing. Clients could have issues such as depression, anxiety, stress, loss and relationship difficulties that are affecting their ability to manage life."
+//
+            titleLabel.text = "expert".localizableString(forLocalization: savedLanguage ?? "")
+            carouselLabel.text = "expert".localizableString(forLocalization: savedLanguage ?? "")
             bigImage.image = UIImage(named: "doctor.png")
-            textView.text = "Counsellors work with clients experiencing a wide range of emotional and psychological difficulties to help them bring about effective change and/or enhance their wellbeing. Clients could have issues such as depression, anxiety, stress, loss and relationship difficulties that are affecting their ability to manage life."
+            textView.text = "expert_detail".localizableString(forLocalization: savedLanguage ?? "")
         }
     }
     

@@ -10,7 +10,8 @@ import UIKit
 class ExpertViewController: UIViewController,UITableViewDelegate,UITableViewDataSource {
     
     
-   
+    @IBOutlet weak var txtTitle: UILabel!
+    
     @IBOutlet weak var tblView: UITableView!
     var arr:NSArray?
     var heading:String = ""
@@ -18,6 +19,9 @@ class ExpertViewController: UIViewController,UITableViewDelegate,UITableViewData
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        txtTitle.text = "expert".localizableString(forLocalization: UserDefaults.standard.string(forKey: "currentLanguage") ?? "")
+
+
         if let path = Bundle.main.path(forResource: "doctor", ofType: "plist") {
            arr = NSArray(contentsOfFile: path)
             print(heading)

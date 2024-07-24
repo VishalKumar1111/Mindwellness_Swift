@@ -25,6 +25,7 @@ class PaidViewController: UIViewController {
         }
 
         paid.layer.cornerRadius = 10
+//        paid.setTitle(String?, for: <#T##UIControl.State#>)
     
     }
     

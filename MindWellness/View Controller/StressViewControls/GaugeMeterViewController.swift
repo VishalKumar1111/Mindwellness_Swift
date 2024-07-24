@@ -75,7 +75,13 @@ class GaugeMeterViewController: UIViewController{
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        txtResult.centerVertically()
+//        txtResult.centerVertically()
+        self.txtResult.textAlignment = .center
+        
+        
+        possiblediagnosis.setTitle("Tap here to know possible diagnosis".localizableString(forLocalization:  UserDefaults.standard.string(forKey: "currentLanguage") ?? ""), for: .normal)
+        thoseWhoCanHelp.setTitle("Connect with experts".localizableString(forLocalization:  UserDefaults.standard.string(forKey: "currentLanguage") ?? ""), for: .normal)
+        
         
         if let backgroundImage = UIImage(named: "Background") {
             let imageView = UIImageView(frame: self.view.bounds)
@@ -125,29 +131,29 @@ class GaugeMeterViewController: UIViewController{
             
             var arrData = ["Great","Your mental health is good","Continue working on your mental health. Exercise, socialize and don’t use any substance.", "Come back again whenever you feel stressed."]
             arrShowResult = arrData
-            txtResult.text = arrShowResult[0]
+            txtResult.text = arrShowResult[0].localizableString(forLocalization:  UserDefaults.standard.string(forKey: "currentLanguage") ?? "")
 //            bgcolor = UIColor.gray
 //            bgcolor = UIColor(hex: "0B2F2D")
             
             
         }else if average <= 30{
             //result.text! = "Great your responses are suggested of good mental health."
-            var arrData = ["You are possibly suffering from Clinical Depression.","We suggest you bring lifestyle changes.","Exercise daily, take good sleep improve nutrition.","ocialize, meet friends and family, get involved in hobbies Write a Journal or seek counseling.","Recommended: further questions to help you find complete possible diagnosis."," For ADVICE: connect to our experts on Mental Health and Lifestyle Changes"]
+            var arrData = ["You are possibly suffering from Clinical Depression.","We suggest you bring lifestyle changes.","Exercise daily, take good sleep improve nutrition.","Socialize, meet friends and family, get involved in hobbies Write a Journal or seek counseling.","Recommended: further questions to help you find complete possible diagnosis.","For ADVICE: connect to our experts on Mental Health and Lifestyle Changes"]
             arrShowResult = arrData
 //            bgcolor = UIColor.systemYellow
 //            bgcolor = UIColor(hex: "0B2F2D")
-            txtResult.text = arrShowResult[0]
+            txtResult.text = arrShowResult[0].localizableString(forLocalization:  UserDefaults.standard.string(forKey: "currentLanguage") ?? "")
         }else if average <= 50{
-            var arrData = ["You possibly suffer from Moderate Depression.","It is treatable condition.","A Depressive episode typically improves over 3-4 months with treatment.","Treatment includes Medications or Therapy.","You need to bring Lifestyle Changes","We suggest you to consult a Mental Health Expert (Psychiatrist or Clinical Psychologist)","Recommended: further questions to help you find complete possible diagnosis.","For ADVICE: connect to our experts on Mental Health and Lifestyle Changes","Come back to us to track your improvement in a week."]
+            var arrData = ["You possibly suffer from Moderate Depression.","It is a treatable condition.","A Depressive episode typically improves over 3-4 months with treatment.","Treatment includes Medications with Therapy.","You need to bring Lifestyle Changes (Exercise, socialize, sleep hygiene)","We suggest you to consult a Mental Health Expert (Psychiatrist or Clinical Psychologist)","Recommended: further questions to help you find complete possible diagnosis.","For ADVICE: connect to our experts on Mental Health and Lifestyle Changes","Come back to us to track your improvement in a week."]
            arrShowResult = arrData
-            txtResult.text = arrShowResult[0]
+            txtResult.text = arrShowResult[0].localizableString(forLocalization:  UserDefaults.standard.string(forKey: "currentLanguage") ?? "")
           //  result.text! = "You are seems to be stressed but you are not suggested for clincal depression.\n You need to change lifestyle."
 //            UIColor(hex: "0B2F2D")
         }else if average <= 70{
-            var arrData = ["You possibly suffer from Moderately Severe Depression.","It is treatable condition.","A Depressive episode typically improves over 3-4 months with treatment.","Treatment includes Medications with or without Therapy.","You need to bring Lifestyle Changes (Exercise, socialize, sleep hygiene)","Recommended: further questions to help you find complete possible diagnosis.","For ADVICE: connect to our experts on Mental Health and Lifestyle Changes","Come back to us to track your improvement in a week."]
+            var arrData = ["You possibly suffer from Moderately Severe Depression.","It is a treatable condition.","A Depressive episode typically improves over 3-4 months with treatment.","Treatment includes Medications with or without Therapy.","You need to bring Lifestyle Changes (Exercise, socialize, sleep hygiene)","Recommended: further questions to help you find complete possible diagnosis.","For ADVICE: connect to our experts on Mental Health and Lifestyle Changes","Come back to us to track your improvement in a week."]
         //    result.text! = "Your responses are suggestive of clinical depression."
             arrShowResult = arrData
-            txtResult.text = arrShowResult[0]
+            txtResult.text = arrShowResult[0].localizableString(forLocalization:  UserDefaults.standard.string(forKey: "currentLanguage") ?? "")
 //            bgcolor = UIColor(hex: "0B2F2D")
             
         }else if average <= 100{
@@ -155,12 +161,12 @@ class GaugeMeterViewController: UIViewController{
 //            result.text! = "Your responses are suggestive of clinical depression."
             var arrData = ["You possibly suffer from Severe Depression.","It is a treatable condition.","A Depressive episode typically improves over 3-4 months with treatment.","Treatment includes Medications with Therapy.","You need to bring Lifestyle Changes (Exercise, socialize, sleep hygiene)","Recommended: further questions to help you find complete possible diagnosis.","For ADVICE: connect to our experts on Mental Health and Lifestyle Changes","Come back to us to track your improvement in a week."]
             arrShowResult = arrData
-            txtResult.text = arrShowResult[0]
+            txtResult.text = arrShowResult[0].localizableString(forLocalization:  UserDefaults.standard.string(forKey: "currentLanguage") ?? "")
 //            bgcolor = UIColor.red
 //          bgcolor = UIColor(hex: "0B2F2D")
             
         }
-        self.resultPercentLblOlt.text = "Your Stress Level is \(self.average)%"
+        self.resultPercentLblOlt.text = "Your Stress Level".localizableString(forLocalization:  UserDefaults.standard.string(forKey: "currentLanguage") ?? "") + " \(self.average)%"
         
         if str == [["yes"]]{
             possiblediagnosis.isHidden = true
@@ -250,7 +256,7 @@ class GaugeMeterViewController: UIViewController{
         if count >= 1  {
             count -= 1
             
-            txtResult.text = arrShowResult[count]
+            txtResult.text = arrShowResult[count].localizableString(forLocalization:  UserDefaults.standard.string(forKey: "currentLanguage") ?? "")
             
             
         }else{
@@ -263,7 +269,7 @@ class GaugeMeterViewController: UIViewController{
     @IBAction func btnNext(_ sender: Any) {
         if count < arrShowResult.count - 1  {
             count += 1
-            txtResult.text = arrShowResult[count]
+            txtResult.text = arrShowResult[count].localizableString(forLocalization:  UserDefaults.standard.string(forKey: "currentLanguage") ?? "")
                    
             
         }
@@ -278,7 +284,7 @@ class GaugeMeterViewController: UIViewController{
         if count >= 1  {
             count -= 1
             
-            txtResult.text = arrShowResult[count]
+            txtResult.text = arrShowResult[count].localizableString(forLocalization:  UserDefaults.standard.string(forKey: "currentLanguage") ?? "")
             
             
         }else{
@@ -291,7 +297,7 @@ class GaugeMeterViewController: UIViewController{
     @IBAction func nextBtn(_ sender: Any) {
         if count < arrShowResult.count - 1  {
             count += 1
-            txtResult.text = arrShowResult[count]
+            txtResult.text = arrShowResult[count].localizableString(forLocalization:  UserDefaults.standard.string(forKey: "currentLanguage") ?? "")
                    
             
         }
@@ -432,9 +438,24 @@ class GaugeMeterViewController: UIViewController{
       
       
   }
+//extension UITextView {
+//        func centerVertically() {
+//            self.textAlignment = .center
+//        let fittingSize = CGSize(width: bounds.width, height: CGFloat.greatestFiniteMagnitude)
+//        let size = sizeThatFits(fittingSize)
+//        let topOffset = (bounds.size.height - size.height * zoomScale) / 2
+//        let positiveTopOffset = max(1, topOffset)
+//        textContainerInset.top = positiveTopOffset
+//    }
+//}
+//
+
 extension UITextView {
-        func centerVertically() {
-            self.textAlignment = .center
+    func centerVerticallyAndHorizontally() {
+        // Center text horizontally
+        self.textAlignment = .center
+
+        // Center text vertically
         let fittingSize = CGSize(width: bounds.width, height: CGFloat.greatestFiniteMagnitude)
         let size = sizeThatFits(fittingSize)
         let topOffset = (bounds.size.height - size.height * zoomScale) / 2
@@ -442,5 +463,3 @@ extension UITextView {
         textContainerInset.top = positiveTopOffset
     }
 }
-
-

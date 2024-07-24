@@ -12,14 +12,18 @@ import FirebaseFirestore
 class Login: UIViewController {
 
     
+    @IBOutlet weak var lblTitle: UILabel!
     @IBOutlet weak var btnSignUp: UIButton!
     
+    @IBOutlet weak var btnOr: UILabel!
+    @IBOutlet weak var btnForgottext: UIButton!
     @IBOutlet weak var emailTextField: UITextField!
     
+    @IBOutlet weak var btnSignUpText: UIButton!
     @IBOutlet weak var passwordTextField: UITextField!
     
     @IBOutlet weak var loginButton: UIButton!
-    
+    let targetLanguage = ""
     @IBOutlet weak var errorLabel: UILabel!
     override func viewWillAppear(_ animated: Bool) {
         
@@ -29,29 +33,85 @@ class Login: UIViewController {
 
     
     override func viewDidLoad() {
-        super.viewDidLoad()
-        presentSecurityAlert()
-
-        btnSignUp.titleLabel?.textColor = .blue
-        if let backgroundImage = UIImage(named: "Background") {
-            let imageView = UIImageView(frame: self.view.bounds)
-            imageView.contentMode = .scaleAspectFill
-            imageView.image = backgroundImage
-            self.view.insertSubview(imageView, at: 0)
+            super.viewDidLoad()
+            setUpUI()
+            setUpLocalization()
+            presentSecurityAlert()
         }
+        
+        func setUpUI() {
+            btnSignUp.titleLabel?.textColor = .blue
+            if let backgroundImage = UIImage(named: "Background") {
+                let imageView = UIImageView(frame: self.view.bounds)
+                imageView.contentMode = .scaleAspectFill
+                imageView.image = backgroundImage
+                self.view.insertSubview(imageView, at: 0)
+            }
+            Utilities.styleTextField(emailTextField)
+            Utilities.styleTextField(passwordTextField)
+            loginButton.layer.cornerRadius = 20.0
+        }
+        
+        func setUpLocalization() {
+            // Retrieve saved language choice
+            if let savedLanguage = UserDefaults.standard.string(forKey: "currentLanguage") {
+                LanguageChange(language: savedLanguage)
+            }
+        }
+        
+        func LanguageChange(language: String) {
+            lblTitle.text = "Login".localizableString(forLocalization: language)
+            btnOr.text = "or".localizableString(forLocalization: language)
+            btnForgottext.setTitle("forgot".localizableString(forLocalization: UserDefaults.standard.string(forKey: "currentLanguage") ?? ""), for: .normal)
+            btnSignUp.setTitle("SignUp".localizableString(forLocalization: UserDefaults.standard.string(forKey: "currentLanguage") ?? ""), for: .normal)
+            loginButton.setTitle("Login".localizableString(forLocalization: language), for: .normal)
+            
+            // Save the selected language
+            UserDefaults.standard.set(language, forKey: "currentLanguage")
+            UserDefaults.standard.synchronize()
+        }
+    
+    
+    
+    @IBAction func btnLanguage(_ sender: UIButton) {
+        let alert = UIAlertController(title: "Select a Language", message: "", preferredStyle: .actionSheet)
+           
+           alert.addAction(UIAlertAction(title: "English", style: .default , handler:{ (UIAlertAction)in
+               self.LanguageChange(language: "en")
+           }))
 
-        setUpElements()
-        // Do any additional setup after loading the view.
+           alert.addAction(UIAlertAction(title: "Hindi", style: .destructive , handler:{ (UIAlertAction)in
+               
+               self.LanguageChange(language: "hi")
+               
+           }))
+           
+           alert.addAction(UIAlertAction(title: "Dismiss", style: .cancel, handler:{ (UIAlertAction)in
+               print("User click Dismiss button")
+           }))
+
+           
+           //uncomment for iPad Support
+           //alert.popoverPresentationController?.sourceView = self.view
+
+           self.present(alert, animated: true, completion: {
+               print("completion block")
+           })
+        
+        
     }
     
-    func presentSecurityAlert() {
-        let refreshAlert = UIAlertController(title: "Security", message: "We collect your email address solely for account management and communication purposes within our app. Your email address is stored securely and will not be shared with third parties without your explicit consent. We prioritize the protection of your information.", preferredStyle: .alert)
 
-        refreshAlert.addAction(UIAlertAction(title: "Ok", style: .default, handler: { (action: UIAlertAction!) in
+    
+    func presentSecurityAlert() {
+        let refreshAlert = UIAlertController(title: "Security".localizableString(forLocalization: UserDefaults.standard.string(forKey: "currentLanguage") ?? ""), message: "We collect your email address solely for account management and communication purposes within our app. Your email address is stored securely and will not be shared with third parties without your explicit consent. We prioritize the protection of your information.".localizableString(forLocalization: UserDefaults.standard.string(forKey: "currentLanguage") ?? ""), preferredStyle: .alert)
+
+        refreshAlert.addAction(UIAlertAction(title: "OK".localizableString(forLocalization: UserDefaults.standard.string(forKey: "currentLanguage") ?? ""), style: .default, handler: { (action: UIAlertAction!) in
               print("Handle Ok logic here")
+            
         }))
 
-        refreshAlert.addAction(UIAlertAction(title: "Policies", style: .cancel, handler: { (action: UIAlertAction!) in
+        refreshAlert.addAction(UIAlertAction(title: "Policies".localizableString(forLocalization: UserDefaults.standard.string(forKey: "currentLanguage") ?? ""), style: .cancel, handler: { (action: UIAlertAction!) in
               print("Handle Cancel Logic here")
             
             let sc = self.storyboard?.instantiateViewController(withIdentifier: "privacy") as? PrivacyViewController
@@ -60,6 +120,9 @@ class Login: UIViewController {
 
         present(refreshAlert, animated: true, completion: nil)
     }
+    
+
+    
     func setUpElements() {
         
         // Hide the error label
@@ -97,6 +160,9 @@ class Login: UIViewController {
           }
       }
   }
+    
+    
+    
 
   func retrieveUserChoice() {
 //      guard let currentUserUID = Auth.auth().currentUser?.uid else {
@@ -172,4 +238,11 @@ class Login: UIViewController {
          self.navigationController?.pushViewController(vc, animated: true)
         
     }
+    
+    
+    
+    
+    
 }
+
+

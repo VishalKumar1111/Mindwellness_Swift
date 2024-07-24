@@ -1,0 +1,303 @@
+
+/* Class = "UILabel"; text = "Meditation Sounds"; ObjectID = "0R2-W3-aqe"; */
+"0R2-W3-aqe.text" = "Meditation Sounds";
+
+/* Class = "UIButton"; configuration.title = "Button"; ObjectID = "2Pe-FH-Scx"; */
+"2Pe-FH-Scx.configuration.title" = "Button";
+
+/* Class = "UIButton"; normalTitle = "Button"; ObjectID = "2Pe-FH-Scx"; */
+"2Pe-FH-Scx.normalTitle" = "Button";
+
+/* Class = "UILabel"; text = "Label"; ObjectID = "37i-b8-pF0"; */
+"37i-b8-pF0.text" = "Label";
+
+/* Class = "UILabel"; text = "OR"; ObjectID = "3se-mn-Dfo"; */
+"3se-mn-Dfo.text" = "OR";
+
+/* Class = "UILabel"; text = "HEIGHT"; ObjectID = "4bN-eC-gEu"; */
+"4bN-eC-gEu.text" = "HEIGHT";
+
+/* Class = "UIButton"; configuration.title = "Button"; ObjectID = "5ib-l8-amc"; */
+"5ib-l8-amc.configuration.title" = "Button";
+
+/* Class = "UIButton"; normalTitle = "Button"; ObjectID = "5ib-l8-amc"; */
+"5ib-l8-amc.normalTitle" = "Button";
+
+/* Class = "UITextField"; placeholder = "Enter Your Email"; ObjectID = "6PF-6g-LsI"; */
+"6PF-6g-LsI.placeholder" = "Enter Your Email";
+
+/* Class = "UITextField"; text = "rlogixx@gmail.com"; ObjectID = "6PF-6g-LsI"; */
+"6PF-6g-LsI.text" = "rlogixx@gmail.com";
+
+/* Class = "UIButton"; normalTitle = "Connect with  experts"; ObjectID = "76W-cq-gdF"; */
+"76W-cq-gdF.normalTitle" = "Connect with  experts";
+
+/* Class = "UILabel"; text = "LifeStyle Expert"; ObjectID = "7Ke-Mr-mfM"; */
+"7Ke-Mr-mfM.text" = "LifeStyle Expert";
+
+/* Class = "UIButton"; normalTitle = "Send"; ObjectID = "7g3-jw-5gp"; */
+"7g3-jw-5gp.normalTitle" = "Send";
+
+/* Class = "UITextField"; placeholder = "Last Name"; ObjectID = "85m-M7-wcx"; */
+"85m-M7-wcx.placeholder" = "Last Name";
+
+/* Class = "UIButton"; configuration.title = "Button"; ObjectID = "8DW-oA-FOb"; */
+"8DW-oA-FOb.configuration.title" = "Button";
+
+/* Class = "UIButton"; normalTitle = "Button"; ObjectID = "8DW-oA-FOb"; */
+"8DW-oA-FOb.normalTitle" = "Button";
+
+/* Class = "UITextView"; text = "Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda."; ObjectID = "Aps-wl-3Hl"; */
+"Aps-wl-3Hl.text" = "Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.";
+
+/* Class = "UILabel"; text = "  Label"; ObjectID = "BBC-AF-nfO"; */
+"BBC-AF-nfO.text" = "  Label";
+
+/* Class = "UILabel"; text = " Hospital & Doctors List"; ObjectID = "C5w-ie-YYR"; */
+"C5w-ie-YYR.text" = " Hospital & Doctors List";
+
+/* Class = "UILabel"; text = "Your Stress level is 70%"; ObjectID = "CYu-S8-561"; */
+"CYu-S8-561.text" = "Your Stress level is 70%";
+
+/* Class = "UIButton"; normalTitle = "-"; ObjectID = "Cvq-pY-tCW"; */
+"Cvq-pY-tCW.normalTitle" = "-";
+
+/* Class = "UIButton"; normalTitle = "Back to Home"; ObjectID = "DmV-Pz-NZB"; */
+"DmV-Pz-NZB.normalTitle" = "Back to Home";
+
+/* Class = "UILabel"; text = "Let's Calculate Your Stress"; ObjectID = "EbW-OQ-5wK"; */
+"EbW-OQ-5wK.text" = "Let's Calculate Your Stress";
+
+/* Class = "UILabel"; text = "Blogs"; ObjectID = "FUX-7X-rFc"; */
+"FUX-7X-rFc.text" = "Blogs";
+
+/* Class = "UILabel"; text = "Meditation"; ObjectID = "G0C-Fa-EYw"; */
+"G0C-Fa-EYw.text" = "Meditation";
+
+/* Class = "UILabel"; text = "Or"; ObjectID = "GSe-J6-f7J"; */
+"GSe-J6-f7J.text" = "Or";
+
+/* Class = "UITextView"; text = "By using our app, you acknowledge and consent to the following:\n\n1. **Collection and Use**: We collect and use your email address to facilitate various aspects of our app's functionality, including but not limited to account creation, communication, and marketing purposes. Your email address is essential for us to provide you with our services effectively.\n\n2. **Account Management**: Your email address is used for account-related activities such as account verification, password recovery, and security notifications. It helps us ensure the security and integrity of your account.\n\n3. **Communication**: We may send you important notifications, updates, and information related to your account and our services via email. These communications are crucial for keeping you informed about changes, improvements, or disruptions to our app.\n\n4. **Marketing**: With your consent, we may use your email address for marketing purposes, including sending promotional offers, newsletters, and updates about new features or products. You have the right to unsubscribe from these communications at any time.\n\n5. **Data Security**: We prioritize the security and confidentiality of your email address. We implement appropriate measures to safeguard your information and prevent unauthorized access or disclosure. Your email address will not be shared with third parties without your explicit consent, except as required by law or as necessary for providing our services.\n\n6. **Voluntary Consent**: Your decision to provide your email address and use our app signifies your voluntary consent to the terms outlined in this disclaimer. You have the right to withdraw your consent at any time by contacting us or adjusting your communication preferences within the app.\n\nPlease read this disclaimer carefully and ensure that you understand and agree to its terms before proceeding to use our app.\n\nIf you have any questions or concerns regarding the use of your email address, please contact us at [support@mindwellness.co.in].\n\nThank you for choosing our app.\n\nMindwellness Team\n"; ObjectID = "HTi-Z9-dII"; */
+"HTi-Z9-dII.text" = "By using our app, you acknowledge and consent to the following:\n\n1. **Collection and Use**: We collect and use your email address to facilitate various aspects of our app's functionality, including but not limited to account creation, communication, and marketing purposes. Your email address is essential for us to provide you with our services effectively.\n\n2. **Account Management**: Your email address is used for account-related activities such as account verification, password recovery, and security notifications. It helps us ensure the security and integrity of your account.\n\n3. **Communication**: We may send you important notifications, updates, and information related to your account and our services via email. These communications are crucial for keeping you informed about changes, improvements, or disruptions to our app.\n\n4. **Marketing**: With your consent, we may use your email address for marketing purposes, including sending promotional offers, newsletters, and updates about new features or products. You have the right to unsubscribe from these communications at any time.\n\n5. **Data Security**: We prioritize the security and confidentiality of your email address. We implement appropriate measures to safeguard your information and prevent unauthorized access or disclosure. Your email address will not be shared with third parties without your explicit consent, except as required by law or as necessary for providing our services.\n\n6. **Voluntary Consent**: Your decision to provide your email address and use our app signifies your voluntary consent to the terms outlined in this disclaimer. You have the right to withdraw your consent at any time by contacting us or adjusting your communication preferences within the app.\n\nPlease read this disclaimer carefully and ensure that you understand and agree to its terms before proceeding to use our app.\n\nIf you have any questions or concerns regarding the use of your email address, please contact us at [support@mindwellness.co.in].\n\nThank you for choosing our app.\n\nMindwellness Team\n";
+
+/* Class = "UILabel"; text = "Kgs"; ObjectID = "Hcn-l7-FFk"; */
+"Hcn-l7-FFk.text" = "Kgs";
+
+/* Class = "UILabel"; text = "Label"; ObjectID = "KC7-en-iXY"; */
+"KC7-en-iXY.text" = "Label";
+
+/* Class = "UILabel"; text = "LOGIN"; ObjectID = "LLj-rb-cTS"; */
+"LLj-rb-cTS.text" = "LOGIN";
+
+/* Class = "UILabel"; text = "Label"; ObjectID = "Lrj-5V-Jnr"; */
+"Lrj-5V-Jnr.text" = "Label";
+
+/* Class = "UILabel"; text = "SignUp"; ObjectID = "M8p-B7-gMw"; */
+"M8p-B7-gMw.text" = "SignUp";
+
+/* Class = "UITextField"; placeholder = "Password"; ObjectID = "N9K-an-zvI"; */
+"N9K-an-zvI.placeholder" = "Password";
+
+/* Class = "UIButton"; normalTitle = "Tap here to know possible diagnosis "; ObjectID = "NIb-oW-Krf"; */
+"NIb-oW-Krf.normalTitle" = "Tap here to know possible diagnosis ";
+
+/* Class = "UIButton"; configuration.title = "Psychotherapist & Councellors"; ObjectID = "NLI-6P-OW2"; */
+"NLI-6P-OW2.configuration.title" = "Psychotherapist & Councellors";
+
+/* Class = "UIButton"; normalTitle = "Button"; ObjectID = "NLI-6P-OW2"; */
+"NLI-6P-OW2.normalTitle" = "Button";
+
+/* Class = "UIButton"; configuration.title = "Yoga"; ObjectID = "NNA-oy-VS2"; */
+"NNA-oy-VS2.configuration.title" = "Yoga";
+
+/* Class = "UIButton"; normalTitle = "Button"; ObjectID = "NNA-oy-VS2"; */
+"NNA-oy-VS2.normalTitle" = "Button";
+
+/* Class = "UILabel"; text = "You should have to connect with Doctor..!"; ObjectID = "NQ2-GL-dI0"; */
+"NQ2-GL-dI0.text" = "You should have to connect with Doctor..!";
+
+/* Class = "UILabel"; text = "Blogs"; ObjectID = "NSi-c4-B6d"; */
+"NSi-c4-B6d.text" = "Blogs";
+
+/* Class = "UILabel"; text = "BMI Calculator"; ObjectID = "OBv-Uk-myy"; */
+"OBv-Uk-myy.text" = "BMI Calculator";
+
+/* Class = "UIButton"; configuration.title = "Button"; ObjectID = "OM7-0e-gAR"; */
+"OM7-0e-gAR.configuration.title" = "Button";
+
+/* Class = "UIButton"; normalTitle = "Button"; ObjectID = "OM7-0e-gAR"; */
+"OM7-0e-gAR.normalTitle" = "Button";
+
+/* Class = "UITextView"; text = "Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda."; ObjectID = "OWT-cp-LzU"; */
+"OWT-cp-LzU.text" = "Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.";
+
+/* Class = "UILabel"; text = "Yoga"; ObjectID = "Ql0-hS-gTD"; */
+"Ql0-hS-gTD.text" = "Yoga";
+
+/* Class = "UITextField"; placeholder = "Email"; ObjectID = "Rqi-Rt-KHq"; */
+"Rqi-Rt-KHq.placeholder" = "Email";
+
+/* Class = "UILabel"; text = "Label"; ObjectID = "TuF-40-qI4"; */
+"TuF-40-qI4.text" = "Label";
+
+/* Class = "UILabel"; text = "Mental Health Expert"; ObjectID = "U0J-bk-glN"; */
+"U0J-bk-glN.text" = "Mental Health Expert";
+
+/* Class = "UIButton"; normalTitle = "Login"; ObjectID = "U6z-Hv-kPZ"; */
+"U6z-Hv-kPZ.normalTitle" = "Login";
+
+/* Class = "UILabel"; text = "Yoga & It's Benefits"; ObjectID = "UIw-Ra-4cz"; */
+"UIw-Ra-4cz.text" = "Yoga & It's Benefits";
+
+/* Class = "UITextField"; placeholder = "First Name"; ObjectID = "Z8S-un-RkU"; */
+"Z8S-un-RkU.placeholder" = "First Name";
+
+/* Class = "UILabel"; text = "You are suffering from these disease."; ObjectID = "ZAu-SV-E06"; */
+"ZAu-SV-E06.text" = "You are suffering from these disease.";
+
+/* Class = "UIButton"; normalTitle = "Button"; ObjectID = "bQH-40-H8c"; */
+"bQH-40-H8c.normalTitle" = "Button";
+
+/* Class = "UILabel"; text = "Hello"; ObjectID = "cT9-XX-M9N"; */
+"cT9-XX-M9N.text" = "Hello";
+
+/* Class = "UILabel"; text = "MIND WELLNESS"; ObjectID = "cv4-yA-U9M"; */
+"cv4-yA-U9M.text" = "MIND WELLNESS";
+
+/* Class = "UILabel"; text = "Label"; ObjectID = "cwt-JH-mna"; */
+"cwt-JH-mna.text" = "Label";
+
+/* Class = "UILabel"; text = "Your Profile"; ObjectID = "dSf-H4-uxf"; */
+"dSf-H4-uxf.text" = "Your Profile";
+
+/* Class = "UIButton"; normalTitle = "Paid"; ObjectID = "dg6-BL-CwR"; */
+"dg6-BL-CwR.normalTitle" = "Paid";
+
+/* Class = "UILabel"; text = "Connect To Doctor"; ObjectID = "dwH-kJ-1yO"; */
+"dwH-kJ-1yO.text" = "Connect To Doctor";
+
+/* Class = "UITextField"; text = "rlogixx@gmail.com"; ObjectID = "e2A-rv-ZWn"; */
+"e2A-rv-ZWn.text" = "rlogixx@gmail.com";
+
+/* Class = "UIButton"; configuration.title = "Button"; ObjectID = "f0o-CD-ogz"; */
+"f0o-CD-ogz.configuration.title" = "Button";
+
+/* Class = "UIButton"; normalTitle = "Button"; ObjectID = "f0o-CD-ogz"; */
+"f0o-CD-ogz.normalTitle" = "Button";
+
+/* Class = "UILabel"; text = "How this app can help you"; ObjectID = "fMT-Nd-4kn"; */
+"fMT-Nd-4kn.text" = "How this app can help you";
+
+/* Class = "UILabel"; text = "Weight"; ObjectID = "fvE-eN-VA2"; */
+"fvE-eN-VA2.text" = "Weight";
+
+/* Class = "UILabel"; text = "Your Stress Level Is "; ObjectID = "gNa-2e-IVj"; */
+"gNa-2e-IVj.text" = "Your Stress Level Is ";
+
+/* Class = "UILabel"; text = "30"; ObjectID = "ge2-9u-nbw"; */
+"ge2-9u-nbw.text" = "30";
+
+/* Class = "UILabel"; text = "Omega-3 Fatty Acids"; ObjectID = "hgW-zM-vKa"; */
+"hgW-zM-vKa.text" = "Omega-3 Fatty Acids";
+
+/* Class = "UILabel"; text = "Address"; ObjectID = "hjr-ps-BzO"; */
+"hjr-ps-BzO.text" = "Address";
+
+/* Class = "UIButton"; normalTitle = "Button"; ObjectID = "j85-lh-Ml5"; */
+"j85-lh-Ml5.normalTitle" = "Button";
+
+/* Class = "UILabel"; text = "00"; ObjectID = "jYZ-J5-wcH"; */
+"jYZ-J5-wcH.text" = "00";
+
+/* Class = "UILabel"; text = "(•)Please make sure your password is at least 8 characters, contains a special character and a number."; ObjectID = "k9X-Cl-waQ"; */
+"k9X-Cl-waQ.text" = "(•)Please make sure your password is at least 8 characters, contains a special character and a number.";
+
+/* Class = "UILabel"; text = "Mental Health Problems"; ObjectID = "kOT-Sy-5Mj"; */
+"kOT-Sy-5Mj.text" = "Mental Health Problems";
+
+/* Class = "UILabel"; text = "Phone"; ObjectID = "kdN-pr-7k6"; */
+"kdN-pr-7k6.text" = "Phone";
+
+/* Class = "UILabel"; text = "cm"; ObjectID = "lOX-3H-3SL"; */
+"lOX-3H-3SL.text" = "cm";
+
+/* Class = "UILabel"; text = "Tap To Proceed"; ObjectID = "lkf-dq-0Gr"; */
+"lkf-dq-0Gr.text" = "Tap To Proceed";
+
+/* Class = "UITextView"; text = "Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda."; ObjectID = "lsn-pf-rtY"; */
+"lsn-pf-rtY.text" = "Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.";
+
+/* Class = "UILabel"; text = "Label"; ObjectID = "n00-gR-icY"; */
+"n00-gR-icY.text" = "Label";
+
+/* Class = "UIButton"; configuration.title = "Nutritionist"; ObjectID = "nZO-BT-lMn"; */
+"nZO-BT-lMn.configuration.title" = "Nutritionist";
+
+/* Class = "UIButton"; normalTitle = "Button"; ObjectID = "nZO-BT-lMn"; */
+"nZO-BT-lMn.normalTitle" = "Button";
+
+/* Class = "UILabel"; text = "Possible Investigation"; ObjectID = "npk-60-1EF"; */
+"npk-60-1EF.text" = "Possible Investigation";
+
+/* Class = "UIButton"; normalTitle = "Connect With Mental Health Expert"; ObjectID = "oE4-Xa-gHB"; */
+"oE4-Xa-gHB.normalTitle" = "Connect With Mental Health Expert";
+
+/* Class = "UILabel"; text = "Videos"; ObjectID = "qTT-xb-15r"; */
+"qTT-xb-15r.text" = "Videos";
+
+/* Class = "UILabel"; text = "We Need To Know More About You"; ObjectID = "qpt-Kr-cDk"; */
+"qpt-Kr-cDk.text" = "We Need To Know More About You";
+
+/* Class = "UITextView"; text = "Incorporate foods rich in omega-3 fatty acids, such as salmon, trout, walnuts, and flaxseeds. These fats are important for brain health and can help reduce symptoms of depression and anxiety."; ObjectID = "snQ-et-4VA"; */
+"snQ-et-4VA.text" = "Incorporate foods rich in omega-3 fatty acids, such as salmon, trout, walnuts, and flaxseeds. These fats are important for brain health and can help reduce symptoms of depression and anxiety.";
+
+/* Class = "UILabel"; text = "Forgot Password"; ObjectID = "t0w-tT-cBE"; */
+"t0w-tT-cBE.text" = "Forgot Password";
+
+/* Class = "UITextField"; text = "Rlogixx@123"; ObjectID = "t7B-P8-2py"; */
+"t7B-P8-2py.text" = "Rlogixx@123";
+
+/* Class = "UIButton"; normalTitle = " Sign Up"; ObjectID = "tUk-iD-eX9"; */
+"tUk-iD-eX9.normalTitle" = " Sign Up";
+
+/* Class = "UILabel"; text = "More"; ObjectID = "tlL-2t-6ef"; */
+"tlL-2t-6ef.text" = "More";
+
+/* Class = "UIButton"; configuration.title = "Psychiatrist"; ObjectID = "uU8-f7-CHC"; */
+"uU8-f7-CHC.configuration.title" = "Psychiatrist";
+
+/* Class = "UIButton"; normalTitle = "Button"; ObjectID = "uU8-f7-CHC"; */
+"uU8-f7-CHC.normalTitle" = "Button";
+
+/* Class = "UILabel"; text = "FOOD & TIPS"; ObjectID = "uc6-Lk-lSu"; */
+"uc6-Lk-lSu.text" = "FOOD & TIPS";
+
+/* Class = "UISegmentedControl"; uh3-bJ-OiW.segmentTitles[0] = "Food"; ObjectID = "uh3-bJ-OiW"; */
+"uh3-bJ-OiW.segmentTitles[0]" = "Food";
+
+/* Class = "UISegmentedControl"; uh3-bJ-OiW.segmentTitles[1] = "Tips"; ObjectID = "uh3-bJ-OiW"; */
+"uh3-bJ-OiW.segmentTitles[1]" = "Tips";
+
+/* Class = "UILabel"; text = "Label"; ObjectID = "wE7-AP-lYF"; */
+"wE7-AP-lYF.text" = "Label";
+
+/* Class = "UILabel"; text = "Clinic "; ObjectID = "yMl-SJ-sSR"; */
+"yMl-SJ-sSR.text" = "Clinic ";
+
+/* Class = "UITextView"; text = "1- Know Your Stress Level.                                                           2- Manage Your Stress.                                                                  3- Possible Treatment You Can Seek.                                            4- Help You De-Stress With Yoga.                                                                5- Know About Mental Health Problem.                                         6- Connect To An Expert.                                    7-  Health Tips.                                                                                            "; ObjectID = "yOQ-qZ-voZ"; */
+"yOQ-qZ-voZ.text" = "1- Know Your Stress Level.                                                           2- Manage Your Stress.                                                                  3- Possible Treatment You Can Seek.                                            4- Help You De-Stress With Yoga.                                                                5- Know About Mental Health Problem.                                         6- Connect To An Expert.                                    7-  Health Tips.                                                                                            ";
+
+/* Class = "UILabel"; text = "  Label"; ObjectID = "yg7-bc-YuH"; */
+"yg7-bc-YuH.text" = "  Label";
+
+/* Class = "UILabel"; text = "Privacy"; ObjectID = "yvF-JL-7td"; */
+"yvF-JL-7td.text" = "Privacy";
+
+/* Class = "UIButton"; configuration.title = "Button"; ObjectID = "zTB-Iv-OCU"; */
+"zTB-Iv-OCU.configuration.title" = "Button";
+
+/* Class = "UIButton"; normalTitle = "Button"; ObjectID = "zTB-Iv-OCU"; */
+"zTB-Iv-OCU.normalTitle" = "Button";
+
+/* Class = "UIButton"; normalTitle = "Calculate"; ObjectID = "zYC-TY-HAo"; */
+"zYC-TY-HAo.normalTitle" = "Calculate";

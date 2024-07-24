@@ -9,6 +9,7 @@ import UIKit
 
 class MentalBlogsViewController: UIViewController {
 
+    @IBOutlet weak var lblTitle: UILabel!
     @IBOutlet weak var txtDesc: UITextView!
     @IBOutlet weak var imgMain: UIImageView!
     @IBOutlet weak var txtTitle: UILabel!
@@ -17,6 +18,8 @@ class MentalBlogsViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        lblTitle.text = "Blogs".localizableString(forLocalization: UserDefaults.standard.string(forKey: "currentLanguage") ?? "")
         if let backgroundImage = UIImage(named: "Background") {
             let imageView = UIImageView(frame: self.view.bounds)
             imageView.contentMode = .scaleAspectFill

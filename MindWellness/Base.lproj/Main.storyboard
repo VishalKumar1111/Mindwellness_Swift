@@ -154,6 +154,9 @@
                         <outlet property="backBtnOutlet" destination="DmV-Pz-NZB" id="zA7-4G-YPR"/>
                         <outlet property="backgroundViewTbl" destination="mXf-oJ-2Mb" id="lf5-VA-NSj"/>
                         <outlet property="connectBtnOutlet" destination="oE4-Xa-gHB" id="WlF-SP-Xew"/>
+                        <outlet property="lblOr" destination="3se-mn-Dfo" id="i7T-Av-NNo"/>
+                        <outlet property="lblTitle" destination="ZAu-SV-E06" id="z6d-cK-MpJ"/>
+                        <outlet property="lblYouShould" destination="NQ2-GL-dI0" id="3JV-Re-hkR"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="2EA-bY-Kcc" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -426,8 +429,8 @@
                                 </constraints>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Connect To Doctor" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dwH-kJ-1yO">
-                                <rect key="frame" x="100" y="58" width="274" height="35"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="29"/>
+                                <rect key="frame" x="100" y="58" width="274" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
@@ -468,6 +471,7 @@
                     </view>
                     <connections>
                         <outlet property="tblView" destination="jbz-po-8Vp" id="vLr-7e-cJy"/>
+                        <outlet property="txtTitle" destination="dwH-kJ-1yO" id="kOg-zU-dRw"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="kag-TA-IsS" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -567,6 +571,7 @@
                     </view>
                     <connections>
                         <outlet property="imgMain" destination="WTf-2s-Q8F" id="KJX-cw-YhF"/>
+                        <outlet property="lblTitle" destination="FUX-7X-rFc" id="3MH-5b-DFE"/>
                         <outlet property="txtDesc" destination="lsn-pf-rtY" id="N0U-Sm-FGD"/>
                         <outlet property="txtTitle" destination="KC7-en-iXY" id="jVS-TC-nvn"/>
                     </connections>
@@ -757,6 +762,9 @@
                     <connections>
                         <outlet property="collectionVideo" destination="4uh-Ix-mwn" id="b3W-Lt-OoP"/>
                         <outlet property="collectionYogaBlog" destination="gNe-uH-1qL" id="jY4-Fb-PDW"/>
+                        <outlet property="lblBlogs" destination="NSi-c4-B6d" id="eDK-i5-Bux"/>
+                        <outlet property="lblTitle" destination="Ql0-hS-gTD" id="wTI-rf-Z1H"/>
+                        <outlet property="lblVideos" destination="qTT-xb-15r" id="fZN-8T-mWh"/>
                         <outlet property="loader" destination="lNb-yl-rQT" id="ZAI-vb-75R"/>
                         <outlet property="wkwebview" destination="Oka-Jm-PMl" id="Xfu-ch-M4h"/>
                     </connections>
@@ -914,6 +922,7 @@
                         <outlet property="Lblquestion" destination="n00-gR-icY" id="j12-BW-avE"/>
                         <outlet property="btnoneoutlet" destination="OM7-0e-gAR" id="Zc1-Gl-zrT"/>
                         <outlet property="btntwooutlet" destination="2Pe-FH-Scx" id="aDz-KF-421"/>
+                        <outlet property="lblTitle" destination="qpt-Kr-cDk" id="kew-oj-9J3"/>
                         <outlet property="progressreport" destination="yg7-bc-YuH" id="HOF-Xd-hl4"/>
                         <outlet property="progressview" destination="K6h-I5-knN" id="izL-kk-3im"/>
                     </connections>
@@ -1212,6 +1221,8 @@
                         <outlet property="btnPsychotrapist" destination="NLI-6P-OW2" id="VUN-gy-wbn"/>
                         <outlet property="btnYoga" destination="NNA-oy-VS2" id="JCu-Ni-Vzu"/>
                         <outlet property="imgPsychatristOlt" destination="LB6-IS-SJ5" id="mx9-aW-pqf"/>
+                        <outlet property="lblLifeStyle" destination="7Ke-Mr-mfM" id="TfB-qH-ihv"/>
+                        <outlet property="lblMentalHealth" destination="U0J-bk-glN" id="GUE-ng-DFK"/>
                         <outlet property="pshcatristBtnOlt" destination="sPD-Ec-JX7" id="sIr-Aw-RVz"/>
                         <outlet property="viewBackground" destination="KfK-mX-dk3" id="tm0-67-N4w"/>
                     </connections>
@@ -1742,6 +1753,7 @@
                     <connections>
                         <outlet property="MHPtableview" destination="4wF-ig-Kmc" id="pBt-Sy-bFQ"/>
                         <outlet property="headerview" destination="syR-FO-qWa" id="U5f-0Q-thn"/>
+                        <outlet property="lblTitle" destination="kOT-Sy-5Mj" id="x6X-8F-p0k"/>
                         <outlet property="viewBackground" destination="3zQ-db-GJA" id="GCY-7O-ztM"/>
                     </connections>
                 </viewController>
@@ -1993,6 +2005,7 @@
                         <outlet property="imgFood" destination="bEf-Ze-qrH" id="jwb-Uj-6kn"/>
                         <outlet property="lblDesc" destination="snQ-et-4VA" id="FNW-yR-673"/>
                         <outlet property="lblName" destination="hgW-zM-vKa" id="ZXg-a9-9p3"/>
+                        <outlet property="lblTitle" destination="uc6-Lk-lSu" id="yZ1-QM-rh9"/>
                         <outlet property="segment" destination="uh3-bJ-OiW" id="20U-MO-pM3"/>
                     </connections>
                 </viewController>
@@ -2086,6 +2099,7 @@ Mindwellness Team
                     </view>
                     <connections>
                         <outlet property="btnBack" destination="1T3-qy-jXh" id="hCx-aJ-tFQ"/>
+                        <outlet property="lblTitle" destination="yvF-JL-7td" id="JLM-xc-wOr"/>
                         <outlet property="txtPrivacy" destination="HTi-Z9-dII" id="LY1-4H-nYl"/>
                     </connections>
                 </viewController>
@@ -2405,6 +2419,7 @@ Mindwellness Team
                         <outlet property="btnOneOutlet" destination="5ib-l8-amc" id="LSW-h9-KqP"/>
                         <outlet property="btnThreeOutlet" destination="f0o-CD-ogz" id="RKd-5t-Mxy"/>
                         <outlet property="btnTwoOutlet" destination="zTB-Iv-OCU" id="6hf-Hp-gdr"/>
+                        <outlet property="lblLetUsCalculate" destination="EbW-OQ-5wK" id="if3-Hx-nMI"/>
                         <outlet property="lblQuestionText" destination="cwt-JH-mna" id="F35-9L-Nxx"/>
                         <outlet property="progressreport" destination="BBC-AF-nfO" id="16y-2e-enB"/>
                         <outlet property="progressvw" destination="3hn-tD-pzC" id="EjZ-Zt-DVw"/>
@@ -2460,7 +2475,7 @@ Mindwellness Team
                                 <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="15"/>
                                 <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
-                                <state key="normal" title="Connect with an experts"/>
+                                <state key="normal" title="Connect with experts"/>
                                 <connections>
                                     <action selector="Whohelpyou:" destination="Jgy-0x-6Qm" eventType="touchUpInside" id="0QE-6I-d4t"/>
                                 </connections>
@@ -2626,7 +2641,7 @@ Mindwellness Team
                                     <constraint firstAttribute="height" constant="237" id="iXX-kT-VOG"/>
                                 </constraints>
                             </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="How this app can help you" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fMT-Nd-4kn">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="How this app can help you" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fMT-Nd-4kn">
                                 <rect key="frame" x="20" y="367" width="374" height="51"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
@@ -2857,6 +2872,8 @@ Mindwellness Team
                         <outlet property="carousel" destination="lcf-RL-TLz" id="zTk-4y-sqx"/>
                         <outlet property="carouselLabel" destination="wE7-AP-lYF" id="khF-Bg-GOY"/>
                         <outlet property="closeSideMenu" destination="j85-lh-Ml5" id="sKR-8W-dxa"/>
+                        <outlet property="lblMore" destination="tlL-2t-6ef" id="TAr-1s-qXf"/>
+                        <outlet property="lblTapTOProceed" destination="lkf-dq-0Gr" id="tYP-wx-a6m"/>
                         <outlet property="sideBarBtnOutlet" destination="bQH-40-H8c" id="3Sy-eU-pDd"/>
                         <outlet property="soundbtn" destination="Sbo-4a-efz" id="p0b-Tt-Pmw"/>
                         <outlet property="stressResultView" destination="q6z-4L-Aej" id="Kue-6J-6Qj"/>
@@ -3017,7 +3034,7 @@ Mindwellness Team
                                     <action selector="loginokbtn:" destination="gJW-M6-cfp" eventType="touchUpInside" id="hvp-FH-FUx"/>
                                 </connections>
                             </button>
-                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="rlogixx@gmail.com" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="e2A-rv-ZWn">
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="rlogixx@gmail.com" borderStyle="roundedRect" placeholder="Enter Your Emsil" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="e2A-rv-ZWn">
                                 <rect key="frame" x="56" y="276" width="302" height="42"/>
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="e2A-rv-ZWn" secondAttribute="height" multiplier="151:21" id="lnY-oe-ROV"/>
@@ -3058,7 +3075,7 @@ Mindwellness Team
                                             </attributedString>
                                         </state>
                                         <connections>
-                                            <action selector="btnForgotPassword:" destination="gJW-M6-cfp" eventType="touchUpInside" id="ohg-H0-aJB"/>
+                                            <action selector="btnForgotPassword:" destination="gJW-M6-cfp" eventType="touchUpInside" id="fHD-rE-IRK"/>
                                         </connections>
                                     </button>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Or" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GSe-J6-f7J">
@@ -3116,10 +3133,25 @@ Mindwellness Team
                             <constraint firstItem="LLj-rb-cTS" firstAttribute="top" secondItem="epg-ud-CrO" secondAttribute="top" constant="30" id="maQ-G3-yha"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" id="uY3-uX-T2m"/>
+                    <navigationItem key="navigationItem" id="uY3-uX-T2m">
+                        <barButtonItem key="rightBarButtonItem" style="plain" id="RJO-Du-ALf">
+                            <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" id="elV-XY-cJP">
+                                <rect key="frame" x="294.5" y="4.5" width="99.5" height="35"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Language"/>
+                                <connections>
+                                    <action selector="btnLanguage:" destination="gJW-M6-cfp" eventType="touchUpInside" id="ySm-Xb-WIL"/>
+                                </connections>
+                            </button>
+                        </barButtonItem>
+                    </navigationItem>
                     <connections>
+                        <outlet property="btnForgottext" destination="MTy-3v-mmF" id="c1O-Id-hau"/>
+                        <outlet property="btnOr" destination="GSe-J6-f7J" id="ONV-TH-aGm"/>
                         <outlet property="btnSignUp" destination="kSd-h0-Ewz" id="y5X-ub-Ow4"/>
                         <outlet property="emailTextField" destination="e2A-rv-ZWn" id="7d6-De-bgG"/>
+                        <outlet property="lblTitle" destination="LLj-rb-cTS" id="MVG-zN-T5T"/>
                         <outlet property="loginButton" destination="U6z-Hv-kPZ" id="jyr-Bg-qNV"/>
                         <outlet property="passwordTextField" destination="t7B-P8-2py" id="LyQ-6X-iQG"/>
                     </connections>

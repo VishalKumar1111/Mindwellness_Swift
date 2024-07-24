@@ -17,6 +17,8 @@ class AssessmentViewController: UIViewController {
     @IBOutlet weak var pshcatristBtnOlt: UIButton!
     @IBOutlet weak var imgPsychatristOlt: UIImageView!
     
+    @IBOutlet weak var lblMentalHealth: UILabel!
+    @IBOutlet weak var lblLifeStyle: UILabel!
     @IBOutlet weak var btnNutrition: UIButton!
     @IBOutlet weak var btnYoga: UIButton!
     @IBOutlet weak var btnPsychotrapist: UIButton!
@@ -31,6 +33,16 @@ class AssessmentViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        lblLifeStyle.text = "LifeStyle Expert".localizableString(forLocalization: UserDefaults.standard.string(forKey: "currentLanguage") ?? "")
+        lblMentalHealth.text = "Mental Health Expert".localizableString(forLocalization: UserDefaults.standard.string(forKey: "currentLanguage") ?? "")
+        btnYoga.setTitle("Yoga".localizableString(forLocalization: UserDefaults.standard.string(forKey: "currentLanguage") ?? ""), for: .normal)
+        btnPsychatrist.setTitle("Psychiatrist".localizableString(forLocalization: UserDefaults.standard.string(forKey: "currentLanguage") ?? ""), for: .normal)
+        btnPsychotrapist.setTitle("Psychotherapist & Councellors".localizableString(forLocalization: UserDefaults.standard.string(forKey: "currentLanguage") ?? ""), for: .normal)
+        btnNutrition.setTitle("Nutritionist".localizableString(forLocalization: UserDefaults.standard.string(forKey: "currentLanguage") ?? ""), for: .normal)
+            
+        
+        
         if let backgroundImage = UIImage(named: "Background") {
             let imageView = UIImageView(frame: self.view.bounds)
             imageView.contentMode = .scaleAspectFill

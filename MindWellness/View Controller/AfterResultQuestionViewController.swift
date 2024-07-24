@@ -14,9 +14,12 @@ class AfterResultQuestionViewController: UIViewController {
     @IBOutlet weak var connectBtnOutlet: UIButton!
     @IBOutlet weak var afterResultTblView: UITableView!
     
+    @IBOutlet weak var lblTitle: UILabel!
     @IBOutlet weak var backBtnOutlet: UIButton!
     
+    @IBOutlet weak var lblYouShould: UILabel!
     
+    @IBOutlet weak var lblOr: UILabel!
     //MARK: Properties
   
     var arrOfResult = [String]()
@@ -37,6 +40,13 @@ class AfterResultQuestionViewController: UIViewController {
         backgroundViewTbl.layer.cornerRadius = 20
         afterResultTblView.layer.cornerRadius = 20
         //afterResultTblView.backgroundColor = UIColor(red: 0.73, green: 0.73, blue: 0.88, alpha: 1.00)
+        
+        lblTitle.text = "You are suffering from these disease.".localizableString(forLocalization: UserDefaults.standard.string(forKey: "currentLanguage") ?? "")
+        lblYouShould.text = "You should have to connect with Doctor..!".localizableString(forLocalization: UserDefaults.standard.string(forKey: "currentLanguage") ?? "")
+        lblOr.text = "or".localizableString(forLocalization: UserDefaults.standard.string(forKey: "currentLanguage") ?? "")
+        connectBtnOutlet.setTitle("Connect With Mental Health Expert".localizableString(forLocalization: UserDefaults.standard.string(forKey: "currentLanguage") ?? ""), for: .normal)
+        backBtnOutlet.setTitle("Back to Home".localizableString(forLocalization: UserDefaults.standard.string(forKey: "currentLanguage") ?? ""), for: .normal)
+        
        
     }
     
@@ -90,7 +100,7 @@ extension AfterResultQuestionViewController: UITableViewDelegate, UITableViewDat
         guard let cell = tableView.dequeueReusableCell(withIdentifier: "ShowDiseaseTableViewCell", for: indexPath) as? ShowDiseaseTableViewCell else{
             return UITableViewCell()
         }
-        cell.lblOutlet.text = arrOfResult[indexPath.row]
+        cell.lblOutlet.text = arrOfResult[indexPath.row].localizableString(forLocalization:  UserDefaults.standard.string(forKey: "currentLanguage") ?? "")
         cell.selectionStyle = .none
        // cell.backgroundColor = UIColor.clear
         return cell

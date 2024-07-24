@@ -12,12 +12,17 @@ class PrivacyViewController: UIViewController {
     @IBOutlet weak var txtPrivacy: UITextView!
     @IBOutlet weak var btnBack: UIButton!
     
+    @IBOutlet weak var lblTitle: UILabel!
     
+    @IBOutlet weak var lblDesc: UITextView!
     
     
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        lblTitle.text = "Privacy".localizableString(forLocalization: UserDefaults.standard.string(forKey: "currentLanguage") ?? "")
+        txtPrivacy.text = "PrivacyDesc".localizableString(forLocalization: UserDefaults.standard.string(forKey: "currentLanguage") ?? "")
         
         
         self.navigationController?.isNavigationBarHidden = true

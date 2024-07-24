@@ -52,6 +52,8 @@
 		14BB3E3B2A8FBE5800F55820 /* v4.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 14F7E8922A853310006BEB98 /* v4.mp4 */; };
 		14BB3E3C2A8FBE5D00F55820 /* v5.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 14F7E8942A853310006BEB98 /* v5.mp4 */; };
 		14BB3E3E2A8FBF6800F55820 /* vdo.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 14BB3E3D2A8FBF4C00F55820 /* vdo.mp4 */; };
+		14C3CD432C4E520300A1FD4E /* Localiztion.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14C3CD422C4E520300A1FD4E /* Localiztion.swift */; };
+		14C488172C4CEFB200BC2D0F /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 14C488192C4CEFB200BC2D0F /* Localizable.strings */; };
 		14C4BA0B2B2C29F800E50353 /* CollectionYoga.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14C4BA092B2C29F800E50353 /* CollectionYoga.swift */; };
 		14C4BA0C2B2C29F800E50353 /* CollectionYoga.xib in Resources */ = {isa = PBXBuildFile; fileRef = 14C4BA0A2B2C29F800E50353 /* CollectionYoga.xib */; };
 		14C5EB182BC57100006D9153 /* PrivacyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14C5EB172BC57100006D9153 /* PrivacyViewController.swift */; };
@@ -157,6 +159,9 @@
 		143B00EA2AFB8602007B7348 /* Montserrat-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Montserrat-Bold.ttf"; path = "../../../../../Downloads/montserrat/Montserrat-Bold.ttf"; sourceTree = "<group>"; };
 		143B2D432B0CA0BD00EAB11A /* ExpertsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExpertsTableViewCell.swift; sourceTree = "<group>"; };
 		143B2D442B0CA0BD00EAB11A /* ExpertsTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ExpertsTableViewCell.xib; sourceTree = "<group>"; };
+		143C00112C4AA2A90079CD88 /* hi */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = hi; path = hi.lproj/Main.strings; sourceTree = "<group>"; };
+		143C00122C4AA2AA0079CD88 /* hi */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = hi; path = hi.lproj/LaunchScreen.strings; sourceTree = "<group>"; };
+		143C00142C4AA2BB0079CD88 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Main.strings; sourceTree = "<group>"; };
 		143D6FA3291E3864004B9F95 /* sound.mpeg */ = {isa = PBXFileReference; lastKnownFileType = video.mpeg; path = sound.mpeg; sourceTree = "<group>"; };
 		143DE271286F2E4100B71C05 /* psychtristnearme.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = psychtristnearme.jpeg; sourceTree = "<group>"; };
 		143DE275286F2FB600B71C05 /* counselling.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = counselling.png; sourceTree = "<group>"; };
@@ -194,6 +199,9 @@
 		14AF1B1A28A2416200503730 /* Mental.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Mental.jpeg; sourceTree = "<group>"; };
 		14B4374728B4EB5B0042AD31 /* MentalHealthViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MentalHealthViewController.swift; sourceTree = "<group>"; };
 		14BB3E3D2A8FBF4C00F55820 /* vdo.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = vdo.mp4; sourceTree = "<group>"; };
+		14C3CD422C4E520300A1FD4E /* Localiztion.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Localiztion.swift; sourceTree = "<group>"; };
+		14C488182C4CEFB200BC2D0F /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
+		14C4881A2C4CEFC600BC2D0F /* hi */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = hi; path = hi.lproj/Localizable.strings; sourceTree = "<group>"; };
 		14C4BA092B2C29F800E50353 /* CollectionYoga.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionYoga.swift; sourceTree = "<group>"; };
 		14C4BA0A2B2C29F800E50353 /* CollectionYoga.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CollectionYoga.xib; sourceTree = "<group>"; };
 		14C5EB172BC57100006D9153 /* PrivacyViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrivacyViewController.swift; sourceTree = "<group>"; };
@@ -565,6 +573,8 @@
 		C2A84CE626A9791B0002801F = {
 			isa = PBXGroup;
 			children = (
+				14C3CD422C4E520300A1FD4E /* Localiztion.swift */,
+				14C488192C4CEFB200BC2D0F /* Localizable.strings */,
 				143B00E72AFB85DC007B7348 /* Font */,
 				C2A84CF126A9791B0002801F /* MindWellness */,
 				C2A84CF026A9791B0002801F /* Products */,
@@ -756,6 +766,7 @@
 			knownRegions = (
 				en,
 				Base,
+				hi,
 			);
 			mainGroup = C2A84CE626A9791B0002801F;
 			productRefGroup = C2A84CF026A9791B0002801F /* Products */;
@@ -845,6 +856,7 @@
 				149C9B7D28917BC300BD4D9E /* images5.png in Resources */,
 				14841B1D2928D95C002E867C /* Yoga Data.plist in Resources */,
 				14668E20292E210100FD57C0 /* videoImage.png in Resources */,
+				14C488172C4CEFB200BC2D0F /* Localizable.strings in Resources */,
 				14C8B71928F5556100A0CE37 /* bg6.jpeg in Resources */,
 				144757C42ACC08BF00515C2A /* SoundMedTableViewCel.xib in Resources */,
 			);
@@ -951,6 +963,7 @@
 				C2A84D0826A979AE0002801F /* IntroViewController.swift in Sources */,
 				C293BAD726F1EA260092AC9C /* QuestionAnswerViewController.swift in Sources */,
 				14C7E2992B2B3B1500FBC461 /* YogaController.swift in Sources */,
+				14C3CD432C4E520300A1FD4E /* Localiztion.swift in Sources */,
 				C2EA1A622B5266DD00DD7BCA /* Constants.swift in Sources */,
 				14DB30202BFDBC2400E33791 /* ForgotPassword.swift in Sources */,
 				1441CCAB28771910006BCBF2 /* ExTableViewCell.swift in Sources */,
@@ -968,10 +981,21 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
+		14C488192C4CEFB200BC2D0F /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				14C488182C4CEFB200BC2D0F /* en */,
+				14C4881A2C4CEFC600BC2D0F /* hi */,
+			);
+			name = Localizable.strings;
+			sourceTree = "<group>";
+		};
 		C2A84CF826A9791B0002801F /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
 				C2A84CF926A9791B0002801F /* Base */,
+				143C00112C4AA2A90079CD88 /* hi */,
+				143C00142C4AA2BB0079CD88 /* en */,
 			);
 			name = Main.storyboard;
 			sourceTree = "<group>";
@@ -980,6 +1004,7 @@
 			isa = PBXVariantGroup;
 			children = (
 				C2A84CFE26A9791D0002801F /* Base */,
+				143C00122C4AA2AA0079CD88 /* hi */,
 			);
 			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
@@ -991,6 +1016,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
@@ -1052,6 +1078,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";

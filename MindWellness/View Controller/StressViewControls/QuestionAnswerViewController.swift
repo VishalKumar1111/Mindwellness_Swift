@@ -20,6 +20,7 @@ class QuestionAnswerViewController: UIViewController,demoDelegate{
     var DataFromGaugeVC = Int()
     weak var delegate: GoToCaroselDelegate?
     
+    @IBOutlet weak var lblLetUsCalculate: UILabel!
     @IBOutlet weak var lblQuestionText: UILabel!
     @IBOutlet weak var btnOneOutlet: UIButton!
     @IBOutlet weak var btnTwoOutlet: UIButton!
@@ -43,9 +44,17 @@ class QuestionAnswerViewController: UIViewController,demoDelegate{
             imageView.contentMode = .scaleAspectFill
             imageView.image = backgroundImage
             self.view.insertSubview(imageView, at: 0)
+            
+            lblLetUsCalculate.text = "Let's Calculate Your Stress".localizableString(forLocalization: UserDefaults.standard.string(forKey: "currentLanguage") ?? "")
         }
-        questions = ["Not Felling Pleasure  in doing things?" , "Feeling Down Or Depressed?" , "Not having Proper Sleep,Sleeping Less Or More " , "Feeling tired or Fatigued?" , "Poor appetite or overeating?" , "Negative Thoughts or that you are a failure or have let your family down?" , "Trouble concentrating on things?" , " Moving or speaking slowly that other people could have noticed? " , "Thoughts that you would be better off dead, or of Self Harm Or Sucide? "
-        ]
+//        questions = ["Not Felling Pleasure  in doing things?" , "Feeling Down Or Depressed?" , "Not having Proper Sleep,Sleeping Less Or More " , "Feeling tired or Fatigued?" , "Poor appetite or overeating?" , "Negative Thoughts or that you are a failure or have let your family down?" , "Trouble concentrating on things?" , " Moving or speaking slowly that other people could have noticed? " , "Thoughts that you would be better off dead, or of Self Harm Or Sucide? "
+//        ]
+//        questions =  ["Not feeling pleasure  in doing things (In the last fifteen days)?" , "Feeling down Or depressed (In the last fifteen days)?" , "Not having proper sleep,sleeping less Or more (In the last fifteen days)?" , "Feeling tired or fatigued (In the last fifteen days)?" , "Poor appetite or overeating (In the last fifteen days)?" , "Negative thoughts or that you are a failure or have let your family down (In the last fifteen days)?" , "Trouble concentrating on things (In the last fifteen days)?" , " Moving or speaking slowly that other people could have commented  (In the last fifteen days)?" , "Thoughts that you would be better off dead, or of Self Harm Or Sucide (In the last fifteen days)?"]
+//
+        questions =  ["question_1" , "question_2" , "question_3" , "question_4" ,"question_5" ,"question_6" ,"question_7" ,"question_8" ,"question_9"]
+
+        
+        
         btnOneOutlet.layer.cornerRadius = 20
         btnTwoOutlet.layer.cornerRadius = 20
         btnThreeOutlet.layer.cornerRadius = 20
@@ -57,18 +66,18 @@ class QuestionAnswerViewController: UIViewController,demoDelegate{
         print(answers)
         
         
-        progressreport.text = " Question"+" \(currentQuestion + 1) out of 09"
-        lblQuestionText.text = questions[currentQuestion]
+        progressreport.text = "Question".localizableString(forLocalization: UserDefaults.standard.string(forKey: "currentLanguage") ?? "") + " \(currentQuestion + 1)" + " out of".localizableString(forLocalization:  UserDefaults.standard.string(forKey: "currentLanguage") ?? "") + "09"
+        lblQuestionText.text = questions[currentQuestion].localizableString(forLocalization: UserDefaults.standard.string(forKey: "currentLanguage") ?? "")
         buttonTitle()
         
     }
     
     func buttonTitle() {
         print(answers[currentQuestion][x])
-        btnOneOutlet.setTitle(answers[currentQuestion][x], for: .normal)
-        btnTwoOutlet.setTitle(answers[currentQuestion][1], for: .normal)
-        btnThreeOutlet.setTitle(answers[currentQuestion][2], for: .normal)
-        btnFourOutlet.setTitle(answers[currentQuestion][3], for: .normal)
+        btnOneOutlet.setTitle(answers[currentQuestion][x].localizableString(forLocalization: UserDefaults.standard.string(forKey: "currentLanguage") ?? ""), for: .normal)
+        btnTwoOutlet.setTitle(answers[currentQuestion][1].localizableString(forLocalization: UserDefaults.standard.string(forKey: "currentLanguage") ?? ""), for: .normal)
+        btnThreeOutlet.setTitle(answers[currentQuestion][2].localizableString(forLocalization: UserDefaults.standard.string(forKey: "currentLanguage") ?? ""), for: .normal)
+        btnFourOutlet.setTitle(answers[currentQuestion][3].localizableString(forLocalization: UserDefaults.standard.string(forKey: "currentLanguage") ?? ""), for: .normal)
         
     }
     
@@ -88,7 +97,7 @@ class QuestionAnswerViewController: UIViewController,demoDelegate{
         else {
             
             currentQuestion += 1
-            lblQuestionText.text = questions[currentQuestion]
+            lblQuestionText.text = questions[currentQuestion].localizableString(forLocalization: UserDefaults.standard.string(forKey: "currentLanguage") ?? "")
         }
     }
     
@@ -98,7 +107,7 @@ class QuestionAnswerViewController: UIViewController,demoDelegate{
         score += 0
         print(score)
         progressvw.progress += 0.1
-        progressreport.text = "Question "+" \(currentQuestion + 1) out of 09 "
+        progressreport.text = "Question".localizableString(forLocalization: UserDefaults.standard.string(forKey: "currentLanguage") ?? "") + " \(currentQuestion + 1)" + " out of".localizableString(forLocalization:  UserDefaults.standard.string(forKey: "currentLanguage") ?? "") + "09"
         
     }
     @IBAction func btnAnswerTwo(_ sender: Any) {
@@ -107,7 +116,7 @@ class QuestionAnswerViewController: UIViewController,demoDelegate{
         score += 01
         print(score)
         progressvw.progress += 0.1
-        progressreport.text = "Question "+" \(currentQuestion + 1) out of 09 "
+        progressreport.text = "Question".localizableString(forLocalization: UserDefaults.standard.string(forKey: "currentLanguage") ?? "") + " \(currentQuestion + 1)" + " out of".localizableString(forLocalization:  UserDefaults.standard.string(forKey: "currentLanguage") ?? "") + "09"
         
         
     }
@@ -117,7 +126,7 @@ class QuestionAnswerViewController: UIViewController,demoDelegate{
         score += 02
         print(score)
         progressvw.progress += 0.1
-        progressreport.text = "Question "+" \(currentQuestion + 1) out of 09 "
+        progressreport.text = "Question".localizableString(forLocalization: UserDefaults.standard.string(forKey: "currentLanguage") ?? "") + " \(currentQuestion + 1)" + " out of".localizableString(forLocalization:  UserDefaults.standard.string(forKey: "currentLanguage") ?? "") + "09"
         
         if progressvw.progress == 1.0{
             print("Reached")
@@ -141,7 +150,7 @@ class QuestionAnswerViewController: UIViewController,demoDelegate{
             
             let alertController = UIAlertController(title: "Serious", message: "You need to concert a Mental Health Expert at the earliest in person", preferredStyle: .actionSheet)
 
-            let action1 = UIAlertAction(title: "OK", style: .default) { _ in
+            let action1 = UIAlertAction(title: "okButton".localizableString(forLocalization: UserDefaults.standard.string(forKey: "currentLanguage") ?? ""), style: .default) { _ in
                 print("Action 1 selected")
             }
             alertController.addAction(action1)
@@ -151,8 +160,8 @@ class QuestionAnswerViewController: UIViewController,demoDelegate{
             let messageFont = [NSAttributedString.Key.foregroundColor: UIColor.black, NSAttributedString.Key.font: UIFont.boldSystemFont(ofSize: 16.0)]
 
             // Apply attributed text to title and message
-            alertController.setValue(NSAttributedString(string: "Serious", attributes: titleFont), forKey: "attributedTitle")
-            alertController.setValue(NSAttributedString(string: "You Need to concern to a Mental health Expert immediately in person", attributes: messageFont), forKey: "attributedMessage")
+            alertController.setValue(NSAttributedString(string: "seriousAlertTitle".localizableString(forLocalization: UserDefaults.standard.string(forKey: "currentLanguage") ?? ""), attributes: titleFont), forKey: "attributedTitle")
+            alertController.setValue(NSAttributedString(string: "seriousAlertMessage".localizableString(forLocalization: UserDefaults.standard.string(forKey: "currentLanguage") ?? ""), attributes: messageFont), forKey: "attributedMessage")
 
             // Present the action sheet
             if let popoverController = alertController.popoverPresentationController {
@@ -196,16 +205,43 @@ class QuestionAnswerViewController: UIViewController,demoDelegate{
         score += 03
         print(score)
         progressvw.progress += 0.1
-        progressreport.text = "Question "+" \(currentQuestion + 1) out of 09 "
-        
+        progressreport.text = "Question".localizableString(forLocalization: UserDefaults.standard.string(forKey: "currentLanguage") ?? "") + " \(currentQuestion + 1)" + " out of".localizableString(forLocalization:  UserDefaults.standard.string(forKey: "currentLanguage") ?? "") + "09"
         if progressvw.progress == 1.0{
             print("Reached")
-            let alertController = UIAlertController(title: "Serious", message: "You Need to concern to a Mental health Expert immediately in person ", preferredStyle: .alert)
-            let okAction = UIAlertAction(title: "OK", style: .default)
-            alertController.addAction(okAction)
-            self.present(alertController, animated: true, completion: nil)
+            let alertController = UIAlertController(title: "Serious", message: "You need to concert a Mental Health Expert at the earliest in person", preferredStyle: .actionSheet)
             
+            let action1 = UIAlertAction(title: "okButton".localizableString(forLocalization: UserDefaults.standard.string(forKey: "currentLanguage") ?? ""), style: .default) { _ in
+                print("Action 1 selected")
+            }
+            alertController.addAction(action1)
+            
+            // Change title and message text color to black
+            let titleFont = [NSAttributedString.Key.foregroundColor: UIColor.black, NSAttributedString.Key.font: UIFont.boldSystemFont(ofSize: 20.0)]
+            let messageFont = [NSAttributedString.Key.foregroundColor: UIColor.black, NSAttributedString.Key.font: UIFont.boldSystemFont(ofSize: 16.0)]
+            
+            // Apply attributed text to title and message
+            alertController.setValue(NSAttributedString(string: "seriousAlertTitle".localizableString(forLocalization: UserDefaults.standard.string(forKey: "currentLanguage") ?? ""), attributes: titleFont), forKey: "attributedTitle")
+            alertController.setValue(NSAttributedString(string: "seriousAlertMessage".localizableString(forLocalization: UserDefaults.standard.string(forKey: "currentLanguage") ?? ""), attributes: messageFont), forKey: "attributedMessage")
+            
+            // Present the action sheet
+            if let popoverController = alertController.popoverPresentationController {
+                popoverController.sourceView = self.view
+                popoverController.sourceRect = CGRect(x: self.view.bounds.midX, y: self.view.bounds.midY, width: 0, height: 0)
+                popoverController.permittedArrowDirections = []
+            }
+            
+            self.present(alertController, animated: true, completion: nil)
         }
+        
+        
+//        if progressvw.progress == 1.0{
+//            print("Reached")
+//            let alertController = UIAlertController(title: "Serious", message: "You Need to concern to a Mental health Expert immediately in person ", preferredStyle: .alert)
+//            let okAction = UIAlertAction(title: "OK", style: .default)
+//            alertController.addAction(okAction)
+//            self.present(alertController, animated: true, completion: nil)
+//
+//        }
        
     }
    
