@@ -16,11 +16,16 @@ class MedSoundViewController: UIViewController ,UITableViewDelegate,UITableViewD
     
     @IBOutlet weak var tblView: UITableView!
     
-    var arr = [["name" : "Sunset View" ,"image":UIImage(named: "sunset")!], ["name":" Stars " ,"image": UIImage(named: "star" )!], ["name":"Relaxing Ocean Sound" ,"image": UIImage(named: "ocean sound")!] ,["name": "Wave","image":UIImage(named: "wave")!],["name" :"Nature Sound","image":UIImage(named: "nature")!]]
+    @IBOutlet weak var txtTitle: UILabel!
+    
+    var arr = [["name" : "sunset_view".localizableString(forLocalization: UserDefaults.standard.string(forKey: "currentLanguage") ?? "") ,"image":UIImage(named: "sunset")!], ["name":"stars".localizableString(forLocalization: UserDefaults.standard.string(forKey: "currentLanguage") ?? "") ,"image": UIImage(named: "star" )!], ["name":"relaxing_ocean_sound".localizableString(forLocalization: UserDefaults.standard.string(forKey: "currentLanguage") ?? "") ,"image": UIImage(named: "ocean sound")!] ,["name": "wave".localizableString(forLocalization: UserDefaults.standard.string(forKey: "currentLanguage") ?? ""),"image":UIImage(named: "wave")!],["name" :"nature_sound".localizableString(forLocalization: UserDefaults.standard.string(forKey: "currentLanguage") ?? ""),"image":UIImage(named: "nature")!]]
     
 
     override func viewDidLoad() {
         super.viewDidLoad()
+    
+        txtTitle.text = "Meditation Sounds".localizableString(forLocalization: UserDefaults.standard.string(forKey: "currentLanguage") ?? "")
+    
         if let backgroundImage = UIImage(named: "Background") {
             let imageView = UIImageView(frame: self.view.bounds)
             imageView.contentMode = .scaleAspectFill

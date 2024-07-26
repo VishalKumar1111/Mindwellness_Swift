@@ -15,6 +15,8 @@ class Login: UIViewController {
     @IBOutlet weak var lblTitle: UILabel!
     @IBOutlet weak var btnSignUp: UIButton!
     
+    @IBOutlet weak var lblLanguage: UIButton!
+    
     @IBOutlet weak var btnOr: UILabel!
     @IBOutlet weak var btnForgottext: UIButton!
     @IBOutlet weak var emailTextField: UITextField!
@@ -40,6 +42,8 @@ class Login: UIViewController {
         }
         
         func setUpUI() {
+            
+            btnSignUp.setTitleColor(.blue, for: .normal)
             btnSignUp.titleLabel?.textColor = .blue
             if let backgroundImage = UIImage(named: "Background") {
                 let imageView = UIImageView(frame: self.view.bounds)
@@ -62,9 +66,12 @@ class Login: UIViewController {
         func LanguageChange(language: String) {
             lblTitle.text = "Login".localizableString(forLocalization: language)
             btnOr.text = "or".localizableString(forLocalization: language)
-            btnForgottext.setTitle("forgot".localizableString(forLocalization: UserDefaults.standard.string(forKey: "currentLanguage") ?? ""), for: .normal)
-            btnSignUp.setTitle("SignUp".localizableString(forLocalization: UserDefaults.standard.string(forKey: "currentLanguage") ?? ""), for: .normal)
+            btnForgottext.setTitle("forgot".localizableString(forLocalization: language), for: .normal)
+            btnSignUp.setTitle("SignUp".localizableString(forLocalization: language), for: .normal)
             loginButton.setTitle("Login".localizableString(forLocalization: language), for: .normal)
+            
+            lblLanguage.setTitle("language".localizableString(forLocalization: language), for: .normal)
+            
             
             // Save the selected language
             UserDefaults.standard.set(language, forKey: "currentLanguage")

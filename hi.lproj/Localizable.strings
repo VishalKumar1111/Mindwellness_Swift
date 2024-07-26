@@ -8,11 +8,52 @@
 
 "We collect your email address solely for account management and communication purposes within our app. Your email address is stored securely and will not be shared with third parties without your explicit consent. We prioritize the protection of your information." = "हम आपका ईमेल पता केवल हमारे ऐप के भीतर खाता प्रबंधन और संचार उद्देश्यों के लिए एकत्र करते हैं। आपका ईमेल पता सुरक्षित रूप से संग्रहीत किया जाता है और आपकी स्पष्ट सहमति के बिना तीसरे पक्ष के साथ साझा नहीं किया जाएगा। हम आपकी जानकारी की सुरक्षा को प्राथमिकता देते हैं।" ;
 "Login" = "लॉग इन";
-"SignUp" = "साइन अप";
-"or" = "या";
+"SignUp" = " साइन अप";
+"or" = " या";
 "forgot" = "पासवर्ड भूल गए";
 
+"language" = "भाषा" ;
+
 "Policies" = "नीतियाँ";
+
+"condition" = "(•)कृपया सुनिश्चित करें कि आपका पासवर्ड कम से कम 8 अक्षरों का हो, उसमें एक विशेष वर्ण और एक संख्या हो।" ;
+
+
+"Please fill in all fields." = "कृपया सभी फ़ील्ड भरें।";
+"Password" = "पासवर्ड";
+"Please make sure your password is at least 8 characters, contains a special character and a number." = "कृपया सुनिश्चित करें कि आपका पासवर्ड कम से कम 8 वर्णों का है, इसमें एक विशेष अक्षर और एक संख्या है।";
+"Unable To Create User" = "उपयोगकर्ता बनाने में असमर्थ";
+"Error creating user" = "उपयोगकर्ता बनाने में त्रुटि";
+"Successfull" = "सफल";
+"User is created Successfully." = "उपयोगकर्ता सफलतापूर्वक बनाया गया है।";
+"Ok" = "ठीक है";
+"Alert Title" = "अलर्ट शीर्षक";
+
+"first" = "पहला नाम";
+"last" = "अंतिम नाम";
+"email" = "ईमेल दर्ज करें";
+"password" = "पासवर्ड दर्ज करें";
+
+
+"Empty Field" = "खाली क्षेत्र";
+"Fill Value of Height" = "ऊँचाई का मान भरें";
+"BMI" = "बीएमआई";
+"Underweight Message" = "• आपका बॉडी मास इंडेक्स " ;
+"under_remain" = "है।\n• आपका वजन कम है\n• इससे स्वास्थ्य समस्याएं हो सकती हैं\n• वजन बढ़ाने के उपायों के बारे में जानने के लिए लाइफस्टाइल एक्सपर्ट से परामर्श करें";
+"Overweight Message" = "आपका बॉडी मास इंडेक्स " ;
+"over_remaining" = " है।\n• आपका वजन अधिक है\n• इससे स्वास्थ्य समस्याएं हो सकती हैं\n• अधिक वजन के कारण संभावित स्वास्थ्य समस्याओं के बारे में जानने और वजन कम करने की सलाह के लिए लाइफस्टाइल एक्सपर्ट से परामर्श करें";
+"Healthy Weight Message" = "आपका बॉडी मास इंडेक्स " ;
+"healthy_remaining" = "है।\n आपका वजन स्वस्थ है";
+"Ok" = "ठीक है";
+
+"bmicalculator" = "बीएमआई कैलकुलेटर";
+
+
+"height" = "ऊंचाई";
+"weight" = "वजन";
+
+
+
 
 //Carousal Screen started
 
@@ -27,7 +68,7 @@
 "meditationSounds" = "ध्यान ध्वनियां";
 "share" = "साझा करें";
 
-"Stress" = "क्या आप स्ट्रेस्ड हैं?";
+"Stress" = "क्या आप तनाव मे हैं?";
 "how this app" = "यह ऐप आपकी कैसे मदद कर सकता है";
 "help_detail" = "• आपके तनाव के स्तर को जानने में आपकी सहायता करें।\n• आपके तनाव को प्रबंधित करने में आपकी सहायता करें।\n• आपको संभावित उपचार जानने में सहायता करें जिसे आप ढूंढ सकते हैं।\n• योग से आपको तनाव मुक्त करने में सहायता करें।\n• मानसिक स्वास्थ्य समस्या के बारे में जानें .\n• किसी विशेषज्ञ से जुड़ने में आपकी सहायता करें।\n• स्वास्थ्य युक्तियाँ।";
 "let us calculate" = "आइए हम आपके तनाव के स्तर की गणना करें";
@@ -85,7 +126,8 @@
 "Yes" = "हाँ";
 "No" = "नहीं";
 "Question" = "प्रश्न";
-"out of" = "में से";
+"out of" = "";
+"09" = "" ;
 "Depression" = "अवसाद";
 "Bipolar Disorder" = "द्विध्रुवी विकार";
 "Psychosis" = "मनोविकृति";
@@ -95,6 +137,9 @@
 "Recurrent Depression" = "पुनरावर्ती अवसाद";
 "Substance Abuse" = "पदार्थ का दुरुपयोग";
 "Bipolar disorder current episode Depression" = "द्विध्रुवी विकार वर्तमान एपिसोड अवसाद";
+
+"send" = "भेजें" ;
+"forgot" = "पासवर्ड भूल गए" ;
 
 
 
@@ -598,3 +643,18 @@
 माइंडवेलनेस टीम" ;
 "Privacy" = "गोपनीयता";
 
+
+"food" = "खाना";
+"tips" = "सुझाव" ;
+
+"Meditation Sounds" = "ध्यान ध्वनियाँ";
+
+"sunset_view" = "सूर्यास्त दृश्य";
+"stars" = "सितारे";
+"relaxing_ocean_sound" = "शांतिपूर्ण महासागर की ध्वनि";
+"wave" = "लहर";
+"nature_sound" = "प्रकृति की ध्वनि";
+
+"Logout" = "लॉग आउट";
+"calculate" = "गणना" ;
+ 

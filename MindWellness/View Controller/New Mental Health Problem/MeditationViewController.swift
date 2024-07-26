@@ -162,6 +162,9 @@ class MeditationViewController: UIViewController{
         super.viewDidLoad()
         loader.isHidden = true
         print(arrOfProblemTopicHeading)
+        
+        
+        
       //  self.titleBackground.backgroundColor = UIColor(patternImage: UIImage(named: "Background")!)
         if let backgroundImage = UIImage(named: "Background") {
             let imageView = UIImageView(frame: self.view.bounds)
@@ -174,7 +177,7 @@ class MeditationViewController: UIViewController{
        // self.tblView.backgroundColor = UIColor(patternImage: UIImage(named: "Background")!)
        
         
-        txtTitle.text = HeadingLblNameOfView
+        txtTitle.text = HeadingLblNameOfView.localizableString(forLocalization: UserDefaults.standard.string(forKey: "currentLanguage") ?? "")
         tblView.delegate = self
         tblView.dataSource = self
         webView.isHidden = true

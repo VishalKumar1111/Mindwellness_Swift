@@ -70,7 +70,7 @@ class MoreQuizViewController: UIViewController {
         btntwooutlet.layer.cornerRadius = btntwooutlet.bounds.height/2
         progressreport.layer.cornerRadius = 8 //your desire radius
         progressreport.layer.masksToBounds = true
-        progressreport.text = " Question"+" \(currentQuestion + 1) out of 09"
+        progressreport.text = "Question".localizableString(forLocalization: UserDefaults.standard.string(forKey: "currentLanguage") ?? "") + " \(currentQuestion + 1)" + "out of".localizableString(forLocalization:  UserDefaults.standard.string(forKey: "currentLanguage") ?? "") + "09".localizableString(forLocalization:  UserDefaults.standard.string(forKey: "currentLanguage") ?? "")
         Lblquestion.text = questions[currentQuestion].localizableString(forLocalization:  UserDefaults.standard.string(forKey: "currentLanguage") ?? "")
         buttonTitle()
     }
@@ -162,7 +162,7 @@ class MoreQuizViewController: UIViewController {
             arrayAnswerCollection.append("1")
         
         progressview.progress += 0.1
-        progressreport.text = "Question "+" \(currentQuestion + 1) out of 09 "
+        progressreport.text = "Question".localizableString(forLocalization: UserDefaults.standard.string(forKey: "currentLanguage") ?? "") + " \(currentQuestion + 1)" + "out of".localizableString(forLocalization:  UserDefaults.standard.string(forKey: "currentLanguage") ?? "") + "09".localizableString(forLocalization:  UserDefaults.standard.string(forKey: "currentLanguage") ?? "")
         
     }
     @IBAction func btnAnswerTwo(_ sender: Any) {
@@ -174,7 +174,7 @@ class MoreQuizViewController: UIViewController {
         }else{
             arrayAnswerCollection.append("0")
         }
-        progressreport.text = "Question "+" \(currentQuestion + 1) out of 09 "
+        progressreport.text = "Question".localizableString(forLocalization: UserDefaults.standard.string(forKey: "currentLanguage") ?? "") + " \(currentQuestion + 1)" + "out of".localizableString(forLocalization:  UserDefaults.standard.string(forKey: "currentLanguage") ?? "") + "09".localizableString(forLocalization:  UserDefaults.standard.string(forKey: "currentLanguage") ?? "")
     }
     
     @IBAction func backbtn(_ sender: Any) {

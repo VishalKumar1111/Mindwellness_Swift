@@ -10,10 +10,23 @@ import Firebase
 
 class ForgotPassword: UIViewController {
 
+    @IBOutlet weak var lblForgot: UILabel!
+    @IBOutlet weak var btnSend: UIButton!
     @IBOutlet weak var txtEmail: UITextField!
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        lblForgot.text = "forgot".localizableString(forLocalization: UserDefaults.standard.string(forKey: "currentLanguage") ?? "")
+      
+        
+        btnSend.setTitle("send".localizableString(forLocalization: UserDefaults.standard.string(forKey: "currentLanguage") ?? ""), for: .normal)
+        
+        txtEmail.placeholder = "email".localizableString(forLocalization: UserDefaults.standard.string(forKey: "currentLanguage") ?? "")
+        
+    
+        
+        
 
         if let backgroundImage = UIImage(named: "Background") {
             let imageView = UIImageView(frame: self.view.bounds)

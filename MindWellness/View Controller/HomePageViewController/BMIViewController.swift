@@ -24,6 +24,9 @@ class BMIViewController: UIViewController {
     @IBOutlet weak var slider: UISlider!
     @IBOutlet weak var pickWeight: UIPickerView!
     
+    @IBOutlet weak var lblWeight: UILabel!
+    @IBOutlet weak var lblHeight: UILabel!
+    @IBOutlet weak var lblTitle: UILabel!
     @IBOutlet weak var viewBackground: UIView!
     //MARK: Properties
     
@@ -35,6 +38,17 @@ class BMIViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        lblTitle.text = "bmicalculator".localizableString(forLocalization: UserDefaults.standard.string(forKey: "currentLanguage") ?? "")
+        lblHeight.text = "height".localizableString(forLocalization: UserDefaults.standard.string(forKey: "currentLanguage") ?? "")
+        lblWeight.text = "weight".localizableString(forLocalization: UserDefaults.standard.string(forKey: "currentLanguage") ?? "")
+        
+        
+        calculateButton.setTitle("calculate".localizableString(forLocalization: UserDefaults.standard.string(forKey: "currentLanguage") ?? ""), for: UIControl.State.normal)
+        
+        
+        
+        
         self.viewBackground.backgroundColor = UIColor(patternImage: UIImage(named: "Background")!)
         self.arrWeight.removeAll()
         
@@ -75,8 +89,8 @@ class BMIViewController: UIViewController {
         
             let (weight,height) = changeUnitSystem()
             if weight == 0.0 || height == 0.0{
-                let alert = UIAlertController(title: "Empty Field", message: "Fill Value of Height", preferredStyle: UIAlertController.Style.alert)
-                alert.addAction(UIAlertAction(title: "Ok", style: UIAlertAction.Style.default, handler: nil))
+                let alert = UIAlertController(title: "Empty Field".localizableString(forLocalization: UserDefaults.standard.string(forKey: "currentLanguage") ?? ""), message: "Fill Value of Height".localizableString(forLocalization: UserDefaults.standard.string(forKey: "currentLanguage") ?? ""), preferredStyle: UIAlertController.Style.alert)
+                alert.addAction(UIAlertAction(title: "Ok".localizableString(forLocalization: UserDefaults.standard.string(forKey: "currentLanguage") ?? ""), style: UIAlertAction.Style.default, handler: nil))
                 self.present(alert, animated: true, completion: nil)
             }
         
@@ -85,14 +99,14 @@ class BMIViewController: UIViewController {
             let tipText: String = String(format: "%.2f", calculatedBMI)
         
         if calculatedBMI <= 18.5 {
-              let alert = UIAlertController(title: "BMI", message: "•Your Body Mass Index is \(tipText).\n  • You are underweight \n • This may lead to health issues \n • Consult Lifestyle Experts to know about possible health issues ahow to improve weight", preferredStyle: UIAlertController.Style.alert)
+            let alert = UIAlertController(title: "BMI".localizableString(forLocalization: UserDefaults.standard.string(forKey: "currentLanguage") ?? ""), message: "Underweight Message".localizableString(forLocalization: UserDefaults.standard.string(forKey: "currentLanguage") ?? "") + tipText + "under_remain".localizableString(forLocalization: UserDefaults.standard.string(forKey: "currentLanguage") ?? ""), preferredStyle: UIAlertController.Style.alert)
             
             if let messageText = alert.view.subviews.first?.subviews.first?.subviews.first as? UILabel {
                 // Set text alignment to left
                 messageText.textAlignment = .left
             }
 
-            alert.addAction(UIAlertAction(title: "Ok", style: UIAlertAction.Style.default, handler: nil))
+            alert.addAction(UIAlertAction(title: "Ok".localizableString(forLocalization: UserDefaults.standard.string(forKey: "currentLanguage") ?? ""), style: UIAlertAction.Style.default, handler: nil))
 
             // Present the alert
             self.present(alert, animated: true, completion: nil)
@@ -101,13 +115,13 @@ class BMIViewController: UIViewController {
 //              alert.addAction(UIAlertAction(title: "Ok", style: UIAlertAction.Style.default, handler: nil))
 //              self.present(alert, animated: true, completion: nil)
         }else if calculatedBMI >= 24.9{
-              let alert = UIAlertController(title: "BMI", message: "Your Body Mass Index is \(tipText).\n • You are overweight \n • This may lead to health issue \n • Consult Lifestyle Expert to know about possible health probles due to overweight and for advice on how to reduce weight", preferredStyle: UIAlertController.Style.alert)
+            let alert = UIAlertController(title: "BMI".localizableString(forLocalization: UserDefaults.standard.string(forKey: "currentLanguage") ?? ""), message: "Overweight Message".localizableString(forLocalization: UserDefaults.standard.string(forKey: "currentLanguage") ?? "") + tipText + "over_remaining".localizableString(forLocalization: UserDefaults.standard.string(forKey: "currentLanguage") ?? ""), preferredStyle: UIAlertController.Style.alert)
             if let messageText = alert.view.subviews.first?.subviews.first?.subviews.first as? UILabel {
                 // Set text alignment to left
                 messageText.textAlignment = .left
             }
 
-            alert.addAction(UIAlertAction(title: "Ok", style: UIAlertAction.Style.default, handler: nil))
+            alert.addAction(UIAlertAction(title: "Ok".localizableString(forLocalization: UserDefaults.standard.string(forKey: "currentLanguage") ?? ""), style: UIAlertAction.Style.default, handler: nil))
 
             // Present the alert
             self.present(alert, animated: true, completion: nil)
@@ -115,7 +129,7 @@ class BMIViewController: UIViewController {
 //              alert.addAction(UIAlertAction(title: "Ok", style: UIAlertAction.Style.default, handler: nil))
 //              self.present(alert, animated: true, completion: nil)
           }else{
-              let alert = UIAlertController(title: "BMI", message: "Your Body Mass Index is \(tipText).\n You have healthy wieght", preferredStyle: UIAlertController.Style.alert)
+              let alert = UIAlertController(title: "BMI".localizableString(forLocalization: UserDefaults.standard.string(forKey: "currentLanguage") ?? ""), message: "Healthy Weight Message".localizableString(forLocalization: UserDefaults.standard.string(forKey: "currentLanguage") ?? "") + tipText + "healthy_remaining".localizableString(forLocalization: UserDefaults.standard.string(forKey: "currentLanguage") ?? ""), preferredStyle: UIAlertController.Style.alert)
               alert.addAction(UIAlertAction(title: "Ok", style: UIAlertAction.Style.default, handler: nil))
               self.present(alert, animated: true, completion: nil)
           }

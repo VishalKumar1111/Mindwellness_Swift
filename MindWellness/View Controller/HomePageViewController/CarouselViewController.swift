@@ -8,6 +8,8 @@
 import UIKit
 import CircularCarousel
 import AVKit
+import FirebaseAuth
+
 class CarouselViewController: UIViewController, GoToCaroselDelegate{
     @IBOutlet weak var tapView: UIView!
     
@@ -16,7 +18,7 @@ class CarouselViewController: UIViewController, GoToCaroselDelegate{
     
     @IBOutlet weak var lblMore: UILabel!
 //    var   arrOfSideMenuContents = ["Your Profile","Calc Your BMI","Food & Diet","Meditation Sounds","Share"]
-    var   arrOfSideMenuContents = ["yourProfile","calcBmi","foodDiet","meditationSounds","share"]
+    var   arrOfSideMenuContents = ["calcBmi","foodDiet","meditationSounds","share","Logout"]
     
     var color = ["bg3.jpeg", "bg4.jpeg" , "bg5.jpeg" , "bg6.jpeg" ]
     var music = [String]()
@@ -287,24 +289,24 @@ extension CarouselViewController: UITableViewDelegate,UITableViewDataSource{
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         print(indexPath.row)
-        if indexPath.row == 1{
+        if indexPath.row == 0{
             
             let BMIvc = UIStoryboard.init(name: "Main", bundle: Bundle.main).instantiateViewController(withIdentifier: "BMIViewController") as? BMIViewController
         
             self.navigationController?.pushViewController(BMIvc!, animated:true)
             
             
-        }else if indexPath.row == 2 {
+        }else if indexPath.row == 1 {
             let vc: FoodViewController = (storyboard?.instantiateViewController(withIdentifier: "Food") as? FoodViewController)!
             
             self.navigationController?.pushViewController(vc, animated: true)
         }
-        else if indexPath.row == 3 {
+        else if indexPath.row == 2 {
             let Meditationvc = UIStoryboard.init(name: "Main", bundle: Bundle.main).instantiateViewController(withIdentifier: "MedSound") as? MedSoundViewController
             
             self.navigationController?.pushViewController(Meditationvc!, animated: true)
             print(indexPath.row)
-        }else if indexPath.row == 4{
+        }else if indexPath.row == 3{
 //            let shareBtn = UIActivityViewController(activityItems: ["www.google.com"], applicationActivities: nil)
 //            shareBtn.popoverPresentationController?.sourceView = self.view
 //            self.present(shareBtn, animated: true,completion: nil)
@@ -324,8 +326,25 @@ extension CarouselViewController: UITableViewDelegate,UITableViewDataSource{
                 // Present the UIActivityViewController
                 self.present(activityViewController, animated: true, completion: nil)
             
-            
-            
+        }
+        
+        else if indexPath.row == 4{
+            do {
+                        try Auth.auth().signOut()
+                        print("User signed out successfully")
+                        
+                let vc = self.storyboard?.instantiateViewController(withIdentifier: "Login") as? Login
+                
+                self.navigationController?.pushViewController(vc!, animated: true)
+                
+                        
+                        // Optionally, navigate to the login screen
+                        // let loginViewController = ... // instantiate your login view controller
+                        // self.present(loginViewController, animated: true, completion: nil)
+                    } catch let signOutError as NSError {
+                        print("Error signing out: %@", signOutError)
+                    }
+
             
         }
         else{

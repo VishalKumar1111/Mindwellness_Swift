@@ -11,6 +11,8 @@ class Signup: UIViewController {
     
     @IBOutlet weak var lastNameTextField: UITextField!
     
+    @IBOutlet weak var lblCondtition: UILabel!
+    @IBOutlet weak var lblTitle: UILabel!
     @IBOutlet weak var emailTextField: UITextField!
     
     @IBOutlet weak var passwordTextField: UITextField!
@@ -25,6 +27,18 @@ class Signup: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        lblTitle.text = "SignUp".localizableString(forLocalization: UserDefaults.standard.string(forKey: "currentLanguage") ?? "")
+        lblCondtition.text = "condition".localizableString(forLocalization: UserDefaults.standard.string(forKey: "currentLanguage") ?? "")
+       
+        
+        passwordTextField.placeholder = "password".localizableString(forLocalization: UserDefaults.standard.string(forKey: "currentLanguage") ?? "")
+        lastNameTextField.placeholder = "last".localizableString(forLocalization: UserDefaults.standard.string(forKey: "currentLanguage") ?? "")
+        firstNameTextField.placeholder = "first".localizableString(forLocalization: UserDefaults.standard.string(forKey: "currentLanguage") ?? "")
+        emailTextField.placeholder = "email".localizableString(forLocalization: UserDefaults.standard.string(forKey: "currentLanguage") ?? "")
+        
+        signUpButton.setTitle("SignUp".localizableString(forLocalization: UserDefaults.standard.string(forKey: "currentLanguage") ?? ""), for: .normal)
+        
+        
         if let backgroundImage = UIImage(named: "Background") {
             let imageView = UIImageView(frame: self.view.bounds)
             imageView.contentMode = .scaleAspectFill
@@ -36,6 +50,8 @@ class Signup: UIViewController {
     }
     
     func setUpElements() {
+        
+        
     
         // Hide the error label
 //        errorLabel.alpha = 0

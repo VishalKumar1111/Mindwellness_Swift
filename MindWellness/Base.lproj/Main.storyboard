@@ -1410,7 +1410,7 @@
                                         <constraints>
                                             <constraint firstAttribute="height" constant="40" id="vn2-tE-iZI"/>
                                         </constraints>
-                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="29"/>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="21"/>
                                         <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <nil key="highlightedColor"/>
                                     </label>
@@ -1665,6 +1665,9 @@
                         <outlet property="femaleViewOutlet" destination="Fgo-x5-OV4" id="ggR-Bt-uud"/>
                         <outlet property="heightView" destination="oq4-p8-edD" id="BU6-Q1-eLC"/>
                         <outlet property="heigthIntlabel" destination="ge2-9u-nbw" id="gvS-F1-ODi"/>
+                        <outlet property="lblHeight" destination="4bN-eC-gEu" id="x4n-Xk-TQq"/>
+                        <outlet property="lblTitle" destination="OBv-Uk-myy" id="uce-ZE-bhU"/>
+                        <outlet property="lblWeight" destination="fvE-eN-VA2" id="sMP-NI-LGj"/>
                         <outlet property="pickWeight" destination="wBN-NP-azf" id="9s9-4n-k1m"/>
                         <outlet property="slider" destination="u7r-Ld-fvW" id="U31-fL-01a"/>
                         <outlet property="viewBackground" destination="3d3-AM-aKA" id="Ndf-KM-Alj"/>
@@ -1815,7 +1818,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dqe-L6-vhJ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="7844.9275362318849" y="83.705357142857139"/>
+            <point key="canvasLocation" x="7926" y="32"/>
         </scene>
         <!--Med Sound View Controller-->
         <scene sceneID="gRH-YT-NN9">
@@ -1878,6 +1881,7 @@
                     </view>
                     <connections>
                         <outlet property="tblView" destination="9lX-C4-1iw" id="0XK-d3-otE"/>
+                        <outlet property="txtTitle" destination="0R2-W3-aqe" id="Fc8-qh-OkJ"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="TIz-3K-5Cz" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -3009,6 +3013,8 @@ Mindwellness Team
                         <outlet property="emailTextField" destination="Rqi-Rt-KHq" id="svZ-vV-ioZ"/>
                         <outlet property="firstNameTextField" destination="Z8S-un-RkU" id="0Kv-60-BVI"/>
                         <outlet property="lastNameTextField" destination="85m-M7-wcx" id="64R-fq-EgX"/>
+                        <outlet property="lblCondtition" destination="k9X-Cl-waQ" id="82L-gg-cci"/>
+                        <outlet property="lblTitle" destination="M8p-B7-gMw" id="yEw-5D-pbY"/>
                         <outlet property="passwordTextField" destination="N9K-an-zvI" id="Bei-dp-yka"/>
                         <outlet property="signUpButton" destination="tUk-iD-eX9" id="zS9-dC-xCs"/>
                     </connections>
@@ -3059,50 +3065,31 @@ Mindwellness Team
                                 <nil key="highlightedColor"/>
                             </label>
                             <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Hgs-il-aLC">
-                                <rect key="frame" x="87" y="519" width="240" height="34.5"/>
+                                <rect key="frame" x="79.5" y="519" width="245" height="34.5"/>
                                 <subviews>
-                                    <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="MTy-3v-mmF">
-                                        <rect key="frame" x="0.0" y="0.0" width="150" height="34.5"/>
+                                    <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MTy-3v-mmF">
+                                        <rect key="frame" x="0.0" y="0.0" width="153" height="34.5"/>
+                                        <fontDescription key="fontDescription" name=".AppleSystemUIFont" family=".AppleSystemUIFont" pointSize="18"/>
                                         <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
-                                        <state key="normal">
-                                            <attributedString key="attributedTitle">
-                                                <fragment content="Forgot Password?  ">
-                                                    <attributes>
-                                                        <color key="NSColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                                        <font key="NSFont" metaFont="system" size="18"/>
-                                                    </attributes>
-                                                </fragment>
-                                            </attributedString>
+                                        <state key="normal" title="Forgot Password?  ">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         </state>
                                         <connections>
                                             <action selector="btnForgotPassword:" destination="gJW-M6-cfp" eventType="touchUpInside" id="fHD-rE-IRK"/>
                                         </connections>
                                     </button>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Or" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GSe-J6-f7J">
-                                        <rect key="frame" x="150" y="0.0" width="20" height="34.5"/>
-                                        <constraints>
-                                            <constraint firstAttribute="width" constant="20" id="Buo-cA-eNY"/>
-                                        </constraints>
+                                        <rect key="frame" x="153" y="0.0" width="19" height="34.5"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="kSd-h0-Ewz">
-                                        <rect key="frame" x="170" y="0.0" width="70" height="34.5"/>
-                                        <constraints>
-                                            <constraint firstAttribute="width" constant="70" id="mY1-TE-5Nj"/>
-                                        </constraints>
+                                    <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kSd-h0-Ewz">
+                                        <rect key="frame" x="172" y="0.0" width="73" height="34.5"/>
+                                        <fontDescription key="fontDescription" name=".AppleSystemUIFont" family=".AppleSystemUIFont" pointSize="18"/>
                                         <color key="tintColor" systemColor="systemBlueColor"/>
                                         <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
-                                        <state key="normal">
-                                            <attributedString key="attributedTitle">
-                                                <fragment content="Sign Up">
-                                                    <attributes>
-                                                        <font key="NSFont" metaFont="system" size="18"/>
-                                                    </attributes>
-                                                </fragment>
-                                            </attributedString>
-                                        </state>
+                                        <state key="normal" title="  Sign Up"/>
                                         <connections>
                                             <action selector="btnSignup:" destination="gJW-M6-cfp" eventType="touchUpInside" id="Oqx-hM-ywN"/>
                                         </connections>
@@ -3110,7 +3097,7 @@ Mindwellness Team
                                 </subviews>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="34.5" id="aa6-PR-MjF"/>
-                                    <constraint firstAttribute="width" constant="240" id="mae-AW-plg"/>
+                                    <constraint firstAttribute="width" relation="lessThanOrEqual" constant="260" id="mae-AW-plg"/>
                                 </constraints>
                             </stackView>
                         </subviews>
@@ -3120,9 +3107,9 @@ Mindwellness Team
                             <constraint firstItem="t7B-P8-2py" firstAttribute="leading" secondItem="epg-ud-CrO" secondAttribute="leading" constant="56" id="1oI-az-nl9"/>
                             <constraint firstItem="epg-ud-CrO" firstAttribute="trailing" secondItem="LLj-rb-cTS" secondAttribute="trailing" constant="120" id="9La-J4-2sD"/>
                             <constraint firstItem="e2A-rv-ZWn" firstAttribute="leading" secondItem="epg-ud-CrO" secondAttribute="leading" constant="56" id="AWP-DG-vCA"/>
+                            <constraint firstItem="Hgs-il-aLC" firstAttribute="centerX" secondItem="U6z-Hv-kPZ" secondAttribute="centerX" id="Gdz-Ld-LoN"/>
                             <constraint firstItem="e2A-rv-ZWn" firstAttribute="top" secondItem="LLj-rb-cTS" secondAttribute="bottom" constant="100" id="Jgq-2y-DGR"/>
                             <constraint firstItem="U6z-Hv-kPZ" firstAttribute="leading" secondItem="epg-ud-CrO" secondAttribute="leading" constant="56" id="SrM-kJ-m8r"/>
-                            <constraint firstItem="Hgs-il-aLC" firstAttribute="centerX" secondItem="q7Z-Vg-7SX" secondAttribute="centerX" id="WJm-PM-hFz"/>
                             <constraint firstItem="LLj-rb-cTS" firstAttribute="leading" secondItem="epg-ud-CrO" secondAttribute="leading" constant="120" id="Ygj-Bi-D0t"/>
                             <constraint firstItem="Hgs-il-aLC" firstAttribute="top" secondItem="U6z-Hv-kPZ" secondAttribute="bottom" constant="10" id="ZWy-c5-35g"/>
                             <constraint firstItem="U6z-Hv-kPZ" firstAttribute="top" secondItem="t7B-P8-2py" secondAttribute="bottom" constant="80" id="d1f-ID-b1T"/>
@@ -3147,10 +3134,11 @@ Mindwellness Team
                         </barButtonItem>
                     </navigationItem>
                     <connections>
-                        <outlet property="btnForgottext" destination="MTy-3v-mmF" id="c1O-Id-hau"/>
+                        <outlet property="btnForgottext" destination="MTy-3v-mmF" id="8Av-Ld-8LZ"/>
                         <outlet property="btnOr" destination="GSe-J6-f7J" id="ONV-TH-aGm"/>
-                        <outlet property="btnSignUp" destination="kSd-h0-Ewz" id="y5X-ub-Ow4"/>
+                        <outlet property="btnSignUp" destination="kSd-h0-Ewz" id="RNI-N3-xG7"/>
                         <outlet property="emailTextField" destination="e2A-rv-ZWn" id="7d6-De-bgG"/>
+                        <outlet property="lblLanguage" destination="elV-XY-cJP" id="gk3-6D-yAt"/>
                         <outlet property="lblTitle" destination="LLj-rb-cTS" id="MVG-zN-T5T"/>
                         <outlet property="loginButton" destination="U6z-Hv-kPZ" id="jyr-Bg-qNV"/>
                         <outlet property="passwordTextField" destination="t7B-P8-2py" id="LyQ-6X-iQG"/>
@@ -3158,7 +3146,7 @@ Mindwellness Team
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="mbe-Fm-wrJ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-2180" y="-68"/>
+            <point key="canvasLocation" x="-2182.608695652174" y="-68.303571428571431"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="4OO-IF-qn4">
@@ -3224,6 +3212,8 @@ Mindwellness Team
                     </view>
                     <navigationItem key="navigationItem" id="pTK-6J-U0K"/>
                     <connections>
+                        <outlet property="btnSend" destination="7g3-jw-5gp" id="Z6k-iy-93w"/>
+                        <outlet property="lblForgot" destination="t0w-tT-cBE" id="kH5-pH-LiN"/>
                         <outlet property="txtEmail" destination="6PF-6g-LsI" id="cdp-9Y-myQ"/>
                     </connections>
                 </viewController>

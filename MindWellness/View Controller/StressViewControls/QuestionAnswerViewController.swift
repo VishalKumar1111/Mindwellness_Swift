@@ -66,7 +66,7 @@ class QuestionAnswerViewController: UIViewController,demoDelegate{
         print(answers)
         
         
-        progressreport.text = "Question".localizableString(forLocalization: UserDefaults.standard.string(forKey: "currentLanguage") ?? "") + " \(currentQuestion + 1)" + " out of".localizableString(forLocalization:  UserDefaults.standard.string(forKey: "currentLanguage") ?? "") + "09"
+        progressreport.text = "Question".localizableString(forLocalization: UserDefaults.standard.string(forKey: "currentLanguage") ?? "") + " \(currentQuestion + 1)" + "out of".localizableString(forLocalization:  UserDefaults.standard.string(forKey: "currentLanguage") ?? "") + "09".localizableString(forLocalization:  UserDefaults.standard.string(forKey: "currentLanguage") ?? "")
         lblQuestionText.text = questions[currentQuestion].localizableString(forLocalization: UserDefaults.standard.string(forKey: "currentLanguage") ?? "")
         buttonTitle()
         
@@ -107,7 +107,7 @@ class QuestionAnswerViewController: UIViewController,demoDelegate{
         score += 0
         print(score)
         progressvw.progress += 0.1
-        progressreport.text = "Question".localizableString(forLocalization: UserDefaults.standard.string(forKey: "currentLanguage") ?? "") + " \(currentQuestion + 1)" + " out of".localizableString(forLocalization:  UserDefaults.standard.string(forKey: "currentLanguage") ?? "") + "09"
+        progressreport.text = "Question".localizableString(forLocalization: UserDefaults.standard.string(forKey: "currentLanguage") ?? "") + " \(currentQuestion + 1)" + "out of".localizableString(forLocalization:  UserDefaults.standard.string(forKey: "currentLanguage") ?? "") + "09".localizableString(forLocalization:  UserDefaults.standard.string(forKey: "currentLanguage") ?? "")
         
     }
     @IBAction func btnAnswerTwo(_ sender: Any) {
@@ -116,7 +116,7 @@ class QuestionAnswerViewController: UIViewController,demoDelegate{
         score += 01
         print(score)
         progressvw.progress += 0.1
-        progressreport.text = "Question".localizableString(forLocalization: UserDefaults.standard.string(forKey: "currentLanguage") ?? "") + " \(currentQuestion + 1)" + " out of".localizableString(forLocalization:  UserDefaults.standard.string(forKey: "currentLanguage") ?? "") + "09"
+        progressreport.text = "Question".localizableString(forLocalization: UserDefaults.standard.string(forKey: "currentLanguage") ?? "") + " \(currentQuestion + 1)" + "out of".localizableString(forLocalization:  UserDefaults.standard.string(forKey: "currentLanguage") ?? "") + "09".localizableString(forLocalization:  UserDefaults.standard.string(forKey: "currentLanguage") ?? "")
         
         
     }
@@ -126,7 +126,7 @@ class QuestionAnswerViewController: UIViewController,demoDelegate{
         score += 02
         print(score)
         progressvw.progress += 0.1
-        progressreport.text = "Question".localizableString(forLocalization: UserDefaults.standard.string(forKey: "currentLanguage") ?? "") + " \(currentQuestion + 1)" + " out of".localizableString(forLocalization:  UserDefaults.standard.string(forKey: "currentLanguage") ?? "") + "09"
+        progressreport.text = "Question".localizableString(forLocalization: UserDefaults.standard.string(forKey: "currentLanguage") ?? "") + " \(currentQuestion + 1)" + "out of".localizableString(forLocalization:  UserDefaults.standard.string(forKey: "currentLanguage") ?? "") + "09".localizableString(forLocalization:  UserDefaults.standard.string(forKey: "currentLanguage") ?? "")
         
         if progressvw.progress == 1.0{
             print("Reached")
@@ -205,7 +205,7 @@ class QuestionAnswerViewController: UIViewController,demoDelegate{
         score += 03
         print(score)
         progressvw.progress += 0.1
-        progressreport.text = "Question".localizableString(forLocalization: UserDefaults.standard.string(forKey: "currentLanguage") ?? "") + " \(currentQuestion + 1)" + " out of".localizableString(forLocalization:  UserDefaults.standard.string(forKey: "currentLanguage") ?? "") + "09"
+        progressreport.text = "Question".localizableString(forLocalization: UserDefaults.standard.string(forKey: "currentLanguage") ?? "") + " \(currentQuestion + 1)" + "out of".localizableString(forLocalization:  UserDefaults.standard.string(forKey: "currentLanguage") ?? "") + "09".localizableString(forLocalization:  UserDefaults.standard.string(forKey: "currentLanguage") ?? "")
         if progressvw.progress == 1.0{
             print("Reached")
             let alertController = UIAlertController(title: "Serious", message: "You need to concert a Mental Health Expert at the earliest in person", preferredStyle: .actionSheet)

@@ -79,6 +79,10 @@ class GaugeMeterViewController: UIViewController{
         self.txtResult.textAlignment = .center
         
         
+        
+        
+        
+        
         possiblediagnosis.setTitle("Tap here to know possible diagnosis".localizableString(forLocalization:  UserDefaults.standard.string(forKey: "currentLanguage") ?? ""), for: .normal)
         thoseWhoCanHelp.setTitle("Connect with experts".localizableString(forLocalization:  UserDefaults.standard.string(forKey: "currentLanguage") ?? ""), for: .normal)
         

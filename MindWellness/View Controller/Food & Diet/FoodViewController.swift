@@ -23,7 +23,7 @@ class FoodViewController: UIViewController {
     var count = 0
     var arrdata = [[String:Any]]()
     
-    var arrFood = [["name":"omega_3_fatty_acids_name".localizableString(forLocalization: UserDefaults.standard.string(forKey: "currentLanguage") ?? ""),"desc":"omega_3_fatty_acids_desc".localizableString(forLocalization: UserDefaults.standard.string(forKey: "currentLanguage") ?? ""),"image":UIImage(named:"omega_3" )],
+    var arrFood = [["name":"omega_3_name".localizableString(forLocalization: UserDefaults.standard.string(forKey: "currentLanguage") ?? ""),"desc":"omega_3_desc".localizableString(forLocalization: UserDefaults.standard.string(forKey: "currentLanguage") ?? ""),"image":UIImage(named:"omega_3" )],
                    
         ["name":"complex_carbohydrates_name".localizableString(forLocalization: UserDefaults.standard.string(forKey: "currentLanguage") ?? ""),"desc":"complex_carbohydrates_desc".localizableString(forLocalization: UserDefaults.standard.string(forKey: "currentLanguage") ?? ""),"image":UIImage(named: "carbohydrates")],
                    
@@ -86,6 +86,11 @@ class FoodViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        
+        
+        segment.setTitle("food".localizableString(forLocalization: UserDefaults.standard.string(forKey: "currentLanguage") ?? ""), forSegmentAt: 0)
+        segment.setTitle("tips".localizableString(forLocalization: UserDefaults.standard.string(forKey: "currentLanguage") ?? ""), forSegmentAt: 1)
+                  
         lblTitle.text = "FOOD & TIPS".localizableString(forLocalization: UserDefaults.standard.string(forKey: "currentLanguage") ?? "")
         
         self.view.backgroundColor = UIColor(patternImage: UIImage(named: "Background")!)
